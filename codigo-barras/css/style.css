@@ -1,0 +1,103 @@
+@media screen {
+  body {
+    height: calc(100%);
+    width: calc(100%);
+  }
+}
+
+@media print {
+  div#display {
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+#display #field,
+#display center {
+  margin: auto;
+}
+
+#field img {
+  height: 9vh;
+  max-width: 100%;
+}
+
+div#code {
+  font-weight: 700;
+  font-size: 17px;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.container-fluid {
+  height: calc(100%);
+}
+
+div#display {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.mr-5, .mx-5, #bcode-card, .col-md-4{
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+}
+
+.text-center > h4{
+    display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2px;
+  border: none;
+  font: normal 36px/normal "Warnes", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgb(160, 160, 160) , 0 0 20px rgb(117, 117, 117) , 0 0 30px rgb(94, 94, 94) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+
+}
+
+.text-center > h4:hover{
+    text-shadow: 0 0 10px rgb(121, 120, 120) , 0 0 20px rgb(105, 105, 105) , 0 0 30px rgb(63, 63, 63) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+}
+
+.alert-info{
+    background-color: #ffe0bc;
+}
+
+#display > center{
+    font-weight: bold;
+}
+
+label{
+  font-weight: bold;
+}
+
+.btn-block{
+  width: 30% !important;
+}
+
+.card-footer{
+  background-color: rgba(255, 255, 255, 0.03) !important;
+border-top: 0 !important;
+}
+
+.col-md-6{
+  flex: 0 0 40% !important;
+  margin-left: 5%;
+}
+
+.row{
+  margin-top: 3%;
+}

@@ -61,15 +61,15 @@
                       <?php
                         foreach ($persona as $key => $value) {
                           if ( $value['idpersona'] == ($fk_persona)) {
-                            echo '<option name="'.$value['nombre'].'" value="'.$value['idpersona'].'" selected="selected">'.$value['nombre'].'</option>';
+                            echo '<option cedula="'.$value['cedula'].'" name="'.$value['nombre'].'" value="'.$value['idpersona'].'" selected="selected">'.$value['nombre'].'</option>';
                           }else{
-                            echo '<option name="'.$value['nombre'].'" value="'.$value['idpersona'].'">'.$value['nombre'].'</option>';
+                            echo '<option cedula="'.$value['cedula'].'" name="'.$value['nombre'].'" value="'.$value['idpersona'].'">'.$value['nombre'].'</option>';
                           }
                         }
                       ?>
                       </select>
                       <div class="input-group-append">
-                        <a href="<?=base_url()?>/persona/insert" target="_blank" class="btn btn-app bg-success">
+                        <a href="<?=base_url()?>persona/insert" target="_blank" class="btn btn-app bg-success">
                           <i class="fas fa-users"></i> Nuevo
                         </a>
                       </div>
@@ -121,6 +121,7 @@
                     <b> Vendendor: </b><td><?php if(!isset($data['usuario']) and empty($data['usuario'])){echo '';}else{echo $data['usuario'];}?></td> <br>
                     <!-- <b id="publico" > CLiente :</b><td >Publico General</td>  -->
                     <p id="publico"></p>
+                    <p id="cedula"></p>
                 </div>
                 <!-- /.col -->
                 <div class="col-6">
@@ -191,6 +192,7 @@
     function select_cliente() {
 
       optionName = document.getElementById("fk_persona").options[document.getElementById("fk_persona").selectedIndex].getAttribute('name');
+      optionCedula = document.getElementById("fk_persona").options[document.getElementById("fk_persona").selectedIndex].getAttribute('cedula');
       var cod = document.getElementById("fk_persona").value;
       var venta = "<?php if(!isset($datos['idventas']) and empty($datos['idventas'])){echo '';}else{echo $datos['idventas'];}?>";
       var http  = new XMLHttpRequest(); 
@@ -199,6 +201,7 @@
       http.open('GET',ruta,true);
       http.send(); 
       document.getElementById('publico').innerHTML =  optionName;
+      document.getElementById('cedula').innerHTML =  optionCedula;
       // alert(cod);
     }
     // mostral hora actual
@@ -272,12 +275,13 @@
       http.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
           var resultado = (this.responseText);
-          const index = resultado.indexOf("\n");
-          const cut = resultado.substring(index);
-          const final = resultado.replace(cut, "");
+          // const index = resultado.indexOf("\n");
+          // const cut = resultado.substring(index);
+          // const final = resultado.replace(cut, "");
 	        tabla = document.getElementById('tabla'),
           tabla.innerHTML = '<tr><th>Cant.</th><th>Producto</th><th>Prec. Uni.</th><th>Subtotal</th></tr>';
-          var datos  = JSON.parse(final);
+          // var datos  = JSON.parse(final);
+          var datos  = JSON.parse(resultado);
             datos.forEach(recibo => {
               var elemento = document.createElement("tr");
               elemento.innerHTML += ("<td>" + recibo.cantidad + "</td>");
@@ -300,10 +304,11 @@
       http.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
           var resultado = (this.responseText);
-          const index = resultado.indexOf("\n");
-          const cut = resultado.substring(index);
-          const final = resultado.replace(cut, "");
-          var datos  = JSON.parse(final);
+          // const index = resultado.indexOf("\n");
+          // const cut = resultado.substring(index);
+          // const final = resultado.replace(cut, "");
+          // var datos  = JSON.parse(final);
+          var datos  = JSON.parse(resultado);
           document.getElementById("total_precio").innerHTML = datos.resultado;
         }
       }

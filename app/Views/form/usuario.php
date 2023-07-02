@@ -89,25 +89,15 @@
                       onchange="loadFile(event)">
                     </div>  
                     <div class="form-group">
-                      <label>Cliente</label>
+                    <label >Email</label>
                       <?php //php code generator
-                        if  (isset($_POST['fk_persona']) and !empty($_POST['fk_persona'])){
-                          $fk_persona = $_POST['fk_persona'];
-                        }elseif (isset($datos['fk_persona']) and !empty($datos['fk_persona'])) {
-                          $fk_persona = $datos['fk_persona'];
-                        }else { $fk_persona = '';}
+                        if  (isset($_POST['email']) and !empty($_POST['email'])){
+                          $email = $_POST['email'];
+                        }elseif (isset($datos['email']) and !empty($datos['email'])) {
+                          $email = $datos['email'];
+                        }else { $email = '.@gmail.com';}
                       ?>
-                      <select class="form-control select2" id='Cliente' name="fk_persona" onchange="select_presentacion()" style="width: 100%;">
-                      <?php
-                        foreach ($persona as $key => $value) {
-                          if ( $value['idpersona'] ==($fk_persona)) {
-                            echo '<option value="'.$value['idpersona'].'" selected="selected">'.$value['email'].'</option>';
-                          }else{
-                            echo '<option value="'.$value['idpersona'].'">'.$value['email'].'</option>';
-                          }
-                        }
-                        ?>
-                      </select>
+                      <input type="email" name="email" class="form-control"  placeholder="Ingrese email" value="<?=$email; ?>">
                     </div>
                     <div class="form-group">
                       <label>Roles  </label>

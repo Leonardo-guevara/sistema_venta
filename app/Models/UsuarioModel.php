@@ -15,7 +15,7 @@ class UsuarioModel extends Model
     protected $useSoftDeletes = true;
 
     protected $allowedFields = [
-    'fk_persona',
+    'email',
     'password',
     'foto',
     'user',
@@ -69,13 +69,13 @@ class UsuarioModel extends Model
     public function insertar($datos = null)
     {
         $db = \Config\Database::connect();
-        $sql = "INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `usuario`, `detalle`, `fkroles`, `created_at`) 
+        $sql = "INSERT INTO `usuario` (`email`, `password`, `foto`, `usuario`, `detalle`, `fkroles`, `created_at`) 
         VALUES ( ?,?,?,?,?,?, NOW());";
         $sha512_password = hash('sha512',$datos['password']);
-        $db->query($sql,[$datos['fk_persona'],$sha512_password,$datos['foto'],$datos['usuario'],$datos['detalle'],$datos['fkroles']]);
+        $db->query($sql,[$datos['email'],$sha512_password,$datos['foto'],$datos['usuario'],$datos['detalle'],$datos['fkroles']]);
         //correo
         $sql = "SELECT `email` FROM `persona` WHERE `idpersona` = ? AND `deleted_at`<=> NULL;";
-        $query = $db->query($sql,[$datos['fk_persona']]);
+        $query = $db->query($sql,[$datos['email']]);
         $row = $query->getRowArray();
         return $row;
     }
@@ -91,14 +91,14 @@ class UsuarioModel extends Model
     {
         $db = \Config\Database::connect();
         // $sql = "INSERT INTO `un idad` (`name`, `created_at`, ) VALUES ( ?, NOW());";
-        $sql = "UPDATE `usuario` SET `fk_persona` = ?, `foto` = ?, `usuario` = ?, `detalle` = ?, `fkroles` = ?,  `updated_at` = NOW() WHERE `usuario`.`idusuario` IN (?);";
-        $query = $db->query($sql,[$datos['fk_persona'],$datos['foto'],$datos['usuario'],$datos['detalle'],$datos['fkroles'],$id]);
+        $sql = "UPDATE `usuario` SET `email` = ?, `foto` = ?, `usuario` = ?, `detalle` = ?, `fkroles` = ?,  `updated_at` = NOW() WHERE `usuario`.`idusuario` IN (?);";
+        $query = $db->query($sql,[$datos['email'],$datos['foto'],$datos['usuario'],$datos['detalle'],$datos['fkroles'],$id]);
     }
 
     public function login($data = null)
     {
         $db = \Config\Database::connect();
-        $sql = "SELECT `idusuario`, `usuario`, `fk_persona`, `foto`, `detalle`, `fkroles` FROM `usuario` WHERE `usuario` = ? and `password` = ? and `deleted_at` <=> NULL;";
+        $sql = "SELECT `idusuario`, `usuario`, `email`, `foto`, `detalle`, `fkroles` FROM `usuario` WHERE `usuario` = ? and `password` = ? and `deleted_at` <=> NULL;";
         $sha512_password = hash('sha512', $data['password']);
         $query = $db->query($sql,[$data['user'],$sha512_password]);
         $user = $query->getRowArray();
@@ -112,6 +112,31 @@ class UsuarioModel extends Model
         $user['permiso'] =  $permiso;
         return $user;
     }
+   
+    public function buscar_contrasenha( $var = null)
+    {
+        $db = \Config\Database::connect();
+        $sql = "SELECT usuario.idusuario,`password` FROM `usuario` 
+        WHERE  email = ?;";
+         $query = $db->query($sql,[$var]);
+         $user = $query->getRowArray();
+         if (!empty($user)) {
+            $length = 8;
+            $key = "";
+            $pattern = "1234567890abcdefghijklmnopqrstuvwxyz";
+            $max = strlen($pattern)-1;
+            for($i = 0; $i < $length; $i++){
+                $key .= substr($pattern, mt_rand(0,$max), 1);
+            }
+            
+        $contrasenha = hash('sha512', $key);
+            $sql = 'UPDATE `usuario` SET `password`= ? WHERE `idusuario` = ?;';
+            $db->query($sql,[$contrasenha,$user['idusuario']]);
+            return $key;
+        }
+         return 'Este correo no existe';
+
+    }
     public function contrasenha( $length = null)
     {
         $key = "";
@@ -122,20 +147,23 @@ class UsuarioModel extends Model
         }
         return $key;
     }
+
     public function change_password( $data = null)
     {
-        $contrasenha = $data['contrasenha'];
-        $usuario = $data['usuario'];
-        $contrasenha = hash('sha512', $contrasenha);
-        $db = \Config\Database::connect();
-        $sql = "SELECT `idusuario` FROM `usuario` WHERE  `usuario`.`usuario`  = ? and  `usuario`.`password` = ?;";
-        $query = $db->query($sql,[$usuario,$contrasenha]);
-        $buscar = $query->getRowArray();
-        if (empty($buscar)) {
         
+        $usuario = $data['usuario'];
+        $sha512_password = hash('sha512', $data['contrasenha']);
+        $db = \Config\Database::connect();
+        $sql = "SELECT `idusuario` FROM `usuario` WHERE  `usuario`  = ? and  `password` = ?;";
+        $query = $db->query($sql,[$usuario,$sha512_password]);
+        $buscar = $query->getRowArray();
+    
+    
+        if (empty($buscar)) {
             $error = '<ul><li> Ecribe bien la contrasenha anteriol </li></ul>'  ;
             return $error ;
         }
+        
         $new_password = $data['password'];
         $new_password = hash('sha512', $new_password);
         $sql = "UPDATE `usuario` SET `password`= ? WHERE `idusuario` = ?;";

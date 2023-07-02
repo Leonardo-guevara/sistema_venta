@@ -1,0 +1,508 @@
+INFO - 2023-05-05 18:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 18:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 18:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 18:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 18:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:08:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 19:12:30 --> Class "App\Models\InventarioModel" not found
+in APPPATH\Controllers\Inventario.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 19:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:26:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 19:28:20 --> Class "App\Models\CajaModel" not found
+in APPPATH\Controllers\Caja.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 19:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:53:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 19:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 19:57:32 --> Undefined array key "foto"
+in APPPATH\Controllers\Caja.php on line 48.
+ 1 APPPATH\Controllers\Caja.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Caja.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 19:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 20:00:34 --> Undefined array key "password"
+in APPPATH\Models\CajaModel.php on line 77.
+ 1 APPPATH\Models\CajaModel.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\CajaModel.php', 77)
+ 2 APPPATH\Controllers\Caja.php(46): App\Models\cajaModel->insertar([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 20:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 20:02:32 --> Undefined array key "name"
+in APPPATH\Models\CajaModel.php on line 62.
+ 1 APPPATH\Models\CajaModel.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\CajaModel.php', 62)
+ 2 APPPATH\Controllers\Caja.php(46): App\Models\cajaModel->insertar([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 20:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 20:03:21 --> Undefined array key "idroles"
+in APPPATH\Views\board\caja.php on line 68.
+ 1 APPPATH\Views\board\caja.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idroles"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php', 68)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/caja', [], true)
+ 5 APPPATH\Controllers\Caja.php(93): view('board/caja', [...])
+ 6 APPPATH\Controllers\Caja.php(24): App\Controllers\Caja->load_view('board/caja', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 20:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 20:04:16 --> Undefined array key "user"
+in APPPATH\Views\board\caja.php on line 81.
+ 1 APPPATH\Views\board\caja.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/caja', [], true)
+ 5 APPPATH\Controllers\Caja.php(93): view('board/caja', [...])
+ 6 APPPATH\Controllers\Caja.php(24): App\Controllers\Caja->load_view('board/caja', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 20:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:17:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 20:17:39 --> Call to undefined method App\Models\cajaModel::delete_user
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Caja.php(78): CodeIgniter\Model->__call('delete_user', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->delete()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 20:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-05 20:18:32 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `caja` S...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `caja` S...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `caja` S...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `caja` S...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Caja.php(78): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Caja->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-05 20:18:32 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `caja` SET `deleted_at` = \'2023-05-05 20:18:32\', `updated_at` = \'2023-05-05 20:18:32\'
+WHERE `id` IN (\'1\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `caja` SET `deleted_at` = \'2023-05-05 20:18:32\', `updated_at` = \'2023-05-05 20:18:32\'
+WHERE `id` IN (\'1\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `caja` SET `deleted_at` = \'2023-05-05 20:18:32\', `updated_at` = \'2023-05-05 20:18:32\'
+WHERE `id` IN (\'1\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `caja` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Caja.php(78): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 20:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 20:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 21:00:21 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\form\arqueo.php on line 62.
+ 1 APPPATH\Views\form\arqueo.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 5 APPPATH\Controllers\Caja.php(112): view('form/arqueo', [...])
+ 6 APPPATH\Controllers\Caja.php(96): App\Controllers\Caja->load_view('form/arqueo', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 21:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 21:01:01 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\form\arqueo.php on line 62.
+ 1 APPPATH\Views\form\arqueo.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 5 APPPATH\Controllers\Caja.php(112): view('form/arqueo', [...])
+ 6 APPPATH\Controllers\Caja.php(96): App\Controllers\Caja->load_view('form/arqueo', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 21:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 21:01:33 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\form\arqueo.php on line 62.
+ 1 APPPATH\Views\form\arqueo.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 5 APPPATH\Controllers\Caja.php(112): view('form/arqueo', [...])
+ 6 APPPATH\Controllers\Caja.php(96): App\Controllers\Caja->load_view('form/arqueo', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 21:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 21:08:54 --> Cannot access offset of type string on string
+in APPPATH\Views\form\arqueo.php on line 63.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 4 APPPATH\Controllers\Caja.php(115): view('form/arqueo', [...])
+ 5 APPPATH\Controllers\Caja.php(99): App\Controllers\Caja->load_view('form/arqueo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 21:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 21:09:36 --> Cannot access offset of type string on string
+in APPPATH\Views\form\arqueo.php on line 63.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 4 APPPATH\Controllers\Caja.php(115): view('form/arqueo', [...])
+ 5 APPPATH\Controllers\Caja.php(99): App\Controllers\Caja->load_view('form/arqueo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 21:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 21:09:54 --> Cannot access offset of type string on string
+in APPPATH\Views\form\arqueo.php on line 63.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 4 APPPATH\Controllers\Caja.php(115): view('form/arqueo', [...])
+ 5 APPPATH\Controllers\Caja.php(99): App\Controllers\Caja->load_view('form/arqueo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 21:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 21:10:16 --> Cannot access offset of type string on string
+in APPPATH\Views\form\arqueo.php on line 63.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 4 APPPATH\Controllers\Caja.php(115): view('form/arqueo', [...])
+ 5 APPPATH\Controllers\Caja.php(99): App\Controllers\Caja->load_view('form/arqueo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 21:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 21:10:36 --> Cannot access offset of type string on string
+in APPPATH\Views\form\arqueo.php on line 63.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 4 APPPATH\Controllers\Caja.php(115): view('form/arqueo', [...])
+ 5 APPPATH\Controllers\Caja.php(99): App\Controllers\Caja->load_view('form/arqueo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 21:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-05 21:11:04 --> Cannot access offset of type string on string
+in APPPATH\Views\form\arqueo.php on line 66.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 4 APPPATH\Controllers\Caja.php(115): view('form/arqueo', [...])
+ 5 APPPATH\Controllers\Caja.php(99): App\Controllers\Caja->load_view('form/arqueo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 21:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 21:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 22:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 22:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 22:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 22:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 22:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-05 22:01:48 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ar...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ar...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ar...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CajaModel.php(101): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Caja.php(106): App\Models\cajaModel->arqueo_inicio(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-05 22:01:48 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `arqueo_caja` (`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( \'2\',\'1\',\'100\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `arqueo_caja` (`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( \'2\',\'1\',\'100\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `arqueo_caja` (`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( \'2\',\'1\',\'100\', NOW());')
+ 4 APPPATH\Models\CajaModel.php(101): CodeIgniter\Database\BaseConnection->query('INSERT INTO `arqueo_caja` (`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( ?,?,?, NOW());', [...])
+ 5 APPPATH\Controllers\Caja.php(106): App\Models\cajaModel->arqueo_inicio([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 22:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 22:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-05 22:07:54 --> mysqli_sql_exception: Column 'idarqueo_caja' cannot be null in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ar...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ar...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ar...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CajaModel.php(101): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Caja.php(106): App\Models\cajaModel->arqueo_inicio(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-05 22:07:54 --> Column 'idarqueo_caja' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `arqueo_caja` (`idarqueo_caja`,`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( NULL ,\'2\',\'1\',\'100\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `arqueo_caja` (`idarqueo_caja`,`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( NULL ,\'2\',\'1\',\'100\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `arqueo_caja` (`idarqueo_caja`,`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( NULL ,\'2\',\'1\',\'100\', NOW());')
+ 4 APPPATH\Models\CajaModel.php(101): CodeIgniter\Database\BaseConnection->query('INSERT INTO `arqueo_caja` (`idarqueo_caja`,`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( NULL ,?,?,?, NOW());', [...])
+ 5 APPPATH\Controllers\Caja.php(106): App\Models\cajaModel->arqueo_inicio([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 22:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-05 22:08:39 --> mysqli_sql_exception: Column 'idarqueo_caja' cannot be null in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ar...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ar...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ar...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CajaModel.php(101): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Caja.php(106): App\Models\cajaModel->arqueo_inicio(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-05 22:08:39 --> Column 'idarqueo_caja' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `arqueo_caja` (`idarqueo_caja`,`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( NULL ,\'2\',\'1\',\'100\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `arqueo_caja` (`idarqueo_caja`,`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( NULL ,\'2\',\'1\',\'100\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `arqueo_caja` (`idarqueo_caja`,`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( NULL ,\'2\',\'1\',\'100\', NOW());')
+ 4 APPPATH\Models\CajaModel.php(101): CodeIgniter\Database\BaseConnection->query('INSERT INTO `arqueo_caja` (`idarqueo_caja`,`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( NULL ,?,?,?, NOW());', [...])
+ 5 APPPATH\Controllers\Caja.php(106): App\Models\cajaModel->arqueo_inicio([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 22:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-05 22:08:51 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ar...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ar...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ar...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CajaModel.php(101): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Caja.php(106): App\Models\cajaModel->arqueo_inicio(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-05 22:08:51 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `arqueo_caja` (`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( \'2\',\'1\',\'100\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `arqueo_caja` (`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( \'2\',\'1\',\'100\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `arqueo_caja` (`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( \'2\',\'1\',\'100\', NOW());')
+ 4 APPPATH\Models\CajaModel.php(101): CodeIgniter\Database\BaseConnection->query('INSERT INTO `arqueo_caja` (`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( ?,?,?, NOW());', [...])
+ 5 APPPATH\Controllers\Caja.php(106): App\Models\cajaModel->arqueo_inicio([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 22:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 22:09:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 22:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 22:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 22:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 22:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-05 22:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-05 22:09:37 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ar...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ar...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ar...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CajaModel.php(101): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Caja.php(106): App\Models\cajaModel->arqueo_inicio(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-05 22:09:37 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `arqueo_caja` (`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( \'3\',\'1\',\'100\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `arqueo_caja` (`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( \'3\',\'1\',\'100\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `arqueo_caja` (`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( \'3\',\'1\',\'100\', NOW());')
+ 4 APPPATH\Models\CajaModel.php(101): CodeIgniter\Database\BaseConnection->query('INSERT INTO `arqueo_caja` (`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( ?,?,?, NOW());', [...])
+ 5 APPPATH\Controllers\Caja.php(106): App\Models\cajaModel->arqueo_inicio([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-05 22:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-05 22:12:05 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ar...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ar...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ar...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CajaModel.php(101): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Caja.php(106): App\Models\cajaModel->arqueo_inicio(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-05 22:12:05 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `arqueo_caja` (`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( \'3\',\'1\',\'100\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `arqueo_caja` (`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( \'3\',\'1\',\'100\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `arqueo_caja` (`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( \'3\',\'1\',\'100\', NOW());')
+ 4 APPPATH\Models\CajaModel.php(101): CodeIgniter\Database\BaseConnection->query('INSERT INTO `arqueo_caja` (`fkcaja`, `fk_usuario`, `monto_inicial`,`horario_inicio`) 
+        VALUES ( ?,?,?, NOW());', [...])
+ 5 APPPATH\Controllers\Caja.php(106): App\Models\cajaModel->arqueo_inicio([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

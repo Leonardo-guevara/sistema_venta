@@ -21,7 +21,7 @@ class="hold-transition login-page">
 <div class="login-box">
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="<?=base_url('/public')?>" class="h1"><b>Admin</b>LTE</a>
+      <!-- <a href="<?=base_url('/public')?>" class="h1"><b>Mini</b>LTE</a> -->
     </div>
     <div class="card-body">
       <p class="login-box-msg">¿Olvidaste tu contraseña? Aquí puede recuperar fácilmente una nueva contraseña.</p>

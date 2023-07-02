@@ -63,6 +63,16 @@ class Venta extends BaseController
         return $this->vacia($data);
         die();
     }
+    public function view_recibo() {
+        
+        $VentaModel = new VentaModel();
+        $data['title'] = 'Comprobante Recibo ';
+        $data['home'] = 'Venta';
+        $data['principal']= $this->session->get('usuario');
+        if(!isset($_GET["view"]) and empty($_GET['view'])) { $view = '0';} else {$view = $_GET["view"];} 
+        $data['data'] =$VentaModel->view_recibo($view);
+        return $this->load_view('reporte/view_recibo',$data);
+    }
     function chage_user() {
         if ($this->validar() == NULL) {
             return redirect()->route('login');

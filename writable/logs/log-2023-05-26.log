@@ -1,0 +1,26 @@
+INFO - 2023-05-26 22:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-26 22:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-26 22:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-26 22:04:24 --> Undefined variable $array
+in APPPATH\Views\board\caja.php on line 76.
+ 1 APPPATH\Views\board\caja.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $array', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php', 76)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/caja', [], true)
+ 5 APPPATH\Controllers\Caja.php(120): view('board/caja', [...])
+ 6 APPPATH\Controllers\Caja.php(24): App\Controllers\Caja->load_view('board/caja', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-26 22:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-26 22:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-26 22:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-26 22:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-26 22:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-26 22:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-26 22:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-26 22:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-26 22:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-26 22:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-26 22:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

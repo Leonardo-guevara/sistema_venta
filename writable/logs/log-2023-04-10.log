@@ -1,0 +1,1373 @@
+INFO - 2023-04-10 00:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 00:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 00:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 00:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 00:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 00:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 00:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 00:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 00:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 00:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 00:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 01:12:21 --> Undefined variable $name
+in APPPATH\Views\board\unidad.php on line 40.
+ 1 APPPATH\Views\board\unidad.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\unidad.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\unidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/unidad', [], true)
+ 5 APPPATH\Controllers\Unidad.php(62): view('board/unidad', [...])
+ 6 APPPATH\Controllers\Unidad.php(22): App\Controllers\Unidad->load_view('board/unidad', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 01:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 01:12:35 --> Undefined variable $name
+in APPPATH\Views\board\unidad.php on line 40.
+ 1 APPPATH\Views\board\unidad.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\unidad.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\unidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/unidad', [], true)
+ 5 APPPATH\Controllers\Unidad.php(62): view('board/unidad', [...])
+ 6 APPPATH\Controllers\Unidad.php(22): App\Controllers\Unidad->load_view('board/unidad', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 01:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 01:15:34 --> Undefined variable $home
+in APPPATH\Views\header.php on line 11.
+ 1 APPPATH\Views\header.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $home', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\header.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('header', [], true)
+ 5 APPPATH\Controllers\Unidad.php(60): view('header')
+ 6 APPPATH\Controllers\Unidad.php(22): App\Controllers\Unidad->load_view('board/unidad', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 01:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:21:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 01:23:55 --> Undefined variable $userModel
+in APPPATH\Controllers\Unidad.php on line 46.
+ 1 APPPATH\Controllers\Unidad.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userModel', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Unidad.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 01:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:24:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 01:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 02:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 02:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 02:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 02:06:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 02:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 02:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 02:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 02:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 02:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 02:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 02:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 02:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 02:40:41 --> Undefined variable $id
+in APPPATH\Controllers\Unidad.php on line 49.
+ 1 APPPATH\Controllers\Unidad.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Unidad.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 02:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 02:41:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 02:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 03:23:01 --> Undefined variable $userModel
+in APPPATH\Controllers\Unidad.php on line 40.
+ 1 APPPATH\Controllers\Unidad.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userModel', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Unidad.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 03:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:24:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 03:27:42 --> Undefined array key "unidad"
+in APPPATH\Views\form\unidad.php on line 74.
+ 1 APPPATH\Views\form\unidad.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "unidad"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 5 APPPATH\Controllers\Unidad.php(81): view('form/unidad', [...])
+ 6 APPPATH\Controllers\Unidad.php(35): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 03:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 03:27:43 --> Undefined array key "unidad"
+in APPPATH\Views\form\unidad.php on line 74.
+ 1 APPPATH\Views\form\unidad.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "unidad"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 5 APPPATH\Controllers\Unidad.php(81): view('form/unidad', [...])
+ 6 APPPATH\Controllers\Unidad.php(35): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 03:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 03:27:52 --> Undefined array key "unidad"
+in APPPATH\Views\form\unidad.php on line 74.
+ 1 APPPATH\Views\form\unidad.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "unidad"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 5 APPPATH\Controllers\Unidad.php(81): view('form/unidad', [...])
+ 6 APPPATH\Controllers\Unidad.php(35): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 03:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:28:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 03:45:25 --> Undefined array key "unidad"
+in APPPATH\Views\form\unidad.php on line 74.
+ 1 APPPATH\Views\form\unidad.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "unidad"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 5 APPPATH\Controllers\Unidad.php(83): view('form/unidad', [...])
+ 6 APPPATH\Controllers\Unidad.php(35): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 03:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 03:45:29 --> Undefined array key "unidad"
+in APPPATH\Views\form\unidad.php on line 74.
+ 1 APPPATH\Views\form\unidad.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "unidad"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 5 APPPATH\Controllers\Unidad.php(83): view('form/unidad', [...])
+ 6 APPPATH\Controllers\Unidad.php(35): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 03:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 03:46:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2023-04-10 03:46:08'', NULL, NULL)' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `un...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `un...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `un...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\UnidadModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `un...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Unidad.php(40): App\Models\UnidadModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Unidad->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 03:46:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2023-04-10 03:46:08'', NULL, NULL)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, \'PIEZA\', \'2023-04-10 03:46:08\'\', NULL, NULL);', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, \'PIEZA\', \'2023-04-10 03:46:08\'\', NULL, NULL);')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, \'PIEZA\', \'2023-04-10 03:46:08\'\', NULL, NULL);')
+ 4 APPPATH\Models\UnidadModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, ?, ?\', NULL, NULL);', [...])
+ 5 APPPATH\Controllers\Unidad.php(40): App\Models\UnidadModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 03:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 03:46:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2023-04-10 03:46:25'', NULL, NULL)' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `un...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `un...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `un...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\UnidadModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `un...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Unidad.php(40): App\Models\UnidadModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Unidad->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 03:46:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2023-04-10 03:46:25'', NULL, NULL)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, \'PIEZA\', \'2023-04-10 03:46:25\'\', NULL, NULL);', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, \'PIEZA\', \'2023-04-10 03:46:25\'\', NULL, NULL);')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, \'PIEZA\', \'2023-04-10 03:46:25\'\', NULL, NULL);')
+ 4 APPPATH\Models\UnidadModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, ?, ?\', NULL, NULL);', [...])
+ 5 APPPATH\Controllers\Unidad.php(40): App\Models\UnidadModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 03:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 03:46:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2023-04-10 03:46:59'', NULL, NULL)' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `un...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `un...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `un...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\UnidadModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `un...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Unidad.php(40): App\Models\UnidadModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Unidad->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 03:46:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2023-04-10 03:46:59'', NULL, NULL)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, \'PIEZA\', \'2023-04-10 03:46:59\'\', NULL, NULL);', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, \'PIEZA\', \'2023-04-10 03:46:59\'\', NULL, NULL);')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, \'PIEZA\', \'2023-04-10 03:46:59\'\', NULL, NULL);')
+ 4 APPPATH\Models\UnidadModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, ?, ?\', NULL, NULL);', [...])
+ 5 APPPATH\Controllers\Unidad.php(40): App\Models\UnidadModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 03:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 03:47:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2023-04-10 03:47:38'', NULL, NULL)' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `un...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `un...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `un...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\UnidadModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `un...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Unidad.php(40): App\Models\UnidadModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Unidad->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 03:47:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2023-04-10 03:47:38'', NULL, NULL)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, \'PIEZA\', \'2023-04-10 03:47:38\'\', NULL, NULL);', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, \'PIEZA\', \'2023-04-10 03:47:38\'\', NULL, NULL);')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, \'PIEZA\', \'2023-04-10 03:47:38\'\', NULL, NULL);')
+ 4 APPPATH\Models\UnidadModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, ?, ?\', NULL, NULL);', [...])
+ 5 APPPATH\Controllers\Unidad.php(40): App\Models\UnidadModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 03:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 03:48:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''04-10-2023 03:48:49 am'', NULL, NULL)' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `un...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `un...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `un...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\UnidadModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `un...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Unidad.php(40): App\Models\UnidadModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Unidad->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 03:48:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''04-10-2023 03:48:49 am'', NULL, NULL)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, \'PIEZA\', \'04-10-2023 03:48:49 am\'\', NULL, NULL);', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, \'PIEZA\', \'04-10-2023 03:48:49 am\'\', NULL, NULL);')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, \'PIEZA\', \'04-10-2023 03:48:49 am\'\', NULL, NULL);')
+ 4 APPPATH\Models\UnidadModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `unidad` (`idunidad`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, ?, ?\', NULL, NULL);', [...])
+ 5 APPPATH\Controllers\Unidad.php(40): App\Models\UnidadModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 03:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 03:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:05:05 --> Undefined array key "unidad"
+in APPPATH\Views\form\unidad.php on line 48.
+ 1 APPPATH\Views\form\unidad.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "unidad"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 5 APPPATH\Controllers\Unidad.php(82): view('form/unidad', [...])
+ 6 APPPATH\Controllers\Unidad.php(57): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:07:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:07:22 --> Undefined array key "unidad"
+in APPPATH\Views\form\unidad.php on line 48.
+ 1 APPPATH\Views\form\unidad.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "unidad"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 5 APPPATH\Controllers\Unidad.php(82): view('form/unidad', [...])
+ 6 APPPATH\Controllers\Unidad.php(57): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:08:24 --> Undefined array key "name"
+in APPPATH\Views\form\unidad.php on line 50.
+ 1 APPPATH\Views\form\unidad.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 5 APPPATH\Controllers\Unidad.php(82): view('form/unidad', [...])
+ 6 APPPATH\Controllers\Unidad.php(57): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:08:44 --> Undefined array key "name"
+in APPPATH\Views\form\unidad.php on line 50.
+ 1 APPPATH\Views\form\unidad.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 5 APPPATH\Controllers\Unidad.php(82): view('form/unidad', [...])
+ 6 APPPATH\Controllers\Unidad.php(57): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:08:50 --> Undefined variable $unidad
+in APPPATH\Views\form\unidad.php on line 53.
+ 1 APPPATH\Views\form\unidad.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $unidad', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 5 APPPATH\Controllers\Unidad.php(82): view('form/unidad', [...])
+ 6 APPPATH\Controllers\Unidad.php(57): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:09:37 --> Array to string conversion
+in APPPATH\Views\form\unidad.php on line 54.
+ 1 APPPATH\Views\form\unidad.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 5 APPPATH\Controllers\Unidad.php(82): view('form/unidad', [...])
+ 6 APPPATH\Controllers\Unidad.php(57): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:12:00 --> Cannot use object of type stdClass as array
+in APPPATH\Views\form\unidad.php on line 49.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 4 APPPATH\Controllers\Unidad.php(82): view('form/unidad', [...])
+ 5 APPPATH\Controllers\Unidad.php(57): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:14:21 --> Too few arguments to function CodeIgniter\Database\BaseResult::getCustomRowObject(), 0 passed in E:\xampp\htdocs\codeigniter\app\Models\UnidadModel.php on line 71 and exactly 2 expected
+in SYSTEMPATH\Database\BaseResult.php on line 290.
+ 1 APPPATH\Models\UnidadModel.php(71): CodeIgniter\Database\BaseResult->getCustomRowObject()
+ 2 APPPATH\Controllers\Unidad.php(49): App\Models\UnidadModel->find_out('8')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:16:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\form\unidad.php on line 74.
+ 1 APPPATH\Views\form\unidad.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 5 APPPATH\Controllers\Unidad.php(82): view('form/unidad', [...])
+ 6 APPPATH\Controllers\Unidad.php(57): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:17:27 --> Undefined array key "unidad"
+in APPPATH\Views\form\unidad.php on line 48.
+ 1 APPPATH\Views\form\unidad.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "unidad"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 5 APPPATH\Controllers\Unidad.php(82): view('form/unidad', [...])
+ 6 APPPATH\Controllers\Unidad.php(57): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:17:52 --> Undefined variable $datos
+in APPPATH\Views\form\unidad.php on line 74.
+ 1 APPPATH\Views\form\unidad.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 5 APPPATH\Controllers\Unidad.php(82): view('form/unidad', [...])
+ 6 APPPATH\Controllers\Unidad.php(35): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:19:27 --> No hay datos para update
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Unidad.php(62): CodeIgniter\Model->update('9', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:20:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:20:47 --> No hay datos para update
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Unidad.php(62): CodeIgniter\Model->update('9', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:22:29 --> Call to undefined method App\Models\UnidadModel::seleccionar
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Unidad.php(21): CodeIgniter\Model->__call('seleccionar', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:33:55 --> No hay datos para update
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Unidad.php(62): CodeIgniter\Model->update('9', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:47:26 --> Undefined array key 0
+in APPPATH\Models\UnidadModel.php on line 68.
+ 1 APPPATH\Models\UnidadModel.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\UnidadModel.php', 68)
+ 2 APPPATH\Controllers\Unidad.php(49): App\Models\UnidadModel->encontrar('9')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:48:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:48:17 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getResultRow()
+in APPPATH\Models\UnidadModel.php on line 67.
+ 1 APPPATH\Controllers\Unidad.php(49): App\Models\UnidadModel->encontrar('8')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:49:23 --> Cannot use object of type stdClass as array
+in APPPATH\Views\board\unidad.php on line 65.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/unidad', [], true)
+ 4 APPPATH\Controllers\Unidad.php(80): view('board/unidad', [...])
+ 5 APPPATH\Controllers\Unidad.php(22): App\Controllers\Unidad->load_view('board/unidad', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:49:26 --> Cannot use object of type stdClass as array
+in APPPATH\Views\board\unidad.php on line 65.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/unidad', [], true)
+ 4 APPPATH\Controllers\Unidad.php(80): view('board/unidad', [...])
+ 5 APPPATH\Controllers\Unidad.php(22): App\Controllers\Unidad->load_view('board/unidad', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:51:30 --> Too few arguments to function CodeIgniter\Database\BaseResult::getCustomRowObject(), 0 passed in E:\xampp\htdocs\codeigniter\app\Models\UnidadModel.php on line 67 and exactly 2 expected
+in SYSTEMPATH\Database\BaseResult.php on line 290.
+ 1 APPPATH\Models\UnidadModel.php(67): CodeIgniter\Database\BaseResult->getCustomRowObject()
+ 2 APPPATH\Controllers\Unidad.php(49): App\Models\UnidadModel->encontrar('8')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:52:58 --> Undefined array key "name"
+in APPPATH\Views\form\unidad.php on line 74.
+ 1 APPPATH\Views\form\unidad.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\unidad.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 5 APPPATH\Controllers\Unidad.php(80): view('form/unidad', [...])
+ 6 APPPATH\Controllers\Unidad.php(57): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:54:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:54:12 --> Cannot use object of type stdClass as array
+in APPPATH\Views\form\unidad.php on line 49.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 4 APPPATH\Controllers\Unidad.php(80): view('form/unidad', [...])
+ 5 APPPATH\Controllers\Unidad.php(57): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:54:45 --> Cannot use object of type stdClass as array
+in APPPATH\Views\form\unidad.php on line 55.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 4 APPPATH\Controllers\Unidad.php(80): view('form/unidad', [...])
+ 5 APPPATH\Controllers\Unidad.php(57): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:55:20 --> Cannot use object of type stdClass as array
+in APPPATH\Views\form\unidad.php on line 57.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 4 APPPATH\Controllers\Unidad.php(80): view('form/unidad', [...])
+ 5 APPPATH\Controllers\Unidad.php(57): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:56:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:56:49 --> Too few arguments to function CodeIgniter\Database\BaseResult::getCustomResultObject(), 0 passed in E:\xampp\htdocs\codeigniter\app\Models\UnidadModel.php on line 67 and exactly 1 expected
+in SYSTEMPATH\Database\BaseResult.php on line 121.
+ 1 APPPATH\Models\UnidadModel.php(67): CodeIgniter\Database\BaseResult->getCustomResultObject()
+ 2 APPPATH\Controllers\Unidad.php(49): App\Models\UnidadModel->encontrar('8')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:57:17 --> Cannot use object of type stdClass as array
+in APPPATH\Views\form\unidad.php on line 57.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 4 APPPATH\Controllers\Unidad.php(80): view('form/unidad', [...])
+ 5 APPPATH\Controllers\Unidad.php(57): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:57:35 --> Cannot use object of type stdClass as array
+in APPPATH\Views\form\unidad.php on line 57.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 4 APPPATH\Controllers\Unidad.php(80): view('form/unidad', [...])
+ 5 APPPATH\Controllers\Unidad.php(57): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 04:58:27 --> Undefined constant "name"
+in APPPATH\Views\form\unidad.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/unidad', [], true)
+ 4 APPPATH\Controllers\Unidad.php(80): view('form/unidad', [...])
+ 5 APPPATH\Controllers\Unidad.php(57): App\Controllers\Unidad->load_view('form/unidad', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->update()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 04:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 04:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 21:51:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'hola', NOW())' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 21:51:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'hola', NOW())' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'hola\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'hola\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'hola\', NOW());')
+ 4 APPPATH\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( ?, NOW());', [...])
+ 5 APPPATH\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 21:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 21:52:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', NOW())' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 21:52:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', NOW())' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW());')
+ 4 APPPATH\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( ?, NOW());', [...])
+ 5 APPPATH\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 21:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 21:53:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', NOW())' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 21:53:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', NOW())' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW());')
+ 4 APPPATH\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( ?, NOW());', [...])
+ 5 APPPATH\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 21:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 21:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 21:57:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', NOW())' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 21:57:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', NOW())' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW());')
+ 4 APPPATH\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( ?, NOW());', [...])
+ 5 APPPATH\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 21:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 21:58:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES (`null`, 'Material de Escritorio', NOW())' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 21:58:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES (`null`, 'Material de Escritorio', NOW())' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `categoria` (`idcategoria`,`name`, `created_at`, ) VALUES (`null`, \'Material de Escritorio\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `categoria` (`idcategoria`,`name`, `created_at`, ) VALUES (`null`, \'Material de Escritorio\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `categoria` (`idcategoria`,`name`, `created_at`, ) VALUES (`null`, \'Material de Escritorio\', NOW());')
+ 4 APPPATH\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categoria` (`idcategoria`,`name`, `created_at`, ) VALUES (`null`, ?, NOW());', [...])
+ 5 APPPATH\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 21:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 21:58:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES (`NULL`, 'Material de Escritorio', NOW())' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 21:58:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES (`NULL`, 'Material de Escritorio', NOW())' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `categoria` (`idcategoria`,`name`, `created_at`, ) VALUES (`NULL`, \'Material de Escritorio\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `categoria` (`idcategoria`,`name`, `created_at`, ) VALUES (`NULL`, \'Material de Escritorio\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `categoria` (`idcategoria`,`name`, `created_at`, ) VALUES (`NULL`, \'Material de Escritorio\', NOW());')
+ 4 APPPATH\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categoria` (`idcategoria`,`name`, `created_at`, ) VALUES (`NULL`, ?, NOW());', [...])
+ 5 APPPATH\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 21:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 21:59:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES (`NULL`, 'Material de Escritorio', NOW())' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 21:59:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES (`NULL`, 'Material de Escritorio', NOW())' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `categoria` (`idcategoria`,`name`, `created_at`, ) VALUES (`NULL`, \'Material de Escritorio\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `categoria` (`idcategoria`,`name`, `created_at`, ) VALUES (`NULL`, \'Material de Escritorio\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `categoria` (`idcategoria`,`name`, `created_at`, ) VALUES (`NULL`, \'Material de Escritorio\', NOW());')
+ 4 APPPATH\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categoria` (`idcategoria`,`name`, `created_at`, ) VALUES (`NULL`, ?, NOW());', [...])
+ 5 APPPATH\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 22:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 22:00:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', NOW())' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 22:00:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', NOW())' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW());')
+ 4 APPPATH\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( ?, NOW());', [...])
+ 5 APPPATH\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 22:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 22:00:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', NOW();)' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 22:00:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', NOW();)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW(););', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW(););')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW(););')
+ 4 APPPATH\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( ?, NOW(););', [...])
+ 5 APPPATH\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 22:01:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 22:01:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', NOW()')' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 22:01:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', NOW()')' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW()\');', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW()\');')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW()\');')
+ 4 APPPATH\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( ?, NOW()\');', [...])
+ 5 APPPATH\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 22:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 22:01:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', NOW())' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 22:01:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', NOW())' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW());')
+ 4 APPPATH\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( ?, NOW());', [...])
+ 5 APPPATH\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 22:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 22:02:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', `NOW()`)' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 22:02:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', `NOW()`)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', `NOW()`);', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', `NOW()`);')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', `NOW()`);')
+ 4 APPPATH\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( ?, `NOW()`);', [...])
+ 5 APPPATH\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 22:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 22:02:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', `NOW())' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 22:02:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', `NOW())' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', `NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', `NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', `NOW());')
+ 4 APPPATH\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( ?, `NOW());', [...])
+ 5 APPPATH\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 22:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 22:02:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', NOW())' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 22:02:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', NOW())' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW())')
+ 4 APPPATH\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( ?, NOW())', [...])
+ 5 APPPATH\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 22:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 22:02:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', NOW())' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 22:02:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES ( 'Material de Escritorio', NOW())' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW()) ;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW()) ;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( \'Material de Escritorio\', NOW()) ;')
+ 4 APPPATH\Models\CategoriaModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `categoria` (`name`, `created_at`, ) VALUES ( ?, NOW()) ;', [...])
+ 5 APPPATH\Controllers\Categoria.php(40): App\Models\CategoriaModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Categoria->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 22:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 22:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 22:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 22:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 22:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 22:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 22:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 22:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 22:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 22:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 22:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 23:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 23:03:34 --> mysqli_sql_exception: Column 'deleted_at' in where clause is ambiguous in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\ProductoModel.php(69): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Producto.php(21): App\Models\ProductoModel->seleccionar()
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Producto->index()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 23:03:34 --> Column 'deleted_at' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+            producto.codigo AS codigo, 
+            producto.name AS name, 
+            producto.precio_venta AS precio_venta, 
+            producto.stocks AS stocks, 
+            unidad.name AS unidad 
+            FROM producto 
+            INNER JOIN unidad ON producto.fk_unidad = unidad.idunidad 
+            WHERE `deleted_at`<=> NULL;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+            producto.codigo AS codigo, 
+            producto.name AS name, 
+            producto.precio_venta AS precio_venta, 
+            producto.stocks AS stocks, 
+            unidad.name AS unidad 
+            FROM producto 
+            INNER JOIN unidad ON producto.fk_unidad = unidad.idunidad 
+            WHERE `deleted_at`<=> NULL;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+            producto.codigo AS codigo, 
+            producto.name AS name, 
+            producto.precio_venta AS precio_venta, 
+            producto.stocks AS stocks, 
+            unidad.name AS unidad 
+            FROM producto 
+            INNER JOIN unidad ON producto.fk_unidad = unidad.idunidad 
+            WHERE `deleted_at`<=> NULL;')
+ 4 APPPATH\Models\ProductoModel.php(69): CodeIgniter\Database\BaseConnection->query('SELECT 
+            producto.codigo AS codigo, 
+            producto.name AS name, 
+            producto.precio_venta AS precio_venta, 
+            producto.stocks AS stocks, 
+            unidad.name AS unidad 
+            FROM producto 
+            INNER JOIN unidad ON producto.fk_unidad = unidad.idunidad 
+            WHERE `deleted_at`<=> NULL;')
+ 5 APPPATH\Controllers\Producto.php(21): App\Models\ProductoModel->seleccionar()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Producto->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 23:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 23:04:28 --> mysqli_sql_exception: Column 'deleted_at' in where clause is ambiguous in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\ProductoModel.php(69): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Producto.php(21): App\Models\ProductoModel->seleccionar()
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Producto->index()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 23:04:28 --> Column 'deleted_at' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+            producto.codigo AS codigo, 
+            producto.name AS name, 
+            producto.precio_venta AS precio_venta, 
+            producto.stocks AS stocks, 
+            unidad.name AS unidad 
+            FROM producto 
+            INNER JOIN unidad ON producto.fk_unidad = unidad.idunidad 
+            WHERE `deleted_at`<=> NULL;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+            producto.codigo AS codigo, 
+            producto.name AS name, 
+            producto.precio_venta AS precio_venta, 
+            producto.stocks AS stocks, 
+            unidad.name AS unidad 
+            FROM producto 
+            INNER JOIN unidad ON producto.fk_unidad = unidad.idunidad 
+            WHERE `deleted_at`<=> NULL;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+            producto.codigo AS codigo, 
+            producto.name AS name, 
+            producto.precio_venta AS precio_venta, 
+            producto.stocks AS stocks, 
+            unidad.name AS unidad 
+            FROM producto 
+            INNER JOIN unidad ON producto.fk_unidad = unidad.idunidad 
+            WHERE `deleted_at`<=> NULL;')
+ 4 APPPATH\Models\ProductoModel.php(69): CodeIgniter\Database\BaseConnection->query('SELECT 
+            producto.codigo AS codigo, 
+            producto.name AS name, 
+            producto.precio_venta AS precio_venta, 
+            producto.stocks AS stocks, 
+            unidad.name AS unidad 
+            FROM producto 
+            INNER JOIN unidad ON producto.fk_unidad = unidad.idunidad 
+            WHERE `deleted_at`<=> NULL;')
+ 5 APPPATH\Controllers\Producto.php(21): App\Models\ProductoModel->seleccionar()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Producto->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 23:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 23:06:24 --> Undefined array key "idcategoria"
+in APPPATH\Views\board\producto.php on line 73.
+ 1 APPPATH\Views\board\producto.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idcategoria"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\producto.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\producto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/Producto', [], true)
+ 5 APPPATH\Controllers\Producto.php(80): view('board/Producto', [...])
+ 6 APPPATH\Controllers\Producto.php(22): App\Controllers\Producto->load_view('board/Producto', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Producto->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 23:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-10 23:07:20 --> Undefined array key "idproducto"
+in APPPATH\Views\board\producto.php on line 73.
+ 1 APPPATH\Views\board\producto.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idproducto"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\producto.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\producto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/Producto', [], true)
+ 5 APPPATH\Controllers\Producto.php(80): view('board/Producto', [...])
+ 6 APPPATH\Controllers\Producto.php(22): App\Controllers\Producto->load_view('board/Producto', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Producto->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 23:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-10 23:10:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'producto.codigo AS codigo, 
+            producto.name AS name, 
+           ...' at line 3 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \r\n      ...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\ProductoModel.php(70): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...')
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Producto.php(21): App\Models\ProductoModel->seleccionar()
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Producto->index()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-10 23:10:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'producto.codigo AS codigo, 
+            producto.name AS name, 
+           ...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 
+             producto.idproducto AS idproducto
+            producto.codigo AS codigo, 
+            producto.name AS name, 
+            producto.precio_venta AS precio_venta, 
+            producto.stocks AS stocks, 
+            unidad.name AS unidad 
+            FROM producto 
+            INNER JOIN unidad ON producto.fk_unidad = unidad.idunidad 
+            WHERE producto.deleted_at <=> NULL;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+             producto.idproducto AS idproducto
+            producto.codigo AS codigo, 
+            producto.name AS name, 
+            producto.precio_venta AS precio_venta, 
+            producto.stocks AS stocks, 
+            unidad.name AS unidad 
+            FROM producto 
+            INNER JOIN unidad ON producto.fk_unidad = unidad.idunidad 
+            WHERE producto.deleted_at <=> NULL;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+             producto.idproducto AS idproducto
+            producto.codigo AS codigo, 
+            producto.name AS name, 
+            producto.precio_venta AS precio_venta, 
+            producto.stocks AS stocks, 
+            unidad.name AS unidad 
+            FROM producto 
+            INNER JOIN unidad ON producto.fk_unidad = unidad.idunidad 
+            WHERE producto.deleted_at <=> NULL;')
+ 4 APPPATH\Models\ProductoModel.php(70): CodeIgniter\Database\BaseConnection->query('SELECT 
+             producto.idproducto AS idproducto
+            producto.codigo AS codigo, 
+            producto.name AS name, 
+            producto.precio_venta AS precio_venta, 
+            producto.stocks AS stocks, 
+            unidad.name AS unidad 
+            FROM producto 
+            INNER JOIN unidad ON producto.fk_unidad = unidad.idunidad 
+            WHERE producto.deleted_at <=> NULL;')
+ 5 APPPATH\Controllers\Producto.php(21): App\Models\ProductoModel->seleccionar()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Producto->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-10 23:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 23:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 23:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 23:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 23:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 23:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 23:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 23:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 23:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 23:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 23:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 23:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-10 23:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

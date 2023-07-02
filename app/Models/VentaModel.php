@@ -166,8 +166,16 @@ class VentaModel extends Model {
 		// echo '</pre>';
 			}
 		}
+		$sql = "SELECT arqueo_caja.idarqueo_caja, venta.total FROM `arqueo_caja` INNER JOIN venta ON venta.fk_arqueo = arqueo_caja.idarqueo_caja WHERE  venta.idventas = ?;";
+		$query = $db->query($sql,[$data]);
+		$arqueo = $query->getRowArray();
+		if (isset($arqueo)) {
+			$sql = "UPDATE `arqueo_caja` SET `total_ventas`= `total_ventas` + ?  , `monto_final` = `total_ventas` + `monto_inicial` WHERE  `idarqueo_caja` = ?;";
+			$db->query($sql,[$arqueo['total'],$arqueo['idarqueo_caja']]);
+			return true;
+		} 
+		return false;
 		die();
-        return true;
 	}
 
 	function chage_user($data = null) {
@@ -224,6 +232,27 @@ class VentaModel extends Model {
         $query = $db->query($sql,[$var['roles'],$var['permiso']]);
         $row = $query->getRowArray();
         return $row;
-    }
+    } 
+	function view_recibo($data = null) {
+		
+    $db = \Config\Database::connect();
+		$sql = "SELECT `idventas`, usuario.usuario, persona.nombre , persona.cedula ,venta.`created_at`, `total`\n"
+    . "FROM `venta` \n"
+    . "INNER JOIN persona ON   venta.fk_persona = persona.idpersona\n"
+    . "INNER JOIN arqueo_caja on venta.fk_arqueo = arqueo_caja.idarqueo_caja\n"
+    . "INNER JOIN usuario ON arqueo_caja.fk_usuario = usuario.idusuario\n"
+    . "WHERE `idventas` = ?;";
+	$query = $db->query($sql,[$data]);
+	$venta = $query->getRowArray();
+	$sql = "SELECT `cantidad`, producto.name as producto, `subtotal`, `total` 
+	FROM `detalle_venta` 
+	INNER JOIN producto ON producto.idproducto = detalle_venta.fk_producto 
+	WHERE `fk_venta` = ?;";
+	$query = $db->query($sql,[$data]);
+	$detalle = $query->getResultArray();
+	$retornar = $venta;
+	$retornar['detalle'] = $detalle;
+		return $retornar;
+	}
 
 }

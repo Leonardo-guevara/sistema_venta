@@ -58,7 +58,7 @@
                         }else { $usuario = '';}
                       ?>
                       <select class="form-control select2"  id="usuario"  name="usuario" style="width: 100%;">
-                        <option value="true">todos los usuario</option>
+                        <!-- <option value="true">todos los usuario</option> -->
                         <?php
                             foreach ($listausuario as $key => $value) {
                                 echo '<option name="'.$value['usuario'].'" value="'.$value['idusuario'].'">'.$value['usuario'].'</option>';
@@ -72,6 +72,8 @@
                         Ejecutar
                     </button>
                 </div>
+                <button onclick="imprimir()" type="button"><i class="fas fa-print">Print</i></button>
+                
             </div>
             <hr>
         </div>
@@ -111,13 +113,18 @@
 
   
 <script>
-  $(function () {
-    $("#example1").DataTable({
-      "responsive": true, "lengthChange": false, "autoWidth": false,
-      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-    // $('.select2').select2();
-    })
+  function imprimir() {
+    window.addEventListener("load", window.print());
+  }
+  // $(function () {
+  //   $("#example1").DataTable(
+  //     {
+  //     "responsive": true, "lengthChange": false, "autoWidth": false,
+  //     "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+  //   }
+  //   ).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+  //   // $('.select2').select2();
+  //   })
 
     function ajax_reporte() {
         
@@ -139,23 +146,28 @@
         http.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
           var resultado = (this.responseText);
-          const index = resultado.indexOf("\n");
-          const cut = resultado.substring(index);
-          const final = resultado.replace(cut, "");
+          // const index = resultado.indexOf("\n");
+          // const cut = resultado.substring(index);
+          // const final = resultado.replace(cut, "");
 	        tabla = document.getElementById('example1'),
             tabla.innerHTML = '<thead><tr><th>Fecha</th><th>Cod. Arqueo</th><th>Cod. Recibo</th><th>Usuario</th><th>Cliente</th><th>Total</th></tr></thead>';
-            var datos  = JSON.parse(final);
+            // var datos  = JSON.parse(final);
+            var datos  = JSON.parse(resultado);
             datos.forEach(recibo => {
+              // var elemento = document.createElement("tbody");
               var elemento = document.createElement("tr");
+
               elemento.innerHTML += ("<td>" + recibo.created_at + "</td>");
               elemento.innerHTML += ("<td>" + recibo.idarqueo_caja + "</td>");
               elemento.innerHTML += ("<td>" + recibo.idventas + "</td>");
               elemento.innerHTML += ("<td>" + recibo.vendedor + "</td>");
               elemento.innerHTML += ("<td>" + recibo.nombre + "</td>");
-              elemento.innerHTML += ("<td>" + recibo.total + "</td>");
+              elemento.innerHTML += ("<td>" + recibo.total + ' - '+
+              '<a href="<?=base_url()?>venta/view_recibo?view='+recibo.idventas+'"><i class="fas fa-file"></i></a>'
+              +"</td>");
               document.getElementById("example1").appendChild(elemento);
             });
-            console.log(ruta);
+
           } 
         }
         

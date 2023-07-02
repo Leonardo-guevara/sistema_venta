@@ -28,13 +28,13 @@ class Email extends BaseConfig
     /**
      * SMTP Server Address
      */
-    public string $SMTPHost = 'smtp.gmail.com';
+    public string $SMTPHost = 'smtp.dreamhost.com';
     // smtp.dreamhost.com
 
     /**
      * SMTP Username
      */
-    public string $SMTPUser = 'leoanardo.helpfibo@gmail.com';
+    public string $SMTPUser = 'leonardo@udabol.helpfibo.com';
     // leonardo.guevara@posgrado.helpfibo.com
 
     /**
@@ -45,7 +45,7 @@ class Email extends BaseConfig
     /**
      * SMTP Port
      */
-    public int $SMTPPort = 587;
+    public int $SMTPPort =  465;
     // 587 465
 
     /**
@@ -61,7 +61,7 @@ class Email extends BaseConfig
     /**
      * SMTP Encryption. Either tls or ssl
      */
-    public string $SMTPCrypto = 'tls' ;
+    public string $SMTPCrypto = 'ssl' ;
     //= 'tls'
 
     /**

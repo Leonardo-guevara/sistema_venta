@@ -279,11 +279,13 @@
       http.onreadystatechange = function(){
           if(this.readyState == 4 && this.status == 200){
             var resultado = (this.responseText);
-            const index = resultado.indexOf("\n");
-            const cut = resultado.substring(index);
-            const final = resultado.replace(cut, "");
-            var guardar  = JSON.parse(final);
-            // Se limpian los pueblos
+            // const index = resultado.indexOf("\n");
+            // const cut = resultado.substring(index);
+            // const final = resultado.replace(cut, "");
+            // var guardar  = JSON.parse(final);
+            var guardar  = JSON.parse(resultado);
+
+            
             presentacion.innerHTML = '<option value="">Seleccione una presentacion...</option>'
             guardar.forEach(element => {
               var option = document.createElement("option");

@@ -1,0 +1,21 @@
+INFO - 2023-04-05 01:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 01:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 01:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 01:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 02:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 18:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-05 18:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-05 18:04:59 --> Undefined property: App\Controllers\Unidad::$load
+in APPPATH\Controllers\Unidad.php on line 12.
+ 1 APPPATH\Controllers\Unidad.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Unidad::$load', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Unidad.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Unidad->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-05 18:04:59 --> Undefined property: App\Controllers\Unidad::$load
+in APPPATH\Controllers\Unidad.php on line 12.
+ 1 APPPATH\Controllers\Unidad.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Unidad::$load', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Unidad.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Unidad->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

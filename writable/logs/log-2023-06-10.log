@@ -1,0 +1,166 @@
+INFO - 2023-06-10 02:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 03:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 03:43:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 22:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 22:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-10 23:05:12 --> Cannot call constructor
+in APPPATH\Controllers\Home.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 23:05:24 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 9.
+ 1 APPPATH\Controllers\Home.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Home.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 23:05:28 --> Undefined array key "file"
+in APPPATH\Views\img.php on line 19.
+ 1 APPPATH\Views\img.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\img.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\img.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('img', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('img')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->img()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 23:06:35 --> Undefined array key "file"
+in APPPATH\Views\img.php on line 20.
+ 1 APPPATH\Views\img.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\img.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\img.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('img', [], true)
+ 5 APPPATH\Controllers\Home.php(23): view('img')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->img()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 23:11:11 --> Undefined constant "App\Controllers\file"
+in APPPATH\Controllers\Home.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->img()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 23:49:58 --> move_uploaded_file(images/..\public\data\user\user2023_06_10_23:49:58jpg): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(images/..\\public\\data\\user\\user2023_06_10_23:49:58jpg): Failed to open stream: No such file or directory', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Home.php', 78)
+ 2 APPPATH\Controllers\Home.php(78): move_uploaded_file('E:\\xampp\\tmp\\php8B5B.tmp', 'images/..\\public\\data\\user\\user2023_06_10_23:49:58jpg')
+ 3 APPPATH\Controllers\Home.php(25): App\Controllers\Home->imagen([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->img()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 23:51:34 --> move_uploaded_file(http://localhost/codeigniter//public/data/user/user2023_06_10_23:51:34jpg): Failed to open stream: HTTP wrapper does not support writeable connections
+in APPPATH\Controllers\Home.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(http://localhost/codeigniter//public/data/user/user2023_06_10_23:51:34jpg): Failed to open stream: HTTP wrapper does not support writeable connections', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Home.php', 78)
+ 2 APPPATH\Controllers\Home.php(78): move_uploaded_file('E:\\xampp\\tmp\\php2F8.tmp', 'http://localhost/codeigniter//public/data/user/user2023_06_10_23:51:34jpg')
+ 3 APPPATH\Controllers\Home.php(25): App\Controllers\Home->imagen([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->img()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 23:51:44 --> move_uploaded_file(http://localhost/codeigniter/public/data/user/user2023_06_10_23:51:44jpg): Failed to open stream: HTTP wrapper does not support writeable connections
+in APPPATH\Controllers\Home.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(http://localhost/codeigniter/public/data/user/user2023_06_10_23:51:44jpg): Failed to open stream: HTTP wrapper does not support writeable connections', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Home.php', 78)
+ 2 APPPATH\Controllers\Home.php(78): move_uploaded_file('E:\\xampp\\tmp\\php295D.tmp', 'http://localhost/codeigniter/public/data/user/user2023_06_10_23:51:44jpg')
+ 3 APPPATH\Controllers\Home.php(25): App\Controllers\Home->imagen([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->img()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 23:54:34 --> copy(http://localhost/codeigniter/public/data/user/user2023_06_10_23:54:34jpg): Failed to open stream: HTTP wrapper does not support writeable connections
+in APPPATH\Controllers\Home.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(http://localhost/codeigniter/public/data/user/user2023_06_10_23:54:34jpg): Failed to open stream: HTTP wrapper does not support writeable connections', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Home.php', 78)
+ 2 APPPATH\Controllers\Home.php(78): copy('E:\\xampp\\tmp\\phpBF5B.tmp', 'http://localhost/codeigniter/public/data/user/user2023_06_10_23:54:34jpg')
+ 3 APPPATH\Controllers\Home.php(25): App\Controllers\Home->imagen([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->img()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 23:55:00 --> copy(http://localhost/codeigniter/public/data/user/user2023_06_10_23:55:00jpg): Failed to open stream: HTTP wrapper does not support writeable connections
+in APPPATH\Controllers\Home.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(http://localhost/codeigniter/public/data/user/user2023_06_10_23:55:00jpg): Failed to open stream: HTTP wrapper does not support writeable connections', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Home.php', 78)
+ 2 APPPATH\Controllers\Home.php(78): copy('E:\\xampp\\tmp\\php2859.tmp', 'http://localhost/codeigniter/public/data/user/user2023_06_10_23:55:00jpg')
+ 3 APPPATH\Controllers\Home.php(25): App\Controllers\Home->imagen([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->img()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 23:55:24 --> copy(http://localhost/codeigniter/public/data/user/user2023_06_10_23:55:24jpg): Failed to open stream: HTTP wrapper does not support writeable connections
+in APPPATH\Controllers\Home.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(http://localhost/codeigniter/public/data/user/user2023_06_10_23:55:24jpg): Failed to open stream: HTTP wrapper does not support writeable connections', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Home.php', 78)
+ 2 APPPATH\Controllers\Home.php(78): copy('E:\\xampp\\tmp\\php836B.tmp', 'http://localhost/codeigniter/public/data/user/user2023_06_10_23:55:24jpg')
+ 3 APPPATH\Controllers\Home.php(25): App\Controllers\Home->imagen([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->img()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 23:55:45 --> move_uploaded_file(http://localhost/codeigniter/public/data/user/user2023_06_10_23:55:45jpg): Failed to open stream: HTTP wrapper does not support writeable connections
+in APPPATH\Controllers\Home.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(http://localhost/codeigniter/public/data/user/user2023_06_10_23:55:45jpg): Failed to open stream: HTTP wrapper does not support writeable connections', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Home.php', 78)
+ 2 APPPATH\Controllers\Home.php(78): move_uploaded_file('E:\\xampp\\tmp\\phpD5F1.tmp', 'http://localhost/codeigniter/public/data/user/user2023_06_10_23:55:45jpg')
+ 3 APPPATH\Controllers\Home.php(25): App\Controllers\Home->imagen([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->img()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 23:56:02 --> move_uploaded_file(http://localhost/codeigniter/public/data/user/user2023_06_10_23:56:02jpg): Failed to open stream: HTTP wrapper does not support writeable connections
+in APPPATH\Controllers\Home.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(http://localhost/codeigniter/public/data/user/user2023_06_10_23:56:02jpg): Failed to open stream: HTTP wrapper does not support writeable connections', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Home.php', 78)
+ 2 APPPATH\Controllers\Home.php(78): move_uploaded_file('E:\\xampp\\tmp\\php1721.tmp', 'http://localhost/codeigniter/public/data/user/user2023_06_10_23:56:02jpg')
+ 3 APPPATH\Controllers\Home.php(25): App\Controllers\Home->imagen([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->img()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 23:56:20 --> move_uploaded_file(http://localhost/codeigniter/public/data/user/user2023_06_10_23:56:20jpg): Failed to open stream: HTTP wrapper does not support writeable connections
+in APPPATH\Controllers\Home.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(http://localhost/codeigniter/public/data/user/user2023_06_10_23:56:20jpg): Failed to open stream: HTTP wrapper does not support writeable connections', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Home.php', 78)
+ 2 APPPATH\Controllers\Home.php(78): move_uploaded_file('E:\\xampp\\tmp\\php5EBA.tmp', 'http://localhost/codeigniter/public/data/user/user2023_06_10_23:56:20jpg')
+ 3 APPPATH\Controllers\Home.php(25): App\Controllers\Home->imagen([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->img()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 23:56:27 --> move_uploaded_file(http://localhost/codeigniter/public/data/user/user2023_06_10_23:56:27jpg): Failed to open stream: HTTP wrapper does not support writeable connections
+in APPPATH\Controllers\Home.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(http://localhost/codeigniter/public/data/user/user2023_06_10_23:56:27jpg): Failed to open stream: HTTP wrapper does not support writeable connections', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Home.php', 78)
+ 2 APPPATH\Controllers\Home.php(78): move_uploaded_file('E:\\xampp\\tmp\\php7B6B.tmp', 'http://localhost/codeigniter/public/data/user/user2023_06_10_23:56:27jpg')
+ 3 APPPATH\Controllers\Home.php(25): App\Controllers\Home->imagen([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->img()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 23:57:07 --> move_uploaded_file(http://localhost/codeigniter/public/data/user/user2023_06_10_23:57:07jpg): Failed to open stream: HTTP wrapper does not support writeable connections
+in APPPATH\Controllers\Home.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(http://localhost/codeigniter/public/data/user/user2023_06_10_23:57:07jpg): Failed to open stream: HTTP wrapper does not support writeable connections', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Home.php', 78)
+ 2 APPPATH\Controllers\Home.php(78): move_uploaded_file('E:\\xampp\\tmp\\php1829.tmp', 'http://localhost/codeigniter/public/data/user/user2023_06_10_23:57:07jpg')
+ 3 APPPATH\Controllers\Home.php(25): App\Controllers\Home->imagen([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->img()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

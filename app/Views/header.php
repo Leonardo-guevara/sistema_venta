@@ -23,7 +23,7 @@
           <i class="far fa-comments"></i>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <a href="<?=base_url()?>usuario/change_password" class="dropdown-item">
+          <a href="<?=base_url()?>home/change_password" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
               <img src="<?=base_url()?>public/dist/img/seguridad.png" alt="User Avatar" class="img-size-50 mr-3 img-circle">

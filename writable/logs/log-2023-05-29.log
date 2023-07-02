@@ -1,0 +1,418 @@
+INFO - 2023-05-29 00:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-29 00:26:00 --> mysqli_sql_exception: Unknown column 'horario_final' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM `...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\ArqueoModel.php(30): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Arqueo.php(22): App\Models\ArqueoModel->seleccionar()
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Arqueo->index()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-29 00:26:00 --> Unknown column 'horario_final' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM `caja` WHERE `horario_final`<=> NULL;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `caja` WHERE `horario_final`<=> NULL;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `caja` WHERE `horario_final`<=> NULL;')
+ 4 APPPATH\Models\ArqueoModel.php(30): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `caja` WHERE `horario_final`<=> NULL;')
+ 5 APPPATH\Controllers\Arqueo.php(22): App\Models\ArqueoModel->seleccionar()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 00:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-29 00:27:41 --> mysqli_sql_exception: Unknown column 'horario_final' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM `...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\ArqueoModel.php(30): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Arqueo.php(22): App\Models\ArqueoModel->seleccionar()
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Arqueo->index()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-29 00:27:41 --> Unknown column 'horario_final' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM `caja` WHERE `horario_final`<=> NULL;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `caja` WHERE `horario_final`<=> NULL;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `caja` WHERE `horario_final`<=> NULL;')
+ 4 APPPATH\Models\ArqueoModel.php(30): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `caja` WHERE `horario_final`<=> NULL;')
+ 5 APPPATH\Controllers\Arqueo.php(22): App\Models\ArqueoModel->seleccionar()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 00:28:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-29 00:28:15 --> Undefined array key "idcaja"
+in APPPATH\Views\board\caja.php on line 63.
+ 1 APPPATH\Views\board\caja.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idcaja"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/caja', [], true)
+ 5 APPPATH\Controllers\Arqueo.php(120): view('board/caja', [...])
+ 6 APPPATH\Controllers\Arqueo.php(24): App\Controllers\Arqueo->load_view('board/caja', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 00:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-29 00:28:56 --> Undefined array key "idcaja"
+in APPPATH\Views\board\caja.php on line 63.
+ 1 APPPATH\Views\board\caja.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idcaja"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/caja', [], true)
+ 5 APPPATH\Controllers\Arqueo.php(120): view('board/caja', [...])
+ 6 APPPATH\Controllers\Arqueo.php(24): App\Controllers\Arqueo->load_view('board/caja', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 00:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-29 00:29:40 --> Undefined array key "idarqueo"
+in APPPATH\Views\board\arqueo.php on line 63.
+ 1 APPPATH\Views\board\arqueo.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idarqueo"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\arqueo.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\arqueo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/arqueo', [], true)
+ 5 APPPATH\Controllers\Arqueo.php(120): view('board/arqueo', [...])
+ 6 APPPATH\Controllers\Arqueo.php(24): App\Controllers\Arqueo->load_view('board/arqueo', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 00:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:36:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 00:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-29 01:24:38 --> Undefined variable $usuario
+in APPPATH\Views\form\arqueo.php on line 59.
+ 1 APPPATH\Views\form\arqueo.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 5 APPPATH\Controllers\Arqueo.php(130): view('form/arqueo', [...])
+ 6 APPPATH\Controllers\Arqueo.php(48): App\Controllers\Arqueo->load_view('form/arqueo', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 01:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 01:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 02:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-29 02:29:43 --> Undefined variable $caja
+in APPPATH\Views\form\arqueo.php on line 80.
+ 1 APPPATH\Views\form\arqueo.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $caja', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 5 APPPATH\Controllers\Arqueo.php(78): view('form/arqueo', [...])
+ 6 APPPATH\Controllers\Arqueo.php(50): App\Controllers\Arqueo->load_view('form/arqueo', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 02:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-29 02:30:06 --> Undefined variable $caja
+in APPPATH\Views\form\arqueo.php on line 80.
+ 1 APPPATH\Views\form\arqueo.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $caja', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 5 APPPATH\Controllers\Arqueo.php(78): view('form/arqueo', [...])
+ 6 APPPATH\Controllers\Arqueo.php(50): App\Controllers\Arqueo->load_view('form/arqueo', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 02:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 02:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 02:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 02:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 02:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 02:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 02:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 02:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 02:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 02:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 02:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 03:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-29 21:23:40 --> App\Models\ArqueoModel::arqueo_final(): Argument #1 ($var) must be of type ?App\Models\Type, string given, called in E:\xampp\htdocs\codeigniter\app\Controllers\Arqueo.php on line 69
+in APPPATH\Models\ArqueoModel.php on line 95.
+ 1 APPPATH\Controllers\Arqueo.php(69): App\Models\ArqueoModel->arqueo_final('2')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->close()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 21:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-29 21:24:27 --> App\Models\ArqueoModel::arqueo_final(): Argument #1 ($var) must be of type ?App\Models\Type, string given, called in E:\xampp\htdocs\codeigniter\app\Controllers\Arqueo.php on line 69
+in APPPATH\Models\ArqueoModel.php on line 95.
+ 1 APPPATH\Controllers\Arqueo.php(69): App\Models\ArqueoModel->arqueo_final('2')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->close()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 21:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-29 21:24:31 --> App\Models\ArqueoModel::arqueo_final(): Argument #1 ($var) must be of type ?App\Models\Type, string given, called in E:\xampp\htdocs\codeigniter\app\Controllers\Arqueo.php on line 69
+in APPPATH\Models\ArqueoModel.php on line 95.
+ 1 APPPATH\Controllers\Arqueo.php(69): App\Models\ArqueoModel->arqueo_final('2')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->close()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 21:24:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-29 21:24:38 --> App\Models\ArqueoModel::arqueo_final(): Argument #1 ($var) must be of type ?App\Models\Type, string given, called in E:\xampp\htdocs\codeigniter\app\Controllers\Arqueo.php on line 69
+in APPPATH\Models\ArqueoModel.php on line 95.
+ 1 APPPATH\Controllers\Arqueo.php(69): App\Models\ArqueoModel->arqueo_final('2')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->close()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 21:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-29 21:25:03 --> mysqli_sql_exception: Unknown column 'horario_final' in 'field list' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `caja` S...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `caja` S...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `caja` S...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\ArqueoModel.php(99): CodeIgniter\Database\BaseConnection->query('UPDATE `caja` S...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Arqueo.php(69): App\Models\ArqueoModel->arqueo_final('2')
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Arqueo->close()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-29 21:25:03 --> Unknown column 'horario_final' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `caja` SET `horario_final` = NOW() WHERE `caja`.`idcaja` = \'2\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `caja` SET `horario_final` = NOW() WHERE `caja`.`idcaja` = \'2\';')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `caja` SET `horario_final` = NOW() WHERE `caja`.`idcaja` = \'2\';')
+ 4 APPPATH\Models\ArqueoModel.php(99): CodeIgniter\Database\BaseConnection->query('UPDATE `caja` SET `horario_final` = NOW() WHERE `caja`.`idcaja` = ?;', [...])
+ 5 APPPATH\Controllers\Arqueo.php(69): App\Models\ArqueoModel->arqueo_final('2')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->close()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 21:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-29 21:44:45 --> Undefined constant "App\Models\condition"
+in APPPATH\Models\ArqueoModel.php on line 87.
+ 1 APPPATH\Controllers\Arqueo.php(59): App\Models\ArqueoModel->arqueo_inicio([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 21:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-29 21:48:19 --> Undefined constant "App\Models\condition"
+in APPPATH\Models\ArqueoModel.php on line 90.
+ 1 APPPATH\Controllers\Arqueo.php(59): App\Models\ArqueoModel->arqueo_inicio([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 21:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 21:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-29 22:08:57 --> mysqli_sql_exception: Unknown column 'fkcaja' in 'field list' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fkcaja`...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fkcaja`...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fkcaja`...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\ArqueoModel.php(91): CodeIgniter\Database\BaseConnection->query('SELECT `fkcaja`...')
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Arqueo.php(58): App\Models\ArqueoModel->arqueo_inicio(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Arqueo->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-29 22:08:57 --> Unknown column 'fkcaja' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fkcaja` FROM `usuario` WHERE `fkcaja` = 2 AND `horario_final` IS NOT NULL;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fkcaja` FROM `usuario` WHERE `fkcaja` = 2 AND `horario_final` IS NOT NULL;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fkcaja` FROM `usuario` WHERE `fkcaja` = 2 AND `horario_final` IS NOT NULL;')
+ 4 APPPATH\Models\ArqueoModel.php(91): CodeIgniter\Database\BaseConnection->query('SELECT `fkcaja` FROM `usuario` WHERE `fkcaja` = 2 AND `horario_final` IS NOT NULL;')
+ 5 APPPATH\Controllers\Arqueo.php(58): App\Models\ArqueoModel->arqueo_inicio([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 22:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-29 22:56:55 --> Array to string conversion
+in APPPATH\Views\form\arqueo.php on line 104.
+ 1 APPPATH\Views\form\arqueo.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php', 104)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 5 APPPATH\Controllers\Arqueo.php(86): view('form/arqueo', [...])
+ 6 APPPATH\Controllers\Arqueo.php(51): App\Controllers\Arqueo->load_view('form/arqueo', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 22:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-29 22:57:49 --> Array to string conversion
+in APPPATH\Views\form\arqueo.php on line 104.
+ 1 APPPATH\Views\form\arqueo.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php', 104)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 5 APPPATH\Controllers\Arqueo.php(87): view('form/arqueo', [...])
+ 6 APPPATH\Controllers\Arqueo.php(52): App\Controllers\Arqueo->load_view('form/arqueo', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 22:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-29 22:58:01 --> Array to string conversion
+in APPPATH\Views\form\arqueo.php on line 104.
+ 1 APPPATH\Views\form\arqueo.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php', 104)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 5 APPPATH\Controllers\Arqueo.php(87): view('form/arqueo', [...])
+ 6 APPPATH\Controllers\Arqueo.php(52): App\Controllers\Arqueo->load_view('form/arqueo', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 22:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-29 22:58:29 --> Array to string conversion
+in APPPATH\Views\form\arqueo.php on line 104.
+ 1 APPPATH\Views\form\arqueo.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php', 104)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 5 APPPATH\Controllers\Arqueo.php(87): view('form/arqueo', [...])
+ 6 APPPATH\Controllers\Arqueo.php(52): App\Controllers\Arqueo->load_view('form/arqueo', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 22:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-29 22:58:32 --> Array to string conversion
+in APPPATH\Views\form\arqueo.php on line 104.
+ 1 APPPATH\Views\form\arqueo.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php', 104)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 5 APPPATH\Controllers\Arqueo.php(87): view('form/arqueo', [...])
+ 6 APPPATH\Controllers\Arqueo.php(52): App\Controllers\Arqueo->load_view('form/arqueo', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arqueo->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arqueo))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-29 22:59:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-29 22:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

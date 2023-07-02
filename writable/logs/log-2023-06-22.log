@@ -1,0 +1,686 @@
+INFO - 2023-06-22 10:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-22 10:34:51 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in E:\xampp\htdocs\codeigniter\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'E:\\xampp\\htdocs...', 1868)
+#1 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1868): fsockopen('tls://sandbox.s...', 465, NULL, NULL, 5)
+#2 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(217): CodeIgniter\Email\Email->send()
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(77): App\Controllers\Usuario->correo_email(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->insert()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-06-22 10:34:51 --> Email: Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.
+ERROR - 2023-06-22 10:34:51 --> 
+INFO - 2023-06-22 10:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-22 10:44:56 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in E:\xampp\htdocs\codeigniter\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'E:\\xampp\\htdocs...', 1868)
+#1 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1868): fsockopen('tls://sandbox.s...', 465, NULL, NULL, 5)
+#2 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 E:\xampp\htdocs\codeigniter\app\Controllers\Home.php(96): CodeIgniter\Email\Email->send()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Home->correo_email()
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-06-22 10:44:56 --> Email: Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.
+ERROR - 2023-06-22 10:44:56 --> 
+CRITICAL - 2023-06-22 10:44:56 --> Call to undefined method App\Controllers\Home::UndoEveryChanges()
+in APPPATH\Controllers\Home.php on line 97.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->correo_email()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 10:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-22 10:46:12 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in E:\xampp\htdocs\codeigniter\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'E:\\xampp\\htdocs...', 1868)
+#1 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1868): fsockopen('tls://sandbox.s...', 465, NULL, NULL, 5)
+#2 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 E:\xampp\htdocs\codeigniter\app\Controllers\Home.php(96): CodeIgniter\Email\Email->send()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Home->correo_email()
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-06-22 10:46:12 --> Email: Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.
+ERROR - 2023-06-22 10:46:12 --> 
+CRITICAL - 2023-06-22 10:46:12 --> Call to undefined method CodeIgniter\Email\Email::UndoEveryChanges()
+in APPPATH\Controllers\Home.php on line 97.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->correo_email()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 10:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-22 10:46:22 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in E:\xampp\htdocs\codeigniter\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'E:\\xampp\\htdocs...', 1868)
+#1 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1868): fsockopen('tls://sandbox.s...', 465, NULL, NULL, 5)
+#2 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 E:\xampp\htdocs\codeigniter\app\Controllers\Home.php(96): CodeIgniter\Email\Email->send()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Home->correo_email()
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-06-22 10:46:22 --> Email: Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.
+ERROR - 2023-06-22 10:46:22 --> 
+CRITICAL - 2023-06-22 10:46:22 --> Email sending failed
+in APPPATH\Controllers\Home.php on line 98.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->correo_email()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 10:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-22 10:46:37 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in E:\xampp\htdocs\codeigniter\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'E:\\xampp\\htdocs...', 1868)
+#1 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1868): fsockopen('tls://sandbox.s...', 465, NULL, NULL, 5)
+#2 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 E:\xampp\htdocs\codeigniter\app\Controllers\Home.php(96): CodeIgniter\Email\Email->send()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Home->correo_email()
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-06-22 10:46:37 --> Email: Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.
+ERROR - 2023-06-22 10:46:37 --> 
+INFO - 2023-06-22 10:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-22 10:46:55 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in E:\xampp\htdocs\codeigniter\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'E:\\xampp\\htdocs...', 1868)
+#1 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1868): fsockopen('tls://sandbox.s...', 465, NULL, NULL, 5)
+#2 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 E:\xampp\htdocs\codeigniter\app\Controllers\Home.php(96): CodeIgniter\Email\Email->send()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Home->correo_email()
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-06-22 10:46:55 --> Email: Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.
+ERROR - 2023-06-22 10:46:55 --> 
+INFO - 2023-06-22 10:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-22 10:47:09 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in E:\xampp\htdocs\codeigniter\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'E:\\xampp\\htdocs...', 1868)
+#1 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1868): fsockopen('tls://sandbox.s...', 465, NULL, NULL, 5)
+#2 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 E:\xampp\htdocs\codeigniter\app\Controllers\Home.php(96): CodeIgniter\Email\Email->send()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Home->correo_email()
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-06-22 10:47:09 --> Email: Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.
+ERROR - 2023-06-22 10:47:09 --> 
+INFO - 2023-06-22 10:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 10:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-22 11:06:30 --> Email: Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.
+ERROR - 2023-06-22 11:06:30 --> 220 smtp-relay.sendinblue.com ESMTP Sendinblue SMTP 2.0
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [181.115.209.22]
+250-PIPELINING
+250-8BITMIME
+250-AUTH LOGIN PLAIN CRAM-MD5
+250 STARTTLS
+
+starttls: 220 Ready to start TLS
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [181.115.209.22]
+250-PIPELINING
+250-8BITMIME
+250 AUTH LOGIN PLAIN CRAM-MD5
+
+from: 501 Error: Bad sender address syntax
+
+Se han encontrado los siguientes errores SMTP: 501 Error: Bad sender address syntax
+
+quit: 221 Bye
+
+INFO - 2023-06-22 11:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-22 11:06:37 --> Email: Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.
+ERROR - 2023-06-22 11:06:37 --> 220 smtp-relay.sendinblue.com ESMTP Sendinblue SMTP 2.0
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [181.115.209.22]
+250-PIPELINING
+250-8BITMIME
+250-AUTH LOGIN PLAIN CRAM-MD5
+250 STARTTLS
+
+starttls: 220 Ready to start TLS
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [181.115.209.22]
+250-PIPELINING
+250-8BITMIME
+250 AUTH LOGIN PLAIN CRAM-MD5
+
+from: 501 Error: Bad sender address syntax
+
+Se han encontrado los siguientes errores SMTP: 501 Error: Bad sender address syntax
+
+quit: 221 Bye
+
+INFO - 2023-06-22 11:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-22 11:11:14 --> Email: Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.
+ERROR - 2023-06-22 11:11:14 --> 220 smtp.gmail.com ESMTP y5-20020a4ab405000000b00558b60a9d27sm2241174oon.25 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2800:cd0:424f:2100:84b7:9e1b:3218:65f7]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2800:cd0:424f:2100:84b7:9e1b:3218:65f7]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Ha fallado la autentificación de la contraseña. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials y5-20020a4ab405000000b00558b60a9d27sm2241174oon.25 - gsmtp
+
+INFO - 2023-06-22 11:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-22 11:11:42 --> Email: Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.
+ERROR - 2023-06-22 11:11:42 --> 220 smtp.gmail.com ESMTP e18-20020a9d7312000000b00697be532609sm2867593otk.73 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2800:cd0:424f:2100:84b7:9e1b:3218:65f7]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2800:cd0:424f:2100:84b7:9e1b:3218:65f7]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Ha fallado la autentificación de la contraseña. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials e18-20020a9d7312000000b00697be532609sm2867593otk.73 - gsmtp
+
+INFO - 2023-06-22 11:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-22 11:30:10 --> Object of class App\Models\UsuarioModel could not be converted to string
+in APPPATH\Controllers\Usuario.php on line 191.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->change_password()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 11:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-22 11:30:16 --> Too few arguments to function CodeIgniter\BaseModel::setValidationMessages(), 0 passed in E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php on line 191 and exactly 1 expected
+in SYSTEMPATH\BaseModel.php on line 1355.
+ 1 APPPATH\Controllers\Usuario.php(191): CodeIgniter\BaseModel->setValidationMessages()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->change_password()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 11:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-22 11:31:00 --> syntax error, unexpected identifier "MAL", expecting "]"
+in APPPATH\Models\UsuarioModel.php on line 35.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\xampp\\htdocs\\codeigniter\\app\\Models\\UsuarioModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuarioModel')
+ 3 APPPATH\Controllers\Usuario.php(251): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuarioModel')
+ 4 APPPATH\Controllers\Usuario.php(159): App\Controllers\Usuario->validar()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->change_password()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 11:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-22 11:31:09 --> Too few arguments to function CodeIgniter\BaseModel::setValidationMessages(), 0 passed in E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php on line 191 and exactly 1 expected
+in SYSTEMPATH\BaseModel.php on line 1355.
+ 1 APPPATH\Controllers\Usuario.php(191): CodeIgniter\BaseModel->setValidationMessages()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->change_password()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 11:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-22 11:32:39 --> Too few arguments to function CodeIgniter\BaseModel::setValidationMessages(), 0 passed in E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php on line 191 and exactly 1 expected
+in SYSTEMPATH\BaseModel.php on line 1355.
+ 1 APPPATH\Controllers\Usuario.php(191): CodeIgniter\BaseModel->setValidationMessages()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->change_password()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 11:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-22 11:32:45 --> Too few arguments to function CodeIgniter\BaseModel::setValidationMessages(), 0 passed in E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php on line 191 and exactly 1 expected
+in SYSTEMPATH\BaseModel.php on line 1355.
+ 1 APPPATH\Controllers\Usuario.php(191): CodeIgniter\BaseModel->setValidationMessages()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->change_password()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 11:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-22 11:33:01 --> Too few arguments to function CodeIgniter\BaseModel::setValidationMessages(), 0 passed in E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php on line 187 and exactly 1 expected
+in SYSTEMPATH\BaseModel.php on line 1355.
+ 1 APPPATH\Controllers\Usuario.php(187): CodeIgniter\BaseModel->setValidationMessages()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->change_password()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 11:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-22 11:33:12 --> Too few arguments to function CodeIgniter\BaseModel::setValidationMessages(), 0 passed in E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php on line 187 and exactly 1 expected
+in SYSTEMPATH\BaseModel.php on line 1355.
+ 1 APPPATH\Controllers\Usuario.php(187): CodeIgniter\BaseModel->setValidationMessages()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->change_password()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 11:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:57:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 11:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 12:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 12:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 12:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 12:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 12:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 12:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 12:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 12:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 12:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 12:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 12:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 12:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 12:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-22 20:07:54 --> Email: Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.
+ERROR - 2023-06-22 20:07:54 --> 220 smtp.gmail.com ESMTP z17-20020a056870c21100b001aa0d9cdf4csm4796336oae.43 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2800:cd0:424f:2100:8d43:e4c8:307f:4c4c]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2800:cd0:424f:2100:8d43:e4c8:307f:4c4c]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Ha fallado la autentificación de la contraseña. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials z17-20020a056870c21100b001aa0d9cdf4csm4796336oae.43 - gsmtp
+
+ERROR - 2023-06-22 20:07:54 --> Email: Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.
+ERROR - 2023-06-22 20:07:54 --> 220 smtp.gmail.com ESMTP v17-20020a05683011d100b006a5db4474c8sm3281341otq.33 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2800:cd0:424f:2100:8d43:e4c8:307f:4c4c]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2800:cd0:424f:2100:8d43:e4c8:307f:4c4c]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Ha fallado la autentificación de la contraseña. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials v17-20020a05683011d100b006a5db4474c8sm3281341otq.33 - gsmtp
+
+INFO - 2023-06-22 20:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:37:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-22 20:37:03 --> Undefined variable $news_item
+in APPPATH\Views\sidebar.php on line 42.
+ 1 APPPATH\Views\sidebar.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $news_item', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\sidebar.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sidebar', [], true)
+ 5 APPPATH\Controllers\Inventario.php(98): view('sidebar')
+ 6 APPPATH\Controllers\Inventario.php(26): App\Controllers\Inventario->load_view('board/inventario', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 20:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-22 20:37:38 --> Undefined array key "fk_permiso"
+in APPPATH\Views\sidebar.php on line 42.
+ 1 APPPATH\Views\sidebar.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fk_permiso"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\sidebar.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sidebar', [], true)
+ 5 APPPATH\Controllers\Inventario.php(98): view('sidebar')
+ 6 APPPATH\Controllers\Inventario.php(26): App\Controllers\Inventario->load_view('board/inventario', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 20:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-22 20:37:49 --> Undefined array key "fk_permiso"
+in APPPATH\Views\sidebar.php on line 42.
+ 1 APPPATH\Views\sidebar.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fk_permiso"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\sidebar.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sidebar', [], true)
+ 5 APPPATH\Controllers\Inventario.php(98): view('sidebar')
+ 6 APPPATH\Controllers\Inventario.php(26): App\Controllers\Inventario->load_view('board/inventario', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 20:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-22 20:42:33 --> Undefined variable $array
+in APPPATH\Controllers\Inventario.php on line 24.
+ 1 APPPATH\Controllers\Inventario.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $array', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Inventario.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 20:42:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-22 20:42:43 --> Undefined variable $array
+in APPPATH\Controllers\Inventario.php on line 24.
+ 1 APPPATH\Controllers\Inventario.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $array', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Inventario.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 20:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-22 20:46:52 --> Undefined array key "fk_permiso"
+in APPPATH\Models\UsuarioModel.php on line 112.
+ 1 APPPATH\Models\UsuarioModel.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fk_permiso"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\UsuarioModel.php', 112)
+ 2 APPPATH\Controllers\Home.php(34): App\Models\UsuarioModel->login([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 20:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:47:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-22 20:47:45 --> Array to string conversion
+in APPPATH\Models\UsuarioModel.php on line 112.
+ 1 APPPATH\Models\UsuarioModel.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\UsuarioModel.php', 112)
+ 2 APPPATH\Controllers\Home.php(34): App\Models\UsuarioModel->login([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 20:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 20:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 21:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 21:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 21:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 21:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 21:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 21:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 21:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 21:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 21:56:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 21:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 21:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 21:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 21:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 21:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-22 21:57:31 --> Undefined variable $clave
+in APPPATH\Controllers\Home.php on line 43.
+ 1 APPPATH\Controllers\Home.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $clave', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Home.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 21:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 21:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 21:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 21:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:03:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:27:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-22 22:27:14 --> Undefined constant "App\Controllers\lengt"
+in APPPATH\Controllers\Home.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 22:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-22 22:30:58 --> Undefined constant "App\Controllers\lengt"
+in APPPATH\Controllers\Home.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-22 22:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:50:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 22:51:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:33:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 23:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

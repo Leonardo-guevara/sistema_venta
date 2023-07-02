@@ -1,0 +1,485 @@
+INFO - 2023-05-03 00:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 00:41:07 --> Undefined array key "value"
+in APPPATH\Models\RolesModel.php on line 83.
+ 1 APPPATH\Models\RolesModel.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "value"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\RolesModel.php', 83)
+ 2 APPPATH\Controllers\Roles.php(99): App\Models\RolesModel->permiso('2', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 00:41:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 00:42:40 --> Undefined array key "value"
+in APPPATH\Controllers\Roles.php on line 99.
+ 1 APPPATH\Controllers\Roles.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "value"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Roles.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 00:42:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 00:42:53 --> Undefined array key "value"
+in APPPATH\Controllers\Roles.php on line 99.
+ 1 APPPATH\Controllers\Roles.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "value"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Roles.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 00:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:54:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 00:55:20 --> Cannot access offset of type string on string
+in APPPATH\Models\RolesModel.php on line 87.
+ 1 APPPATH\Controllers\Roles.php(99): App\Models\RolesModel->permiso('2', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 00:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 00:55:29 --> Cannot access offset of type string on string
+in APPPATH\Models\RolesModel.php on line 87.
+ 1 APPPATH\Controllers\Roles.php(99): App\Models\RolesModel->permiso('2', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 00:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 00:55:35 --> Cannot use [] for reading
+in APPPATH\Models\RolesModel.php on line 87.
+ 1 APPPATH\Controllers\Roles.php(99): App\Models\RolesModel->permiso('2', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 00:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 00:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:07:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 16:11:54 --> Array to string conversion
+in APPPATH\Models\RolesModel.php on line 86.
+ 1 APPPATH\Models\RolesModel.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\RolesModel.php', 86)
+ 2 APPPATH\Controllers\Roles.php(99): App\Models\RolesModel->permiso('2', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 16:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 16:12:01 --> Array to string conversion
+in APPPATH\Models\RolesModel.php on line 86.
+ 1 APPPATH\Models\RolesModel.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\RolesModel.php', 86)
+ 2 APPPATH\Controllers\Roles.php(99): App\Models\RolesModel->permiso('2', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 16:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 16:12:22 --> Cannot access offset of type string on string
+in APPPATH\Models\RolesModel.php on line 86.
+ 1 APPPATH\Controllers\Roles.php(99): App\Models\RolesModel->permiso('2', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 16:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 16:16:31 --> Undefined variable $value
+in APPPATH\Models\RolesModel.php on line 84.
+ 1 APPPATH\Models\RolesModel.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\RolesModel.php', 84)
+ 2 APPPATH\Controllers\Roles.php(99): App\Models\RolesModel->permiso('2', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 16:16:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 16:16:41 --> Undefined variable $value
+in APPPATH\Models\RolesModel.php on line 84.
+ 1 APPPATH\Models\RolesModel.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\RolesModel.php', 84)
+ 2 APPPATH\Controllers\Roles.php(99): App\Models\RolesModel->permiso('2', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 16:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:17:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 16:19:48 --> Uninitialized string offset 1
+in APPPATH\Models\RolesModel.php on line 86.
+ 1 APPPATH\Models\RolesModel.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 1', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\RolesModel.php', 86)
+ 2 APPPATH\Controllers\Roles.php(99): App\Models\RolesModel->permiso('2', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 16:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 16:19:59 --> Uninitialized string offset 1
+in APPPATH\Models\RolesModel.php on line 86.
+ 1 APPPATH\Models\RolesModel.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 1', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\RolesModel.php', 86)
+ 2 APPPATH\Controllers\Roles.php(99): App\Models\RolesModel->permiso('2', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 16:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 16:38:21 --> Undefined variable $permiso
+in APPPATH\Models\RolesModel.php on line 88.
+ 1 APPPATH\Models\RolesModel.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $permiso', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\RolesModel.php', 88)
+ 2 APPPATH\Controllers\Roles.php(99): App\Models\RolesModel->permiso('2', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 16:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 16:39:44 --> Undefined variable $permiso
+in APPPATH\Models\RolesModel.php on line 87.
+ 1 APPPATH\Models\RolesModel.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $permiso', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\RolesModel.php', 87)
+ 2 APPPATH\Controllers\Roles.php(99): App\Models\RolesModel->permiso('2', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 16:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 16:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 17:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-03 17:05:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''(2,1),(2,2),(2,3),(2,4),(2,5),(2,6),(2,7),(2,10),(2,11)'' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ro...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ro...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ro...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\RolesModel.php(88): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ro...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Roles.php(92): App\Models\RolesModel->permiso('2', Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-03 17:05:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''(2,1),(2,2),(2,3),(2,4),(2,5),(2,6),(2,7),(2,10),(2,11)'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `roles_permsio`(`fk_roles`, `fk_permiso`) VALUES \'(2,1),(2,2),(2,3),(2,4),(2,5),(2,6),(2,7),(2,10),(2,11)\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `roles_permsio`(`fk_roles`, `fk_permiso`) VALUES \'(2,1),(2,2),(2,3),(2,4),(2,5),(2,6),(2,7),(2,10),(2,11)\';')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `roles_permsio`(`fk_roles`, `fk_permiso`) VALUES \'(2,1),(2,2),(2,3),(2,4),(2,5),(2,6),(2,7),(2,10),(2,11)\';')
+ 4 APPPATH\Models\RolesModel.php(88): CodeIgniter\Database\BaseConnection->query('INSERT INTO `roles_permsio`(`fk_roles`, `fk_permiso`) VALUES ?;', [...])
+ 5 APPPATH\Controllers\Roles.php(92): App\Models\RolesModel->permiso('2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 17:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 17:06:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 17:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 17:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 17:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 17:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 18:00:43 --> Undefined variable $id
+in APPPATH\Models\RolesModel.php on line 82.
+ 1 APPPATH\Models\RolesModel.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\RolesModel.php', 82)
+ 2 APPPATH\Controllers\Roles.php(86): App\Models\RolesModel->encontrar_permiso('2')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 18:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 18:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 23:08:10 --> Undefined array key "fk_permiso"
+in APPPATH\Views\form\permiso.php on line 34.
+ 1 APPPATH\Views\form\permiso.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fk_permiso"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/permiso', [], true)
+ 5 APPPATH\Controllers\Roles.php(102): view('form/permiso', [...])
+ 6 APPPATH\Controllers\Roles.php(91): App\Controllers\Roles->load_view('form/permiso', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 23:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:08:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:08:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 23:18:11 --> Array to string conversion
+in APPPATH\Views\form\permiso.php on line 35.
+ 1 APPPATH\Views\form\permiso.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/permiso', [], true)
+ 5 APPPATH\Controllers\Roles.php(102): view('form/permiso', [...])
+ 6 APPPATH\Controllers\Roles.php(91): App\Controllers\Roles->load_view('form/permiso', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 23:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 23:18:47 --> Undefined array key "fk_permiso"
+in APPPATH\Views\form\permiso.php on line 35.
+ 1 APPPATH\Views\form\permiso.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fk_permiso"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/permiso', [], true)
+ 5 APPPATH\Controllers\Roles.php(102): view('form/permiso', [...])
+ 6 APPPATH\Controllers\Roles.php(91): App\Controllers\Roles->load_view('form/permiso', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 23:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 23:20:19 --> Array to string conversion
+in APPPATH\Views\form\permiso.php on line 35.
+ 1 APPPATH\Views\form\permiso.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/permiso', [], true)
+ 5 APPPATH\Controllers\Roles.php(102): view('form/permiso', [...])
+ 6 APPPATH\Controllers\Roles.php(91): App\Controllers\Roles->load_view('form/permiso', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 23:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 23:20:28 --> Array to string conversion
+in APPPATH\Views\form\permiso.php on line 35.
+ 1 APPPATH\Views\form\permiso.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/permiso', [], true)
+ 5 APPPATH\Controllers\Roles.php(102): view('form/permiso', [...])
+ 6 APPPATH\Controllers\Roles.php(91): App\Controllers\Roles->load_view('form/permiso', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 23:20:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 23:23:28 --> Undefined variable $datos
+in APPPATH\Views\form\permiso.php on line 34.
+ 1 APPPATH\Views\form\permiso.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/permiso', [], true)
+ 5 APPPATH\Controllers\Roles.php(102): view('form/permiso', [...])
+ 6 APPPATH\Controllers\Roles.php(91): App\Controllers\Roles->load_view('form/permiso', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 23:23:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 23:24:14 --> Undefined variable $Fk_permiso
+in APPPATH\Views\form\permiso.php on line 35.
+ 1 APPPATH\Views\form\permiso.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Fk_permiso', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/permiso', [], true)
+ 5 APPPATH\Controllers\Roles.php(102): view('form/permiso', [...])
+ 6 APPPATH\Controllers\Roles.php(91): App\Controllers\Roles->load_view('form/permiso', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 23:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 23:24:27 --> Undefined variable $Fk_permiso
+in APPPATH\Views\form\permiso.php on line 34.
+ 1 APPPATH\Views\form\permiso.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Fk_permiso', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/permiso', [], true)
+ 5 APPPATH\Controllers\Roles.php(102): view('form/permiso', [...])
+ 6 APPPATH\Controllers\Roles.php(91): App\Controllers\Roles->load_view('form/permiso', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 23:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 23:25:02 --> Undefined variable $DATOS
+in APPPATH\Views\form\permiso.php on line 34.
+ 1 APPPATH\Views\form\permiso.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $DATOS', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/permiso', [], true)
+ 5 APPPATH\Controllers\Roles.php(102): view('form/permiso', [...])
+ 6 APPPATH\Controllers\Roles.php(91): App\Controllers\Roles->load_view('form/permiso', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 23:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 23:25:04 --> Undefined variable $DATOS
+in APPPATH\Views\form\permiso.php on line 34.
+ 1 APPPATH\Views\form\permiso.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $DATOS', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/permiso', [], true)
+ 5 APPPATH\Controllers\Roles.php(102): view('form/permiso', [...])
+ 6 APPPATH\Controllers\Roles.php(91): App\Controllers\Roles->load_view('form/permiso', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 23:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 23:25:32 --> Undefined variable $fk_permiso
+in APPPATH\Views\form\permiso.php on line 34.
+ 1 APPPATH\Views\form\permiso.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fk_permiso', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/permiso', [], true)
+ 5 APPPATH\Controllers\Roles.php(102): view('form/permiso', [...])
+ 6 APPPATH\Controllers\Roles.php(91): App\Controllers\Roles->load_view('form/permiso', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 23:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 23:25:55 --> Undefined variable $fk_permiso
+in APPPATH\Views\form\permiso.php on line 34.
+ 1 APPPATH\Views\form\permiso.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fk_permiso', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/permiso', [], true)
+ 5 APPPATH\Controllers\Roles.php(102): view('form/permiso', [...])
+ 6 APPPATH\Controllers\Roles.php(91): App\Controllers\Roles->load_view('form/permiso', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 23:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 23:26:22 --> Undefined variable $fk_permiso
+in APPPATH\Views\form\permiso.php on line 34.
+ 1 APPPATH\Views\form\permiso.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fk_permiso', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/permiso', [], true)
+ 5 APPPATH\Controllers\Roles.php(103): view('form/permiso', [...])
+ 6 APPPATH\Controllers\Roles.php(92): App\Controllers\Roles->load_view('form/permiso', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 23:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 23:26:52 --> Undefined variable $fk_permiso
+in APPPATH\Views\form\permiso.php on line 34.
+ 1 APPPATH\Views\form\permiso.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fk_permiso', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/permiso', [], true)
+ 5 APPPATH\Controllers\Roles.php(103): view('form/permiso', [...])
+ 6 APPPATH\Controllers\Roles.php(92): App\Controllers\Roles->load_view('form/permiso', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 23:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-03 23:27:20 --> Undefined variable $fk_permiso
+in APPPATH\Views\form\permiso.php on line 34.
+ 1 APPPATH\Views\form\permiso.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fk_permiso', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\permiso.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/permiso', [], true)
+ 5 APPPATH\Controllers\Roles.php(103): view('form/permiso', [...])
+ 6 APPPATH\Controllers\Roles.php(92): App\Controllers\Roles->load_view('form/permiso', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-03 23:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-03 23:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

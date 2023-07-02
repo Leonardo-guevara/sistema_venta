@@ -37,7 +37,6 @@ class Usuario extends BaseController
         $UsuarioModel = new UsuarioModel();
         $data['title'] = 'Crear nuevo Usuario';
         $data['home'] = 'Usuario';
-        $data['persona'] =$UsuarioModel->persona();
         $data['roles'] =$UsuarioModel->roles();
         $data['principal']= $this->session->get('usuario');
         if(!empty($_FILES["file"]["name"]) and isset($_FILES["file"]["name"])){
@@ -46,36 +45,46 @@ class Usuario extends BaseController
         if (!$this->validate([
             'usuario'    => 'required|min_length[3]|max_length[255]|is_unique[usuario.usuario]',
             'detalle'    => 'required|min_length[3]',
-            'fk_persona' => 'required|is_unique[usuario.fk_persona]',  
+            'email'     => 'required|valid_email|is_unique[usuario.email]', 
             'fkroles'    => 'required',
         ])){
             $data['errors'] = $this->validator->getErrors();
             return $this->load_view('form/usuario',$data);
         }
-        $texto = '<h2 class="">CREAR CONTRASEÑA&nbsp;</h2><p><b><u>SU NUEVA CONTRASEÑA&nbsp; SERA:</u></b></p>';
-        $mensaje = $texto. $UsuarioModel->contrasenha('8');
+       
         // validar imagen
         if(isset($foto) and !empty($foto)){
             $foto = $foto;
        }else {
            $foto = "public/dist/img/vacio.png";
        } 
+        $password = $UsuarioModel->contrasenha('8');
         $datos = [
-            'password'    => $UsuarioModel->contrasenha('8'),
+            'password'    => $password,
             'usuario'     => $_POST["usuario"],
             'detalle'     => $_POST["detalle"],
             'foto'        => $foto,
-            'fk_persona'  => $_POST["fk_persona"],
+            'email'       => $_POST["email"],
             'fkroles'     => $_POST["fkroles"],
         ];
-        $correo = $UsuarioModel->insertar($datos);
-        $texto = '<h2 style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif;">Nueva Contraseña&nbsp;</h2><p style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small;">recuerda que puede cambiar la contraseña desde la aplicación&nbsp;<a href="https://posgrado.helpfibo.com/" target="_blank">https://posgrado.helpfibo.com/</a></p><p style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small;"><b><u>Tu contraseña es:</u></b></p>';
-        $correo['mensaje'] = $texto.$datos['password'] ;
+        $correo["email"] = $datos["email"] ;
+        $texto = '<h2 style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif;">Nueva Contraseña&nbsp;</h2><p style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small;">recuerda que puede cambiar la contraseña desde la aplicación&nbsp;<a href="https://udabol.helpfibo.com/" target="_blank">https://posgrado.helpfibo.com/</a></p><p style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small;"><b><u>Tu contraseña es:</u></b></p>';
+        $correo['mensaje'] = $texto.$password ;
         $correo['asunto'] = 'Crear  Contrasenha' ;
-        $correo['titulo'] = 'Contrasenha' ;
+        $correo['titulo'] = ' Se creo una Contrasenha' ;
 
-        $this->correo_email($correo);
-        return redirect()->route('usuario');  
+        $email = \Config\Services::email();
+        $email->setFrom('leonardo@udabol.helpfibo.com',$correo["titulo"]);
+        $email->setTo($datos["email"]);
+        $email->setSubject( $correo["asunto"]);
+        $email->setMessage($correo["mensaje"]);
+        
+        if (!$email->send()) {
+            return redirect()->route('usuario'); 
+         }else  {
+            $UsuarioModel->insertar($datos);
+            return redirect()->route('usuario');  
+         }
         die();
 
     }
@@ -92,9 +101,7 @@ class Usuario extends BaseController
         $data['datos'] = $UsuarioModel->encontrar($id);
         $data['title'] = 'Actualizar Usuario';
         $data['home'] = 'Usuario';
-        $data['persona'] =$UsuarioModel->persona();
         $data['roles'] =$UsuarioModel->roles();
-        var_dump($data['datos']["foto"]);
         if(!empty($_FILES["file"]["name"]) and isset($_FILES["file"]["name"])){
             $foto = $this->upload_img($_FILES);    
         }
@@ -102,7 +109,7 @@ class Usuario extends BaseController
         if (!$this->validate([
             'usuario'    => 'required|min_length[3]|max_length[255]|is_unique[usuario.usuario,idusuario,{id}]',
             'detalle'    => 'required|min_length[3]',
-            'fk_persona' => 'required|is_unique[usuario.usuario,idusuario,{id}]',  
+            'email'     => 'required|valid_email|is_unique[usuario.email,idusuario,{id}]',  
             'fkroles'    => 'required',
         ])){
             $data['errors'] = $this->validator->getErrors();
@@ -120,7 +127,7 @@ class Usuario extends BaseController
             'usuario'     => $_POST["usuario"],
             'detalle'     => $_POST["detalle"],
             'foto'        => $foto,
-            'fk_persona'  => $_POST["fk_persona"],
+            'email'       => $_POST["email"],
             'fkroles'     => $_POST["fkroles"],
         ];
         $UsuarioModel->actualizar($id,$datos);

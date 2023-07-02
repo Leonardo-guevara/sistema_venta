@@ -1,0 +1,1058 @@
+INFO - 2023-05-01 00:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:00:07 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(138): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:00:07 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:00:07\', `updated_at` = \'2023-05-01 00:00:07\'
+WHERE `id` IN (\'10\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:00:07\', `updated_at` = \'2023-05-01 00:00:07\'
+WHERE `id` IN (\'10\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:00:07\', `updated_at` = \'2023-05-01 00:00:07\'
+WHERE `id` IN (\'10\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(138): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:00:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:07:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:07:23 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(138): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:07:23 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:07:23\', `updated_at` = \'2023-05-01 00:07:23\'
+WHERE `id` IN (\'4\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:07:23\', `updated_at` = \'2023-05-01 00:07:23\'
+WHERE `id` IN (\'4\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:07:23\', `updated_at` = \'2023-05-01 00:07:23\'
+WHERE `id` IN (\'4\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(138): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:09:06 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(138): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:09:06 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:09:06\', `updated_at` = \'2023-05-01 00:09:06\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:09:06\', `updated_at` = \'2023-05-01 00:09:06\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:09:06\', `updated_at` = \'2023-05-01 00:09:06\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(138): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:10:59 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:10:59 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:10:59\', `updated_at` = \'2023-05-01 00:10:59\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:10:59\', `updated_at` = \'2023-05-01 00:10:59\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:10:59\', `updated_at` = \'2023-05-01 00:10:59\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:16:42 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:16:42 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:16:42\', `updated_at` = \'2023-05-01 00:16:42\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:16:42\', `updated_at` = \'2023-05-01 00:16:42\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:16:42\', `updated_at` = \'2023-05-01 00:16:42\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:16:45 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:16:45 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:16:45\', `updated_at` = \'2023-05-01 00:16:45\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:16:45\', `updated_at` = \'2023-05-01 00:16:45\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:16:45\', `updated_at` = \'2023-05-01 00:16:45\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:19:11 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:19:11 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:19:11\', `updated_at` = \'2023-05-01 00:19:11\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:19:11\', `updated_at` = \'2023-05-01 00:19:11\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:19:11\', `updated_at` = \'2023-05-01 00:19:11\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:29:18 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:29:18 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:29:18\', `updated_at` = \'2023-05-01 00:29:18\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:29:18\', `updated_at` = \'2023-05-01 00:29:18\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:29:18\', `updated_at` = \'2023-05-01 00:29:18\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:29:44 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:29:44 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:29:44\', `updated_at` = \'2023-05-01 00:29:44\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:29:44\', `updated_at` = \'2023-05-01 00:29:44\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:29:44\', `updated_at` = \'2023-05-01 00:29:44\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:30:00 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:30:00 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:30:00\', `updated_at` = \'2023-05-01 00:30:00\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:30:00\', `updated_at` = \'2023-05-01 00:30:00\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:30:00\', `updated_at` = \'2023-05-01 00:30:00\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:31:18 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:31:18 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:31:18\', `updated_at` = \'2023-05-01 00:31:18\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:31:18\', `updated_at` = \'2023-05-01 00:31:18\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:31:18\', `updated_at` = \'2023-05-01 00:31:18\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:33:57 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:33:57 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:33:57\', `updated_at` = \'2023-05-01 00:33:57\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:33:57\', `updated_at` = \'2023-05-01 00:33:57\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:33:57\', `updated_at` = \'2023-05-01 00:33:57\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:34:38 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:34:38 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:34:38\', `updated_at` = \'2023-05-01 00:34:38\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:34:38\', `updated_at` = \'2023-05-01 00:34:38\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:34:38\', `updated_at` = \'2023-05-01 00:34:38\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:35:28 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(140): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:35:28 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:35:28\', `updated_at` = \'2023-05-01 00:35:28\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:35:28\', `updated_at` = \'2023-05-01 00:35:28\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:35:28\', `updated_at` = \'2023-05-01 00:35:28\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(140): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:40:17 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:40:17 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:40:17\', `updated_at` = \'2023-05-01 00:40:17\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:40:17\', `updated_at` = \'2023-05-01 00:40:17\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:40:17\', `updated_at` = \'2023-05-01 00:40:17\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:41:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:41:26 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:41:26 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:41:26\', `updated_at` = \'2023-05-01 00:41:26\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:41:26\', `updated_at` = \'2023-05-01 00:41:26\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:41:26\', `updated_at` = \'2023-05-01 00:41:26\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:41:28 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:41:28 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:41:28\', `updated_at` = \'2023-05-01 00:41:28\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:41:28\', `updated_at` = \'2023-05-01 00:41:28\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:41:28\', `updated_at` = \'2023-05-01 00:41:28\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:43:57 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:43:57 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:43:57\', `updated_at` = \'2023-05-01 00:43:57\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:43:57\', `updated_at` = \'2023-05-01 00:43:57\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:43:57\', `updated_at` = \'2023-05-01 00:43:57\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:43:59 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:43:59 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:43:59\', `updated_at` = \'2023-05-01 00:43:59\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:43:59\', `updated_at` = \'2023-05-01 00:43:59\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:43:59\', `updated_at` = \'2023-05-01 00:43:59\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:45:20 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:45:20 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:45:20\', `updated_at` = \'2023-05-01 00:45:20\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:45:20\', `updated_at` = \'2023-05-01 00:45:20\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:45:20\', `updated_at` = \'2023-05-01 00:45:20\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:45:29 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:45:29 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:45:29\', `updated_at` = \'2023-05-01 00:45:29\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:45:29\', `updated_at` = \'2023-05-01 00:45:29\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:45:29\', `updated_at` = \'2023-05-01 00:45:29\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:47:28 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:47:28 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:47:28\', `updated_at` = \'2023-05-01 00:47:28\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:47:28\', `updated_at` = \'2023-05-01 00:47:28\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:47:28\', `updated_at` = \'2023-05-01 00:47:28\'
+WHERE `id` IN (\'6\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-01 00:52:14 --> Undefined array key "usuario"
+in APPPATH\Views\board\usuario.php on line 66.
+ 1 APPPATH\Views\board\usuario.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\usuario.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\usuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/usuario', [], true)
+ 5 APPPATH\Controllers\Usuario.php(152): view('board/usuario', [...])
+ 6 APPPATH\Controllers\Usuario.php(60): App\Controllers\Usuario->load_view('board/usuario', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:52:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:53:21 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL: Handshake timed out in E:\xampp\htdocs\codeigniter\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'E:\\xampp\\htdocs...', 1868)
+#1 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1868): fsockopen('tls://smtp.drea...', 465, NULL, NULL, 5)
+#2 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 E:\xampp\htdocs\codeigniter\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(162): CodeIgniter\Email\Email->send()
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(98): App\Controllers\Usuario->correo_email(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->insert()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-05-01 00:53:21 --> Email: Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.
+ERROR - 2023-05-01 00:53:21 --> 
+INFO - 2023-05-01 00:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:53:28 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:53:28 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:53:28\', `updated_at` = \'2023-05-01 00:53:28\'
+WHERE `id` IN (\'9\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:53:28\', `updated_at` = \'2023-05-01 00:53:28\'
+WHERE `id` IN (\'9\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:53:28\', `updated_at` = \'2023-05-01 00:53:28\'
+WHERE `id` IN (\'9\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:53:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:53:32 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:53:32 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:53:32\', `updated_at` = \'2023-05-01 00:53:32\'
+WHERE `id` IN (\'9\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:53:32\', `updated_at` = \'2023-05-01 00:53:32\'
+WHERE `id` IN (\'9\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:53:32\', `updated_at` = \'2023-05-01 00:53:32\'
+WHERE `id` IN (\'9\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:56:13 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:56:13 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:56:13\', `updated_at` = \'2023-05-01 00:56:13\'
+WHERE `id` IN (\'9\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:56:13\', `updated_at` = \'2023-05-01 00:56:13\'
+WHERE `id` IN (\'9\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:56:13\', `updated_at` = \'2023-05-01 00:56:13\'
+WHERE `id` IN (\'9\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 00:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 00:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-01 00:56:19 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 E:\xampp\htdocs\codeigniter\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 E:\xampp\htdocs\codeigniter\system\Model.php(453): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\xampp\htdocs\codeigniter\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete(Array)
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+#8 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#9 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-01 00:56:19 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:56:19\', `updated_at` = \'2023-05-01 00:56:19\'
+WHERE `id` IN (\'9\')
+AND `deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:56:19\', `updated_at` = \'2023-05-01 00:56:19\'
+WHERE `id` IN (\'9\')
+AND `deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario` SET `deleted_at` = \'2023-05-01 00:56:19\', `updated_at` = \'2023-05-01 00:56:19\'
+WHERE `id` IN (\'9\')
+AND `deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario` SET `deleted_at` = :deleted_at:, `updated_at` = :updated_at:
+WHERE `id` IN :id:
+AND `deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(453): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Usuario.php(139): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 01:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-01 01:07:25 --> Call to undefined method App\Models\UsuarioModel::delete_user
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Usuario.php(139): CodeIgniter\Model->__call('delete_user', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 01:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-01 01:09:36 --> Undefined variable $id
+in APPPATH\Models\UsuarioModel.php on line 127.
+ 1 APPPATH\Models\UsuarioModel.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\UsuarioModel.php', 127)
+ 2 APPPATH\Controllers\Usuario.php(139): App\Models\UsuarioModel->delete_user('9')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 01:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-01 01:10:01 --> Undefined variable $id
+in APPPATH\Models\UsuarioModel.php on line 127.
+ 1 APPPATH\Models\UsuarioModel.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\UsuarioModel.php', 127)
+ 2 APPPATH\Controllers\Usuario.php(139): App\Models\UsuarioModel->delete_user('9')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 01:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-01 01:10:14 --> Undefined variable $id
+in APPPATH\Models\UsuarioModel.php on line 127.
+ 1 APPPATH\Models\UsuarioModel.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\UsuarioModel.php', 127)
+ 2 APPPATH\Controllers\Usuario.php(139): App\Models\UsuarioModel->delete_user('9')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->delete()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-01 01:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-01 01:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

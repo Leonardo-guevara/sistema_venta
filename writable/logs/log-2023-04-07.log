@@ -1,0 +1,32 @@
+INFO - 2023-04-07 20:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-07 20:48:00 --> Undefined variable $name
+in APPPATH\Controllers\Unidad.php on line 18.
+ 1 APPPATH\Controllers\Unidad.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Unidad.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-07 21:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-07 21:18:34 --> Undefined variable $name
+in APPPATH\Controllers\Unidad.php on line 18.
+ 1 APPPATH\Controllers\Unidad.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Unidad.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-07 21:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-07 21:18:35 --> Undefined variable $name
+in APPPATH\Controllers\Unidad.php on line 18.
+ 1 APPPATH\Controllers\Unidad.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Unidad.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-07 21:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-07 21:19:43 --> Undefined variable $name
+in APPPATH\Controllers\Unidad.php on line 18.
+ 1 APPPATH\Controllers\Unidad.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Unidad.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

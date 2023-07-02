@@ -58,7 +58,7 @@
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
-                    <th>Persona</th>
+                    <th>Email</th>
                     <th>Usuario</th>
                     <th>Fotografia</th>
                     <th>Roles</th>
@@ -68,7 +68,7 @@
                   <tbody>
                   <?php foreach ($data as $news_item): ?>
                   <tr>
-                    <td><?= esc($news_item['fk_persona']); ?></td>
+                    <td><?= esc($news_item['email']); ?></td>
                     <td><?= esc($news_item['usuario']); ?></td>
                     <td>
                         <img src="<?= esc($news_item['foto']); ?>" class="img-fluid img-thumbnail" width="100" height="100"  alt="<?= esc($news_item['usuario']); ?>" >
@@ -86,7 +86,7 @@
                   </tbody>
                   <tfoot>
                   <tr>
-                    <th>Persona</th>
+                    <th>Email</th>
                     <th>Usuario</th>
                     <th>Fotografia</th>
                     <th>Roles</th>

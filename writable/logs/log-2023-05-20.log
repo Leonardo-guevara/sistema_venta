@@ -1,0 +1,616 @@
+INFO - 2023-05-20 10:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 10:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 10:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 10:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 10:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 10:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 10:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 10:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 10:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-20 10:34:20 --> mysqli_sql_exception: Unknown column 'password' in 'field list' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\UsuarioModel.php(83): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(91): App\Models\UsuarioModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-20 10:34:20 --> Unknown column 'password' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( \'1\',\'8e1b4d4a4f66a921f337c9f874b6a13248db3efbb9ac69493098a9c0615efe6c565330de40989469a7917f154d2e35de71d9c2a83ea6a9bb0d97a9581f5bd0fe\',\'poto\',\'admin\',\'hola\',\'1\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( \'1\',\'8e1b4d4a4f66a921f337c9f874b6a13248db3efbb9ac69493098a9c0615efe6c565330de40989469a7917f154d2e35de71d9c2a83ea6a9bb0d97a9581f5bd0fe\',\'poto\',\'admin\',\'hola\',\'1\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( \'1\',\'8e1b4d4a4f66a921f337c9f874b6a13248db3efbb9ac69493098a9c0615efe6c565330de40989469a7917f154d2e35de71d9c2a83ea6a9bb0d97a9581f5bd0fe\',\'poto\',\'admin\',\'hola\',\'1\', NOW());')
+ 4 APPPATH\Models\UsuarioModel.php(83): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( ?,?,?,?,?,?, NOW());', [...])
+ 5 APPPATH\Controllers\Usuario.php(91): App\Models\UsuarioModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 11:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-20 11:16:36 --> mysqli_sql_exception: Unknown column 'password' in 'field list' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\UsuarioModel.php(83): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(91): App\Models\UsuarioModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-20 11:16:36 --> Unknown column 'password' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( \'1\',\'c99a693ce45f6b2a835c54db45bf894c3450afe6069bab29f046133b8ab543068e62de7144f5152b49d9245003edc8c4b58ed332ce3ccf3da4c0b3abf0f138eb\',\'poto\',\'admin\',\'hola\',\'1\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( \'1\',\'c99a693ce45f6b2a835c54db45bf894c3450afe6069bab29f046133b8ab543068e62de7144f5152b49d9245003edc8c4b58ed332ce3ccf3da4c0b3abf0f138eb\',\'poto\',\'admin\',\'hola\',\'1\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( \'1\',\'c99a693ce45f6b2a835c54db45bf894c3450afe6069bab29f046133b8ab543068e62de7144f5152b49d9245003edc8c4b58ed332ce3ccf3da4c0b3abf0f138eb\',\'poto\',\'admin\',\'hola\',\'1\', NOW());')
+ 4 APPPATH\Models\UsuarioModel.php(83): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( ?,?,?,?,?,?, NOW());', [...])
+ 5 APPPATH\Controllers\Usuario.php(91): App\Models\UsuarioModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 11:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-20 11:16:40 --> mysqli_sql_exception: Unknown column 'password' in 'field list' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\UsuarioModel.php(83): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(91): App\Models\UsuarioModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-20 11:16:40 --> Unknown column 'password' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( \'1\',\'de42b47a206e0174915c8c2bb06aeacb63b199daebd06d922b3603797c16ad412343d21038cb54e0e791a28b58d8e0e8ef41985ea30b9db414b6b9c39eb971bd\',\'poto\',\'admin\',\'hola\',\'1\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( \'1\',\'de42b47a206e0174915c8c2bb06aeacb63b199daebd06d922b3603797c16ad412343d21038cb54e0e791a28b58d8e0e8ef41985ea30b9db414b6b9c39eb971bd\',\'poto\',\'admin\',\'hola\',\'1\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( \'1\',\'de42b47a206e0174915c8c2bb06aeacb63b199daebd06d922b3603797c16ad412343d21038cb54e0e791a28b58d8e0e8ef41985ea30b9db414b6b9c39eb971bd\',\'poto\',\'admin\',\'hola\',\'1\', NOW());')
+ 4 APPPATH\Models\UsuarioModel.php(83): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( ?,?,?,?,?,?, NOW());', [...])
+ 5 APPPATH\Controllers\Usuario.php(91): App\Models\UsuarioModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 11:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-20 11:19:07 --> mysqli_sql_exception: Unknown column 'user' in 'field list' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\UsuarioModel.php(83): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(90): App\Models\UsuarioModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-20 11:19:07 --> Unknown column 'user' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( \'1\',\'b9eec19d6ae18a8a7c78900cd421cb4f6fb6a78f1e599dd80867bf7104fc97d7ddcb5e77c16c78811f72a1e1f0b30183cc514f4397c47d30990bb135e0a39993\',\'poto\',\'admin\',\'hola\',\'1\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( \'1\',\'b9eec19d6ae18a8a7c78900cd421cb4f6fb6a78f1e599dd80867bf7104fc97d7ddcb5e77c16c78811f72a1e1f0b30183cc514f4397c47d30990bb135e0a39993\',\'poto\',\'admin\',\'hola\',\'1\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( \'1\',\'b9eec19d6ae18a8a7c78900cd421cb4f6fb6a78f1e599dd80867bf7104fc97d7ddcb5e77c16c78811f72a1e1f0b30183cc514f4397c47d30990bb135e0a39993\',\'poto\',\'admin\',\'hola\',\'1\', NOW());')
+ 4 APPPATH\Models\UsuarioModel.php(83): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( ?,?,?,?,?,?, NOW());', [...])
+ 5 APPPATH\Controllers\Usuario.php(90): App\Models\UsuarioModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 11:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-20 11:19:44 --> mysqli_sql_exception: Unknown column 'fkroles' in 'field list' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\UsuarioModel.php(83): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Usuario.php(90): App\Models\UsuarioModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Usuario->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-20 11:19:44 --> Unknown column 'fkroles' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( \'1\',\'1ea532a1a20c12bdc39cd4d9f0246f0b77e0fce5029d96b7d1fd42ae6eeb8005e2263f673c71c18b2b657cccabd0ca2ca5ab8e87abe3318f47c1c8f9c0c05f2e\',\'poto\',\'admin\',\'hola\',\'1\', NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( \'1\',\'1ea532a1a20c12bdc39cd4d9f0246f0b77e0fce5029d96b7d1fd42ae6eeb8005e2263f673c71c18b2b657cccabd0ca2ca5ab8e87abe3318f47c1c8f9c0c05f2e\',\'poto\',\'admin\',\'hola\',\'1\', NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( \'1\',\'1ea532a1a20c12bdc39cd4d9f0246f0b77e0fce5029d96b7d1fd42ae6eeb8005e2263f673c71c18b2b657cccabd0ca2ca5ab8e87abe3318f47c1c8f9c0c05f2e\',\'poto\',\'admin\',\'hola\',\'1\', NOW());')
+ 4 APPPATH\Models\UsuarioModel.php(83): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuario` (`fk_persona`, `password`, `foto`, `user`, `detalle`, `fkroles`, `created_at`) 
+        VALUES ( ?,?,?,?,?,?, NOW());', [...])
+ 5 APPPATH\Controllers\Usuario.php(90): App\Models\UsuarioModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 11:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-20 11:25:35 --> Undefined array key "user"
+in APPPATH\Views\board\usuario.php on line 66.
+ 1 APPPATH\Views\board\usuario.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\usuario.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\usuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/usuario', [], true)
+ 5 APPPATH\Controllers\Usuario.php(146): view('board/usuario', [...])
+ 6 APPPATH\Controllers\Usuario.php(60): App\Controllers\Usuario->load_view('board/usuario', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 11:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-20 11:26:19 --> Undefined array key "user"
+in APPPATH\Views\board\usuario.php on line 75.
+ 1 APPPATH\Views\board\usuario.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\usuario.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\usuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/usuario', [], true)
+ 5 APPPATH\Controllers\Usuario.php(146): view('board/usuario', [...])
+ 6 APPPATH\Controllers\Usuario.php(60): App\Controllers\Usuario->load_view('board/usuario', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 11:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:32:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:32:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:38:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:48:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 11:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:06:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:06:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-20 12:37:28 --> mysqli_sql_exception: Table 'posgrado.roles_permsio' doesn't exist in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fk_perm...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fk_perm...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fk_perm...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\RolesModel.php(83): CodeIgniter\Database\BaseConnection->query('SELECT `fk_perm...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Roles.php(86): App\Models\RolesModel->encontrar_permiso('1')
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-20 12:37:28 --> Table 'posgrado.roles_permsio' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = \'1\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = \'1\';')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = \'1\';')
+ 4 APPPATH\Models\RolesModel.php(83): CodeIgniter\Database\BaseConnection->query('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = ?;', [...])
+ 5 APPPATH\Controllers\Roles.php(86): App\Models\RolesModel->encontrar_permiso('1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 12:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:37:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-20 12:37:40 --> mysqli_sql_exception: Table 'posgrado.roles_permsio' doesn't exist in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fk_perm...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fk_perm...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fk_perm...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\RolesModel.php(83): CodeIgniter\Database\BaseConnection->query('SELECT `fk_perm...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Roles.php(86): App\Models\RolesModel->encontrar_permiso('1')
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-20 12:37:40 --> Table 'posgrado.roles_permsio' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = \'1\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = \'1\';')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = \'1\';')
+ 4 APPPATH\Models\RolesModel.php(83): CodeIgniter\Database\BaseConnection->query('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = ?;', [...])
+ 5 APPPATH\Controllers\Roles.php(86): App\Models\RolesModel->encontrar_permiso('1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 12:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-20 12:39:06 --> mysqli_sql_exception: Table 'posgrado.roles_permsio' doesn't exist in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fk_perm...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fk_perm...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fk_perm...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\RolesModel.php(83): CodeIgniter\Database\BaseConnection->query('SELECT `fk_perm...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Roles.php(86): App\Models\RolesModel->encontrar_permiso('1')
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-20 12:39:06 --> Table 'posgrado.roles_permsio' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = \'1\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = \'1\';')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = \'1\';')
+ 4 APPPATH\Models\RolesModel.php(83): CodeIgniter\Database\BaseConnection->query('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = ?;', [...])
+ 5 APPPATH\Controllers\Roles.php(86): App\Models\RolesModel->encontrar_permiso('1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 12:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-20 12:39:07 --> mysqli_sql_exception: Table 'posgrado.roles_permsio' doesn't exist in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fk_perm...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fk_perm...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fk_perm...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\RolesModel.php(83): CodeIgniter\Database\BaseConnection->query('SELECT `fk_perm...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Roles.php(86): App\Models\RolesModel->encontrar_permiso('1')
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-20 12:39:07 --> Table 'posgrado.roles_permsio' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = \'1\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = \'1\';')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = \'1\';')
+ 4 APPPATH\Models\RolesModel.php(83): CodeIgniter\Database\BaseConnection->query('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = ?;', [...])
+ 5 APPPATH\Controllers\Roles.php(86): App\Models\RolesModel->encontrar_permiso('1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 12:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-20 12:39:29 --> mysqli_sql_exception: Table 'posgrado.roles_permsio' doesn't exist in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fk_perm...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fk_perm...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fk_perm...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\RolesModel.php(83): CodeIgniter\Database\BaseConnection->query('SELECT `fk_perm...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Roles.php(86): App\Models\RolesModel->encontrar_permiso('1')
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-20 12:39:29 --> Table 'posgrado.roles_permsio' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = \'1\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = \'1\';')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = \'1\';')
+ 4 APPPATH\Models\RolesModel.php(83): CodeIgniter\Database\BaseConnection->query('SELECT `fk_permiso` FROM `roles_permsio` WHERE `fk_roles` = ?;', [...])
+ 5 APPPATH\Controllers\Roles.php(86): App\Models\RolesModel->encontrar_permiso('1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 12:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-20 12:40:18 --> mysqli_sql_exception: Table 'posgrado.roles_permsio' doesn't exist in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ro...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ro...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ro...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\RolesModel.php(98): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ro...')
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Roles.php(93): App\Models\RolesModel->permiso('1', Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-20 12:40:18 --> Table 'posgrado.roles_permsio' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `roles_permsio`(`fk_roles`, `fk_permiso`) VALUES (1,1),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7),(1,8),(1,9),(1,10),(1,11),(1,12) ;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `roles_permsio`(`fk_roles`, `fk_permiso`) VALUES (1,1),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7),(1,8),(1,9),(1,10),(1,11),(1,12) ;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `roles_permsio`(`fk_roles`, `fk_permiso`) VALUES (1,1),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7),(1,8),(1,9),(1,10),(1,11),(1,12) ;')
+ 4 APPPATH\Models\RolesModel.php(98): CodeIgniter\Database\BaseConnection->query('INSERT INTO `roles_permsio`(`fk_roles`, `fk_permiso`) VALUES (1,1),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7),(1,8),(1,9),(1,10),(1,11),(1,12) ;')
+ 5 APPPATH\Controllers\Roles.php(93): App\Models\RolesModel->permiso('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Roles->permiso()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 12:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:41:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:41:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-20 12:45:22 --> mysqli_sql_exception: Unknown column 'user' in 'field list' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `idusuar...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `idusuar...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `idusuar...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\CajaModel.php(93): CodeIgniter\Database\BaseConnection->query('SELECT `idusuar...')
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Caja.php(89): App\Models\cajaModel->usuario()
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-20 12:45:22 --> Unknown column 'user' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `idusuario`, `user`, `deleted_at` FROM `usuario` WHERE`deleted_at`<=> NULL;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `idusuario`, `user`, `deleted_at` FROM `usuario` WHERE`deleted_at`<=> NULL;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `idusuario`, `user`, `deleted_at` FROM `usuario` WHERE`deleted_at`<=> NULL;')
+ 4 APPPATH\Models\CajaModel.php(93): CodeIgniter\Database\BaseConnection->query('SELECT `idusuario`, `user`, `deleted_at` FROM `usuario` WHERE`deleted_at`<=> NULL;')
+ 5 APPPATH\Controllers\Caja.php(89): App\Models\cajaModel->usuario()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 12:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-20 12:45:37 --> Undefined array key "user"
+in APPPATH\Views\form\arqueo.php on line 63.
+ 1 APPPATH\Views\form\arqueo.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 5 APPPATH\Controllers\Caja.php(115): view('form/arqueo', [...])
+ 6 APPPATH\Controllers\Caja.php(98): App\Controllers\Caja->load_view('form/arqueo', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->arqueo_caja()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 12:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 12:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-20 12:54:32 --> Undefined constant "data"
+in APPPATH\Views\board\caja.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/caja', [], true)
+ 4 APPPATH\Controllers\Caja.php(116): view('board/caja', [...])
+ 5 APPPATH\Controllers\Caja.php(25): App\Controllers\Caja->load_view('board/caja', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 12:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-20 12:54:59 --> Undefined constant "data"
+in APPPATH\Views\board\caja.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/caja', [], true)
+ 4 APPPATH\Controllers\Caja.php(118): view('board/caja', [...])
+ 5 APPPATH\Controllers\Caja.php(27): App\Controllers\Caja->load_view('board/caja', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 13:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-20 13:38:40 --> Undefined constant "data"
+in APPPATH\Views\board\caja.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/caja', [], true)
+ 4 APPPATH\Controllers\Caja.php(119): view('board/caja', [...])
+ 5 APPPATH\Controllers\Caja.php(28): App\Controllers\Caja->load_view('board/caja', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 13:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 13:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 13:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-20 13:39:42 --> Undefined constant "data"
+in APPPATH\Views\board\caja.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/caja', [], true)
+ 4 APPPATH\Controllers\Caja.php(119): view('board/caja', [...])
+ 5 APPPATH\Controllers\Caja.php(28): App\Controllers\Caja->load_view('board/caja', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 13:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-20 13:40:14 --> Undefined constant "data"
+in APPPATH\Views\board\caja.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/caja', [], true)
+ 4 APPPATH\Controllers\Caja.php(119): view('board/caja', [...])
+ 5 APPPATH\Controllers\Caja.php(28): App\Controllers\Caja->load_view('board/caja', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 13:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:15:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-20 14:15:25 --> Array to string conversion
+in APPPATH\Views\board\caja.php on line 70.
+ 1 APPPATH\Views\board\caja.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/caja', [], true)
+ 5 APPPATH\Controllers\Caja.php(119): view('board/caja', [...])
+ 6 APPPATH\Controllers\Caja.php(28): App\Controllers\Caja->load_view('board/caja', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 14:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-20 14:15:44 --> Array to string conversion
+in APPPATH\Views\board\caja.php on line 52.
+ 1 APPPATH\Views\board\caja.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/caja', [], true)
+ 5 APPPATH\Controllers\Caja.php(119): view('board/caja', [...])
+ 6 APPPATH\Controllers\Caja.php(28): App\Controllers\Caja->load_view('board/caja', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 14:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-20 14:16:37 --> Array to string conversion
+in APPPATH\Views\board\caja.php on line 52.
+ 1 APPPATH\Views\board\caja.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/caja', [], true)
+ 5 APPPATH\Controllers\Caja.php(119): view('board/caja', [...])
+ 6 APPPATH\Controllers\Caja.php(28): App\Controllers\Caja->load_view('board/caja', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 14:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-20 14:16:47 --> Array to string conversion
+in APPPATH\Views\board\caja.php on line 52.
+ 1 APPPATH\Views\board\caja.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/caja', [], true)
+ 5 APPPATH\Controllers\Caja.php(119): view('board/caja', [...])
+ 6 APPPATH\Controllers\Caja.php(28): App\Controllers\Caja->load_view('board/caja', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 14:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-20 14:19:16 --> Array to string conversion
+in APPPATH\Views\board\caja.php on line 54.
+ 1 APPPATH\Views\board\caja.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/caja', [], true)
+ 5 APPPATH\Controllers\Caja.php(116): view('board/caja', [...])
+ 6 APPPATH\Controllers\Caja.php(25): App\Controllers\Caja->load_view('board/caja', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 14:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-20 14:19:56 --> Undefined variable $value
+in APPPATH\Views\board\caja.php on line 53.
+ 1 APPPATH\Views\board\caja.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\board\\caja.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('board/caja', [], true)
+ 5 APPPATH\Controllers\Caja.php(116): view('board/caja', [...])
+ 6 APPPATH\Controllers\Caja.php(25): App\Controllers\Caja->load_view('board/caja', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Caja->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caja))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 14:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:32:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 14:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 23:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 23:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 23:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 23:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,1634 @@
+INFO - 2023-06-09 01:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 01:25:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'')' at line 3 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mo...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(57): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 01:25:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `movimiento_inventario` 
+        ( `name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'10\'\');', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `movimiento_inventario` 
+        ( `name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'10\'\');')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `movimiento_inventario` 
+        ( `name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'10\'\');')
+ 4 APPPATH\Models\InventarioModel.php(57): CodeIgniter\Database\BaseConnection->query('INSERT INTO `movimiento_inventario` 
+        ( `name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( ?, current_timestamp(),?,?,?\');', [...])
+ 5 APPPATH\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 01:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 01:27:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'')' at line 2 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mo...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(56): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 01:27:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'')' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'10\'\');', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'10\'\');')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'10\'\');')
+ 4 APPPATH\Models\InventarioModel.php(56): CodeIgniter\Database\BaseConnection->query('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( ?, current_timestamp(),?,?,?\');', [...])
+ 5 APPPATH\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 01:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 01:27:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'')' at line 2 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mo...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(56): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 01:27:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'')' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'10\'\');', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'10\'\');')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'10\'\');')
+ 4 APPPATH\Models\InventarioModel.php(56): CodeIgniter\Database\BaseConnection->query('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( ?, current_timestamp(),?,?,?\');', [...])
+ 5 APPPATH\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 01:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 01:40:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2'')' at line 2 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mo...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(56): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 01:40:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2'')' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\'\');', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\'\');')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\'\');')
+ 4 APPPATH\Models\InventarioModel.php(56): CodeIgniter\Database\BaseConnection->query('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( ?, current_timestamp(),?,?,?\');', [...])
+ 5 APPPATH\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 01:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 01:41:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2'')' at line 2 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mo...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(61): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 01:41:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2'')' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\'\');', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\'\');')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\'\');')
+ 4 APPPATH\Models\InventarioModel.php(61): CodeIgniter\Database\BaseConnection->query('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( ?, current_timestamp(),?,?,?\');', [...])
+ 5 APPPATH\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 01:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 01:43:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2'')' at line 2 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mo...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(61): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 01:43:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2'')' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\'\');', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\'\');')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\'\');')
+ 4 APPPATH\Models\InventarioModel.php(61): CodeIgniter\Database\BaseConnection->query('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( ?, current_timestamp(),?,?,?\');', [...])
+ 5 APPPATH\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 01:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 01:45:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2'')' at line 2 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mo...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(61): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 01:45:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2'')' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\'\');', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\'\');')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\'\');')
+ 4 APPPATH\Models\InventarioModel.php(61): CodeIgniter\Database\BaseConnection->query('INSERT INTO `movimiento_inventario`(`name`, `fecha`, `fk_usuario`, `fk_producto`, `cantidad`) 
+        VALUES ( ?, current_timestamp(),?,?,?\');', [...])
+ 5 APPPATH\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 01:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 01:46:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2'')' at line 2 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mo...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(61): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 01:46:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2'')' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\'\');', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\'\');')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\'\');')
+ 4 APPPATH\Models\InventarioModel.php(61): CodeIgniter\Database\BaseConnection->query('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( ?, current_timestamp(),?,?,?\');', [...])
+ 5 APPPATH\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 01:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 01:46:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2'')' at line 2 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mo...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(61): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 01:46:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2'')' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\'\');', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\'\');')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\'\');')
+ 4 APPPATH\Models\InventarioModel.php(61): CodeIgniter\Database\BaseConnection->query('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( ?, current_timestamp(),?,?,?\');', [...])
+ 5 APPPATH\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 01:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 01:48:35 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`posgrado`.`movimiento_inventario`, CONSTRAINT `movimiento_inventario_ibfk_2` FOREIGN KEY (`fk_usuario`) REFERENCES `usuario` (`idusuario`) ON DELETE CASCADE ON UPDATE CASCADE) in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mo...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(61): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 01:48:35 --> Cannot add or update a child row: a foreign key constraint fails (`posgrado`.`movimiento_inventario`, CONSTRAINT `movimiento_inventario_ibfk_2` FOREIGN KEY (`fk_usuario`) REFERENCES `usuario` (`idusuario`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\');', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\');')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'fibo\',\'123\',\'2\');')
+ 4 APPPATH\Models\InventarioModel.php(61): CodeIgniter\Database\BaseConnection->query('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( ?, current_timestamp(),?,?,?);', [...])
+ 5 APPPATH\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 01:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 01:50:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`posgrado`.`movimiento_inventario`, CONSTRAINT `movimiento_inventario_ibfk_2` FOREIGN KEY (`fk_usuario`) REFERENCES `usuario` (`idusuario`) ON DELETE CASCADE ON UPDATE CASCADE) in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mo...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 01:50:50 --> Cannot add or update a child row: a foreign key constraint fails (`posgrado`.`movimiento_inventario`, CONSTRAINT `movimiento_inventario_ibfk_2` FOREIGN KEY (`fk_usuario`) REFERENCES `usuario` (`idusuario`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'2\',\'123\',\'2\');', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'2\',\'123\',\'2\');')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'2\',\'123\',\'2\');')
+ 4 APPPATH\Models\InventarioModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( ?, current_timestamp(),?,?,?);', [...])
+ 5 APPPATH\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 01:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 01:55:53 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`posgrado`.`movimiento_inventario`, CONSTRAINT `movimiento_inventario_ibfk_2` FOREIGN KEY (`fk_usuario`) REFERENCES `usuario` (`idusuario`) ON DELETE CASCADE ON UPDATE CASCADE) in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mo...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 01:55:53 --> Cannot add or update a child row: a foreign key constraint fails (`posgrado`.`movimiento_inventario`, CONSTRAINT `movimiento_inventario_ibfk_2` FOREIGN KEY (`fk_usuario`) REFERENCES `usuario` (`idusuario`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'2\',\'123\',\'2\');', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'2\',\'123\',\'2\');')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'2\',\'123\',\'2\');')
+ 4 APPPATH\Models\InventarioModel.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( ?, current_timestamp(),?,?,?);', [...])
+ 5 APPPATH\Controllers\Inventario.php(53): App\Models\InventarioModel->agregar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 01:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:57:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 01:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:08:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 02:15:15 --> mysqli_sql_exception: Unknown column 'description' in 'field list' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\ProductoModel.php(126): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Producto.php(63): App\Models\ProductoModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Producto->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 02:15:15 --> Unknown column 'description' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`, 
+            
+            `created_at`) VALUES  ( \'fixer\',\'                                                gel                                            \',\'7774904402965\',\'https://www.diligent.es/wp-content/uploads/2017/05/como-hacer-buenas-fotografias-con-el-movil-.jpg\',\'100\',\'10\',\'9\',\'10\',\'2\',\'3\',NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`, 
+            
+            `created_at`) VALUES  ( \'fixer\',\'                                                gel                                            \',\'7774904402965\',\'https://www.diligent.es/wp-content/uploads/2017/05/como-hacer-buenas-fotografias-con-el-movil-.jpg\',\'100\',\'10\',\'9\',\'10\',\'2\',\'3\',NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`, 
+            
+            `created_at`) VALUES  ( \'fixer\',\'                                                gel                                            \',\'7774904402965\',\'https://www.diligent.es/wp-content/uploads/2017/05/como-hacer-buenas-fotografias-con-el-movil-.jpg\',\'100\',\'10\',\'9\',\'10\',\'2\',\'3\',NOW());')
+ 4 APPPATH\Models\ProductoModel.php(126): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`, 
+            
+            `created_at`) VALUES  ( ?,?,?,?,?,?,?,?,?,?,NOW());', [...])
+ 5 APPPATH\Controllers\Producto.php(63): App\Models\ProductoModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Producto->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 02:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 02:19:51 --> mysqli_sql_exception: Unknown column 'description' in 'field list' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\ProductoModel.php(124): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Producto.php(63): App\Models\ProductoModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Producto->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 02:19:51 --> Unknown column 'description' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( \'fixer\',\'                                                gel                                            \',\'7774904402965\',\'https://www.diligent.es/wp-content/uploads/2017/05/como-hacer-buenas-fotografias-con-el-movil-.jpg\',\'100\',\'10\',\'9\',\'10\',\'2\',\'3\',NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( \'fixer\',\'                                                gel                                            \',\'7774904402965\',\'https://www.diligent.es/wp-content/uploads/2017/05/como-hacer-buenas-fotografias-con-el-movil-.jpg\',\'100\',\'10\',\'9\',\'10\',\'2\',\'3\',NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( \'fixer\',\'                                                gel                                            \',\'7774904402965\',\'https://www.diligent.es/wp-content/uploads/2017/05/como-hacer-buenas-fotografias-con-el-movil-.jpg\',\'100\',\'10\',\'9\',\'10\',\'2\',\'3\',NOW());')
+ 4 APPPATH\Models\ProductoModel.php(124): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( ?,?,?,?,?,?,?,?,?,?,NOW());', [...])
+ 5 APPPATH\Controllers\Producto.php(63): App\Models\ProductoModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Producto->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 02:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 02:20:07 --> mysqli_sql_exception: Unknown column 'description' in 'field list' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\ProductoModel.php(125): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Producto.php(63): App\Models\ProductoModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Producto->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 02:20:07 --> Unknown column 'description' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( \'fixer\',\'                                                gel                                            \',\'7774904402965\',\'https://www.diligent.es/wp-content/uploads/2017/05/como-hacer-buenas-fotografias-con-el-movil-.jpg\',\'100\',\'10\',\'9\',\'10\',\'2\',\'3\',NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( \'fixer\',\'                                                gel                                            \',\'7774904402965\',\'https://www.diligent.es/wp-content/uploads/2017/05/como-hacer-buenas-fotografias-con-el-movil-.jpg\',\'100\',\'10\',\'9\',\'10\',\'2\',\'3\',NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( \'fixer\',\'                                                gel                                            \',\'7774904402965\',\'https://www.diligent.es/wp-content/uploads/2017/05/como-hacer-buenas-fotografias-con-el-movil-.jpg\',\'100\',\'10\',\'9\',\'10\',\'2\',\'3\',NOW());')
+ 4 APPPATH\Models\ProductoModel.php(125): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( ?,?,?,?,?,?,?,?,?,?,NOW());', [...])
+ 5 APPPATH\Controllers\Producto.php(63): App\Models\ProductoModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Producto->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 02:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 02:26:46 --> mysqli_sql_exception: Unknown column 'description' in 'field list' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\ProductoModel.php(125): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Producto.php(63): App\Models\ProductoModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Producto->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 02:26:46 --> Unknown column 'description' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( \'fixer\',\'                                                gel                                            \',\'7774904402965\',\'https://www.diligent.es/wp-content/uploads/2017/05/como-hacer-buenas-fotografias-con-el-movil-.jpg\',\'100\',\'10\',\'9\',\'10\',\'2\',\'3\',NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( \'fixer\',\'                                                gel                                            \',\'7774904402965\',\'https://www.diligent.es/wp-content/uploads/2017/05/como-hacer-buenas-fotografias-con-el-movil-.jpg\',\'100\',\'10\',\'9\',\'10\',\'2\',\'3\',NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( \'fixer\',\'                                                gel                                            \',\'7774904402965\',\'https://www.diligent.es/wp-content/uploads/2017/05/como-hacer-buenas-fotografias-con-el-movil-.jpg\',\'100\',\'10\',\'9\',\'10\',\'2\',\'3\',NOW());')
+ 4 APPPATH\Models\ProductoModel.php(125): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( ?,?,?,?,?,?,?,?,?,?,NOW());', [...])
+ 5 APPPATH\Controllers\Producto.php(63): App\Models\ProductoModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Producto->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 02:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 02:31:58 --> mysqli_sql_exception: Unknown column 'description' in 'field list' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\ProductoModel.php(124): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Producto.php(62): App\Models\ProductoModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Producto->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 02:31:58 --> Unknown column 'description' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( \'fixer\',\'                                                gel                                            \',\'7774904402965\',\'https://www.diligent.es/wp-content/uploads/2017/05/como-hacer-buenas-fotografias-con-el-movil-.jpg\',\'100\',\'10\',\'9\',\'10\',\'2\',\'3\',NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( \'fixer\',\'                                                gel                                            \',\'7774904402965\',\'https://www.diligent.es/wp-content/uploads/2017/05/como-hacer-buenas-fotografias-con-el-movil-.jpg\',\'100\',\'10\',\'9\',\'10\',\'2\',\'3\',NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( \'fixer\',\'                                                gel                                            \',\'7774904402965\',\'https://www.diligent.es/wp-content/uploads/2017/05/como-hacer-buenas-fotografias-con-el-movil-.jpg\',\'100\',\'10\',\'9\',\'10\',\'2\',\'3\',NOW());')
+ 4 APPPATH\Models\ProductoModel.php(124): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( ?,?,?,?,?,?,?,?,?,?,NOW());', [...])
+ 5 APPPATH\Controllers\Producto.php(62): App\Models\ProductoModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Producto->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 02:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 02:32:05 --> mysqli_sql_exception: Unknown column 'description' in 'field list' in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\ProductoModel.php(124): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Producto.php(62): App\Models\ProductoModel->insertar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Producto->insert()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 02:32:05 --> Unknown column 'description' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( \'fixer\',\'                                                gel                                            \',\'7774904402965\',\'https://www.diligent.es/wp-content/uploads/2017/05/como-hacer-buenas-fotografias-con-el-movil-.jpg\',\'100\',\'10\',\'9\',\'10\',\'2\',\'3\',NOW());', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( \'fixer\',\'                                                gel                                            \',\'7774904402965\',\'https://www.diligent.es/wp-content/uploads/2017/05/como-hacer-buenas-fotografias-con-el-movil-.jpg\',\'100\',\'10\',\'9\',\'10\',\'2\',\'3\',NOW());')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( \'fixer\',\'                                                gel                                            \',\'7774904402965\',\'https://www.diligent.es/wp-content/uploads/2017/05/como-hacer-buenas-fotografias-con-el-movil-.jpg\',\'100\',\'10\',\'9\',\'10\',\'2\',\'3\',NOW());')
+ 4 APPPATH\Models\ProductoModel.php(124): CodeIgniter\Database\BaseConnection->query('INSERT INTO `producto`(
+            `name`, `description`, 
+            `codigo`, `foto`, 
+            `stocks`,  `minimo`, 
+            `precio_compra`, `precio_venta`, 
+            `fk_unidad`, `fk_categoria`,
+            `created_at`) VALUES  ( ?,?,?,?,?,?,?,?,?,?,NOW());', [...])
+ 5 APPPATH\Controllers\Producto.php(62): App\Models\ProductoModel->insertar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Producto->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 02:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 02:44:09 --> Undefined array key "fk_presentacion "
+in APPPATH\Controllers\Producto.php on line 52.
+ 1 APPPATH\Controllers\Producto.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fk_presentacion "', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Producto.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Producto->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 02:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 02:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 02:44:30 --> Undefined variable $marca
+in APPPATH\Views\form\producto.php on line 123.
+ 1 APPPATH\Views\form\producto.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $marca', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\producto.php', 123)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\producto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/Producto', [], true)
+ 5 APPPATH\Controllers\Producto.php(125): view('form/Producto', [...])
+ 6 APPPATH\Controllers\Producto.php(91): App\Controllers\Producto->load_view('form/Producto', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Producto->update()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 16:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 16:57:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 16:57:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 16:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 16:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 17:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 17:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 17:02:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 17:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 17:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 17:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 17:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 17:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 17:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 17:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 17:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 18:16:10 --> Cannot call constructor
+in APPPATH\Controllers\Usuario.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Usuario->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 18:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 18:16:17 --> Undefined property: App\Controllers\Usuario::$load
+in APPPATH\Controllers\Usuario.php on line 18.
+ 1 APPPATH\Controllers\Usuario.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Usuario::$load', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Usuario.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->Login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 18:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 18:21:45 --> syntax error, unexpected token "(", expecting identifier or variable or "{" or "$"
+in APPPATH\Config\Routes.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-09 18:21:55 --> Object of type CodeIgniter\Router\RouteCollection is not callable
+in APPPATH\Config\Routes.php on line 38.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 18:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:59:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 18:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 19:30:50 --> Undefined variable $ArqueoModel
+in APPPATH\Controllers\Usuario.php on line 31.
+ 1 APPPATH\Controllers\Usuario.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ArqueoModel', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Usuario.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 19:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 19:34:09 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Usuario.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->login()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 19:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 19:34:27 --> Undefined variable $usuario
+in APPPATH\Views\form\arqueo.php on line 59.
+ 1 APPPATH\Views\form\arqueo.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\form\\arqueo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form/arqueo', [], true)
+ 5 APPPATH\Controllers\Usuario.php(179): view('form/arqueo', [...])
+ 6 APPPATH\Controllers\Usuario.php(34): App\Controllers\Usuario->load_view('form/arqueo', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 19:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 19:35:23 --> Undefined variable $view
+in APPPATH\Controllers\Usuario.php on line 34.
+ 1 APPPATH\Controllers\Usuario.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $view', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Usuario.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 19:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 19:42:50 --> Array to string conversion
+in APPPATH\Models\UsuarioModel.php on line 107.
+ 1 APPPATH\Models\UsuarioModel.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\UsuarioModel.php', 107)
+ 2 APPPATH\Controllers\Usuario.php(31): App\Models\UsuarioModel->login([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->login()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 19:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 19:43:05 --> Array to string conversion
+in APPPATH\Models\UsuarioModel.php on line 107.
+ 1 APPPATH\Models\UsuarioModel.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Models\\UsuarioModel.php', 107)
+ 2 APPPATH\Controllers\Usuario.php(31): App\Models\UsuarioModel->login([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->login()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 19:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 19:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 19:47:27 --> Cannot call constructor
+in APPPATH\Controllers\Usuario.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Usuario->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-09 19:48:00 --> Class "App\Controllers\CI_Controller" not found
+in APPPATH\Controllers\Usuario.php on line 8.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Usuario.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuario')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuario')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Usuario', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-09 19:48:06 --> Cannot call constructor
+in APPPATH\Controllers\Usuario.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Usuario->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 19:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 19:50:10 --> Call to undefined method CodeIgniter\Session\Session::set_userdata()
+in APPPATH\Controllers\Usuario.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->login()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-09 19:51:14 --> Undefined property: App\Controllers\Usuario::$session
+in APPPATH\Controllers\Usuario.php on line 38.
+ 1 APPPATH\Controllers\Usuario.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Usuario::$session', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Usuario.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuario->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 19:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 20:08:16 --> Undefined property: App\Controllers\Inventario::$session
+in APPPATH\Controllers\Inventario.php on line 20.
+ 1 APPPATH\Controllers\Inventario.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Inventario::$session', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Inventario.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-09 20:08:24 --> Undefined property: App\Controllers\Inventario::$session
+in APPPATH\Controllers\Inventario.php on line 20.
+ 1 APPPATH\Controllers\Inventario.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Inventario::$session', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Inventario.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-09 20:08:26 --> Undefined property: App\Controllers\Inventario::$session
+in APPPATH\Controllers\Inventario.php on line 20.
+ 1 APPPATH\Controllers\Inventario.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Inventario::$session', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Inventario.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-09 20:08:32 --> Undefined property: App\Controllers\Inventario::$session
+in APPPATH\Controllers\Inventario.php on line 20.
+ 1 APPPATH\Controllers\Inventario.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Inventario::$session', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Inventario.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-09 20:08:48 --> Undefined property: App\Controllers\Inventario::$session
+in APPPATH\Controllers\Inventario.php on line 20.
+ 1 APPPATH\Controllers\Inventario.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Inventario::$session', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Inventario.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-09 20:09:09 --> Undefined property: App\Controllers\Inventario::$session
+in APPPATH\Controllers\Inventario.php on line 20.
+ 1 APPPATH\Controllers\Inventario.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Inventario::$session', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Inventario.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 20:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 20:10:15 --> Undefined property: App\Controllers\Unidad::$session
+in APPPATH\Controllers\Unidad.php on line 20.
+ 1 APPPATH\Controllers\Unidad.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Unidad::$session', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Unidad.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-09 20:10:29 --> Undefined property: App\Controllers\Unidad::$session
+in APPPATH\Controllers\Unidad.php on line 20.
+ 1 APPPATH\Controllers\Unidad.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Unidad::$session', 'E:\\xampp\\htdocs\\codeigniter\\app\\Controllers\\Unidad.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unidad->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidad))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 20:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 20:20:10 --> Array to string conversion
+in APPPATH\Views\sidebar.php on line 14.
+ 1 APPPATH\Views\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\codeigniter\\app\\Views\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeigniter\\app\\Views\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('sidebar', [], true)
+ 5 APPPATH\Controllers\Inventario.php(116): view('sidebar')
+ 6 APPPATH\Controllers\Inventario.php(22): App\Controllers\Inventario->load_view('board/inventario', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 20:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:24:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 20:35:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '+= '4' WHERE `codigo` = '123'' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE producto...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE producto...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE producto...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(64): CodeIgniter\Database\BaseConnection->query('UPDATE producto...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(52): App\Models\InventarioModel->agregar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 20:35:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '+= '4' WHERE `codigo` = '123'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE producto SET stocks += \'4\' WHERE `codigo` = \'123\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE producto SET stocks += \'4\' WHERE `codigo` = \'123\';')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE producto SET stocks += \'4\' WHERE `codigo` = \'123\';')
+ 4 APPPATH\Models\InventarioModel.php(64): CodeIgniter\Database\BaseConnection->query('UPDATE producto SET stocks += ? WHERE `codigo` = ?;', [...])
+ 5 APPPATH\Controllers\Inventario.php(52): App\Models\InventarioModel->agregar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 20:36:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 20:36:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '+= '4' WHERE `codigo` = '123'' at line 1 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE producto...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE producto...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE producto...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(64): CodeIgniter\Database\BaseConnection->query('UPDATE producto...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(52): App\Models\InventarioModel->agregar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 20:36:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '+= '4' WHERE `codigo` = '123'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE producto SET stocks += \'4\' WHERE `codigo` = \'123\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE producto SET stocks += \'4\' WHERE `codigo` = \'123\';')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE producto SET stocks += \'4\' WHERE `codigo` = \'123\';')
+ 4 APPPATH\Models\InventarioModel.php(64): CodeIgniter\Database\BaseConnection->query('UPDATE producto SET stocks += ? WHERE `codigo` = ?;', [...])
+ 5 APPPATH\Controllers\Inventario.php(52): App\Models\InventarioModel->agregar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 20:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:39:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 20:42:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`posgrado`.`movimiento_inventario`, CONSTRAINT `movimiento_inventario_ibfk_2` FOREIGN KEY (`fk_usuario`) REFERENCES `usuario` (`idusuario`) ON DELETE CASCADE ON UPDATE CASCADE) in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mo...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(61): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', Array)
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(52): App\Models\InventarioModel->agregar(Array)
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 20:42:55 --> Cannot add or update a child row: a foreign key constraint fails (`posgrado`.`movimiento_inventario`, CONSTRAINT `movimiento_inventario_ibfk_2` FOREIGN KEY (`fk_usuario`) REFERENCES `usuario` (`idusuario`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'admin\',\'123\',\'1\');', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'admin\',\'123\',\'1\');')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( \'agregar\', current_timestamp(),\'admin\',\'123\',\'1\');')
+ 4 APPPATH\Models\InventarioModel.php(61): CodeIgniter\Database\BaseConnection->query('INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
+        VALUES ( ?, current_timestamp(),?,?,?);', [...])
+ 5 APPPATH\Controllers\Inventario.php(52): App\Models\InventarioModel->agregar([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 20:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 20:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:03:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 21:05:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY fecha DESC' at line 12 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT movimien...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT movimien...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT movimien...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(40): CodeIgniter\Database\BaseConnection->query('SELECT movimien...')
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(21): App\Models\InventarioModel->seleccionar()
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->index()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 21:05:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY fecha DESC' at line 12
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY fecha DESC;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY fecha DESC;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY fecha DESC;')
+ 4 APPPATH\Models\InventarioModel.php(40): CodeIgniter\Database\BaseConnection->query('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY fecha DESC;')
+ 5 APPPATH\Controllers\Inventario.php(21): App\Models\InventarioModel->seleccionar()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 21:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 21:06:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY fecha DESC' at line 12 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT movimien...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT movimien...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT movimien...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(40): CodeIgniter\Database\BaseConnection->query('SELECT movimien...')
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(21): App\Models\InventarioModel->seleccionar()
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->index()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 21:06:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY fecha DESC' at line 12
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY fecha DESC;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY fecha DESC;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY fecha DESC;')
+ 4 APPPATH\Models\InventarioModel.php(40): CodeIgniter\Database\BaseConnection->query('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY fecha DESC;')
+ 5 APPPATH\Controllers\Inventario.php(21): App\Models\InventarioModel->seleccionar()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 21:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 21:06:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY fecha' at line 12 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT movimien...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT movimien...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT movimien...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(40): CodeIgniter\Database\BaseConnection->query('SELECT movimien...')
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(21): App\Models\InventarioModel->seleccionar()
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->index()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 21:06:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY fecha' at line 12
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY fecha ;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY fecha ;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY fecha ;')
+ 4 APPPATH\Models\InventarioModel.php(40): CodeIgniter\Database\BaseConnection->query('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY fecha ;')
+ 5 APPPATH\Controllers\Inventario.php(21): App\Models\InventarioModel->seleccionar()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 21:06:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 21:06:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY  DESC' at line 12 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT movimien...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT movimien...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT movimien...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(40): CodeIgniter\Database\BaseConnection->query('SELECT movimien...')
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(21): App\Models\InventarioModel->seleccionar()
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->index()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 21:06:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY  DESC' at line 12
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY  DESC;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY  DESC;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY  DESC;')
+ 4 APPPATH\Models\InventarioModel.php(40): CodeIgniter\Database\BaseConnection->query('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY  DESC;')
+ 5 APPPATH\Controllers\Inventario.php(21): App\Models\InventarioModel->seleccionar()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 21:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 21:06:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY fecha DESC' at line 12 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT movimien...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT movimien...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT movimien...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(40): CodeIgniter\Database\BaseConnection->query('SELECT movimien...')
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(21): App\Models\InventarioModel->seleccionar()
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->index()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 21:06:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY fecha DESC' at line 12
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY fecha DESC;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY fecha DESC;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY fecha DESC;')
+ 4 APPPATH\Models\InventarioModel.php(40): CodeIgniter\Database\BaseConnection->query('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+        LIMIT 750 ORDER BY fecha DESC;')
+ 5 APPPATH\Controllers\Inventario.php(21): App\Models\InventarioModel->seleccionar()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 21:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:07:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:08:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-09 21:11:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+...' at line 11 in E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeigniter\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT movimien...', 0)
+#1 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT movimien...')
+#2 E:\xampp\htdocs\codeigniter\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT movimien...')
+#3 E:\xampp\htdocs\codeigniter\app\Models\InventarioModel.php(41): CodeIgniter\Database\BaseConnection->query('SELECT movimien...')
+#4 E:\xampp\htdocs\codeigniter\app\Controllers\Inventario.php(21): App\Models\InventarioModel->seleccionar()
+#5 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(934): App\Controllers\Inventario->index()
+#6 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+#7 E:\xampp\htdocs\codeigniter\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeigniter\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-09 21:11:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+...' at line 11
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        ORDER BY id DESC 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+         LIMIT 750 ;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        ORDER BY id DESC 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+         LIMIT 750 ;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        ORDER BY id DESC 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+         LIMIT 750 ;')
+ 4 APPPATH\Models\InventarioModel.php(41): CodeIgniter\Database\BaseConnection->query('SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
+        movimiento_inventario.`name` as movimiento, 
+        movimiento_inventario.`fecha` AS fecha , 
+        usuario.usuario  as usuario ,
+        producto.name AS producto, 
+        producto.codigo AS codigo ,
+        producto.stocks AS stocks ,
+        movimiento_inventario.cantidad AS cantidad 
+        FROM `movimiento_inventario` 
+        ORDER BY id DESC 
+        INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
+        INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
+         LIMIT 750 ;')
+ 5 APPPATH\Controllers\Inventario.php(21): App\Models\InventarioModel->seleccionar()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inventario->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-09 21:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 21:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 22:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 22:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 22:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 22:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 22:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 22:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 22:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 22:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 22:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 23:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 23:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-09 23:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

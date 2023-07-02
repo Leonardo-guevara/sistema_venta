@@ -34,7 +34,7 @@ class Home extends BaseController
         }
        $_SESSION = $data;
 
-        return redirect()->route('inventario');  
+        return redirect()->route('barcode');  
         die();
     }
    
@@ -46,7 +46,39 @@ class Home extends BaseController
         $data['principal']= $this->session->get('usuario');
         return $this->load_view('extra/barcode',$data);
     }
+    function change_password() {
+        // if ($this->validar() == NULL) {
+        //     return redirect()->route('login');
+        //     die();
+        // }
+        $UsuarioModel = new UsuarioModel();
+        $data['title'] = 'Cambiara Contraseña';
+        $data['home'] = 'Usuario';
+        $data['principal']= $this->session->get('usuario');
+        $data['data'] = $UsuarioModel->view_delete();
 
+        if (!$this->validate([
+            'contrasenha'   => 'required',
+            'password'      => 'required|min_length[5]',
+            'passconf'      => 'required|matches[password]'  
+            
+        ])){
+
+            $data['errors'] = $this->validator->getErrors();
+            return $this->load_view('login/change_password',$data);
+        }
+        if(isset($_POST["contrasenha"]) and !empty($_POST['contrasenha'])){
+            $dat['usuario'] = $_SESSION["usuario"];
+            $dat['contrasenha'] = $_POST["contrasenha"];
+            $dat['password'] = $_POST["password"];
+            $data['error'] = $UsuarioModel->change_password($dat);
+            if (isset($data['error'])) {
+                return $this->load_view('login/change_password',$data);
+            }
+        }
+        return redirect()->route('login');
+        die();
+    }
     
     protected function load_view( $view = null, $data = null)
     {
@@ -76,36 +108,30 @@ class Home extends BaseController
                 $data['errors'] = $this->validator->getErrors();
                 return view("login/recover_password",$data);
             }
-        $texto = '<h2 class="">CAMBIO DE CONTRASEÑA&nbsp;</h2><p><b><u>SU NUEVA CONTRASEÑA&nbsp; SERA:</u></b></p>';
-        $mensaje = $texto. $UsuarioModel->contrasenha('8');
-        // echo '<pre>';
-        // var_dump($mensaje);
-        // echo '<br>';
-        // var_dump($_POST["email"]);
-
         $correo =$_POST["email"] ;
-
+        $texto = '<h2 class="">CAMBIO DE CONTRASEÑA&nbsp;0
+        </h2><p><b><u>SU NUEVA CONTRASEÑA&nbsp; SERA:</u></b></p>';
+        $mensaje = $texto. $UsuarioModel->buscar_contrasenha($correo);
         $asunto = 'Cambio de Contrasenha' ;
+   
         $email = \Config\Services::email();
-        $email->setFrom('leonardo.guevara@posgrado.helpfibo.com', 'Contrasenha');
+        $email->setFrom('leonardo@udabol.helpfibo.com', 'Recuperar Contrasenha');
         $email->setTo($correo);
         $email->setSubject( $asunto);
         $email->setMessage($mensaje);
-        if (!$email->send()) {
-            echo 'algo fallo <br>';
-            echo $correo;
-        }else{
-            echo 'ya se envio';
-        }
+        $email->send();
+
+        return redirect()->route('login');
         die();
+    
 
     }
     public function correo_email($correo = null )
     {       
         $email = \Config\Services::email();
-        $email->setFrom('leo.com',"titulo");
+        $email->setFrom('leonardo@udabol.helpfibo.com',"titulo");
         $email->setTo('lguevara240.@gmail.com');
-        $email->setSubject('prueva');
+        $email->setSubject('prueba');
         $email->setMessage('hola');
         // $email->send();
         if (!$email->send()) {

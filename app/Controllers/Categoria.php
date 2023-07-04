@@ -23,7 +23,7 @@ class Categoria extends BaseController
         $data['home'] = 'Categoria';
         $data['principal']= $this->session->get('usuario');
         $data['data'] =$CategoriaModel->seleccionar();
-        return $this->load_view('board/Categoria',$data);
+        return $this->load_view('board/categoria',$data);
     }
     public function insert()
     {
@@ -40,12 +40,12 @@ class Categoria extends BaseController
             'categoria'    => 'required|min_length[3]|max_length[255]|is_unique[categoria.name,idcategoria,{id}]',    
         ])){
             $data['errors'] = $this->validator->getErrors();
-            return $this->load_view('form/Categoria',$data);
+            return $this->load_view('form/categoria',$data);
         }
         $datos = [
             'categoria'        => $_POST["categoria"],
         ];
-        // return $this->load_view('form/Categoria',$data);
+        // return $this->load_view('form/categoria',$data);
         $CategoriaModel->insertar($datos);
         return redirect()->route('categoria');
         die();

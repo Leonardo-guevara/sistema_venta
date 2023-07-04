@@ -106,7 +106,7 @@ class Venta extends BaseController
         }
         if (isset($data)) {
             $data['title'] = 'Arqueo sin asignar';
-            $data['home'] = 'Ventamilla';
+            $data['home'] = 'Venta';
             $data['principal']= $this->session->get('usuario');
             return $this->load_view('board/vacio',$data);
         }else{

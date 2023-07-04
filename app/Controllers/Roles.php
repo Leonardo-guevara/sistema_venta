@@ -22,7 +22,7 @@ class Roles extends BaseController
         $data['home'] = 'Roles';
         $data['principal']= $this->session->get('usuario');
         $data['data'] =$RolesModel->seleccionar();
-        return $this->load_view('board/Roles',$data);
+        return $this->load_view('board/roles',$data);
     }
     public function insert(){
         if ($this->validar() == NULL) {
@@ -90,7 +90,7 @@ class Roles extends BaseController
         if ($id != 1) {
         $RolesModel->delete($id);
         }
-        header("Location: ".base_url()."Roles/");
+        header("Location: ".base_url()."roles/");
         die();
 
     }

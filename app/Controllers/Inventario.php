@@ -19,10 +19,22 @@ class Inventario extends BaseController
             die();
         }
         $InventarioModel = new InventarioModel();
-        $data['title'] = 'Lista de Inventario';
+        $data['title'] = 'KARDEX DE MOVIMIENTO';
         $data['home'] = 'Inventario';
         $data['principal']= $this->session->get('usuario');
-        $data['data'] =$InventarioModel->seleccionar();
+        if (!$this->validate([
+            'date_final'    => 'required',  
+            'date_inicio'    => 'required',      
+        ])){
+            $data['errors'] = $this->validator->getErrors();
+            return $this->load_view('board/inventario',$data);
+        }
+        $datos = [
+            'date_inicio'    => $_POST["date_inicio"],
+            'date_final'     => $_POST["date_final"],
+            
+        ];
+        $data['data'] =$InventarioModel->seleccionar($datos);
         return $this->load_view('board/inventario',$data);
 
     }
@@ -46,7 +58,9 @@ class Inventario extends BaseController
         $data['principal']= $this->session->get('usuario');
         if (!$this->validate([
             'code'    => 'required', 
-            'stockt'    => 'required|is_natural_no_zero',    
+            'stockt'    => 'required|is_natural_no_zero',  
+            'precio_compra'    => 'required|decimal', 
+            'precio_venta'    => 'required|decimal',    
         ])){
             $data['errors'] = $this->validator->getErrors();
             return $this->load_view('form/agregar',$data);
@@ -56,6 +70,8 @@ class Inventario extends BaseController
             'fk_usuario'    => $this->session->get('idusuario'),
             'fk_producto'   => $_POST["code"],
             'cantidad'      => $_POST["stockt"],
+            'precio_compra'   => $_POST["precio_compra"],
+            'precio_venta'      => $_POST["precio_venta"],
 
         ];
         $InventarioModel->agregar($datos);
@@ -75,7 +91,9 @@ class Inventario extends BaseController
         $data['principal']= $this->session->get('usuario');
         if (!$this->validate([
             'code'    => 'required', 
-            'stockt'    => 'required|numeric',    
+            'stockt'    => 'required|integer',  
+            'precio_compra'    => 'required|decimal', 
+            'precio_venta'    => 'required|decimal',    
         ])){
             $data['errors'] = $this->validator->getErrors();
             return $this->load_view('form/agregar',$data);
@@ -85,6 +103,8 @@ class Inventario extends BaseController
             'fk_usuario'    => $this->session->get('idusuario'),
             'fk_producto'   => $_POST["code"],
             'cantidad'      => $_POST["stockt"],
+            'precio_compra' => $_POST["precio_compra"],
+            'precio_venta'  => $_POST["precio_venta"],
 
         ];
         $InventarioModel->agregar($datos);

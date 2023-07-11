@@ -62,7 +62,7 @@
                         $email = $_POST['email'];
                       }elseif (isset($datos['email']) and !empty($datos['email'])) {
                         $email = $datos['email'];
-                      }else { $email = '.@gmail.com';}
+                      }else { $email = '';}
                     ?>
                     <input type="email" name="email" class="form-control"  placeholder="Ingrese email" value="<?=$email; ?>">
                   </div>

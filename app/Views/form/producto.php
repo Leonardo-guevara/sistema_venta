@@ -210,7 +210,7 @@
                           $precio_compra = $datos['precio_compra'];
                         }else { $precio_compra = '';}
                       ?>
-                      <input type="number" id="mySelect"  name="precio_compra" class="form-control" step="0.01"  placeholder="Precio de compra" value="<?=$precio_compra; ?>">
+                      <input type="number" id="mySelect"  name="precio_compra" class="form-control"  placeholder="Precio de compra" value="<?=$precio_compra; ?>">
                     </div>
                     <div class="form-group">
                       <label  id="demo">Precio de venta</label>
@@ -221,7 +221,7 @@
                           $precio_venta = $datos['precio_venta'];
                         }else { $precio_venta = '';}
                       ?>
-                      <input type="number" step="0.01" id="cobertura" name="precio_venta" class="form-control" step="0.01" placeholder="valor"  value="<?=$precio_venta;?>" onkeydown="cien()" />
+                      <input type="number" step="0.01" id="cobertura" name="precio_venta" class="form-control"  placeholder="valor"  value="<?=$precio_venta;?>" onkeydown="cien()" />
                       <!-- <input type="number" onkeydown="cien()" name="precio_venta" class="form-control"  placeholder="Precio de Venta" value="<?=$precio_venta;?>"> -->
                     </div>
                   </div>

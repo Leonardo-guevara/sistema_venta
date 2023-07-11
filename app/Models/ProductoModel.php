@@ -45,16 +45,7 @@ class ProductoModel extends Model
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;
 
-    // // Callbacks
-    // protected $allowCallbacks = true;
-    // protected $beforeInsert   = [];
-    // protected $afterInsert    = [];
-    // protected $beforeUpdate   = [];
-    // protected $afterUpdate    = [];
-    // protected $beforeFind     = [];
-    // protected $afterFind      = [];
-    // protected $beforeDelete   = [];
-    // protected $afterDelete    = [];
+
     public function seleccionar()
     {
         $db = \Config\Database::connect();
@@ -143,6 +134,17 @@ class ProductoModel extends Model
             'nuevo',$datos['user'],
             $datos['codigo'],$datos['stocks'] 
         ]);
+        $sql = "INSERT INTO `compra`
+        ( `producto`,`name`,
+        `cantidad`, `precio_compra`,
+        `precio_venta`, `usuario`)
+         VALUES ( ?,?,?,?,?,?)";
+        $query = $db->query($sql,[
+            $datos['codigo'], 'nuevo',
+            $datos['stocks'],$datos['precio_compra'],
+            $datos['precio_venta'],$datos['user'] 
+        ]);
+
 
     }
     public function encontrar($id = null)
@@ -181,7 +183,7 @@ class ProductoModel extends Model
         ]);
 
  
-            $agregar = $datos['stocks'] - $stocks['stocks']    ; 
+        $agregar = $datos['stocks'] - $stocks['stocks']    ; 
         
         $sql = "INSERT INTO `movimiento_inventario`( 
             `name`, `fecha`, `fk_usuario`, `producto`,
@@ -190,13 +192,16 @@ class ProductoModel extends Model
             'update',$datos['user'],
             $datos['codigo'], $agregar  
         ]);
-        // print_r($agregar);
-        // die();
-        // $row = $query->getRowArray();
-
-        // $sql_ = "SELECT `stocks` FROM `producto` WHERE `idproducto` = ? AND `deleted_at`<=> NULL;";
-        // $query = $db->query($sql,[$id]);
-        // $stocks = $query->getRowArray();
+        $sql = "INSERT INTO `compra`
+        ( `producto`,`name`,
+        `cantidad`, `precio_compra`,
+        `precio_venta`, `usuario`)
+         VALUES ( ?,?,?,?,?,?)";
+        $query = $db->query($sql,[
+            $datos['codigo'], 'actualizo',
+            $agregar,$datos['precio_compra'],
+            $datos['precio_venta'],$datos['user'] 
+        ]);
     }
     public function recovery_data( $id )
     {        

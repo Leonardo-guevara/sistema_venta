@@ -38,17 +38,42 @@ class Persona extends BaseController
         $data['principal']= $this->session->get('usuario');
         if (!$this->validate([
             'persona'   => 'required|min_length[3]|max_length[255]',
-            'email'     => 'required|valid_email|is_unique[persona.email]',
-            'telefono'  => 'required|min_length[3]|max_length[255]',
+            // 'email'     => 'valid_email|is_unique[persona.email]',
+            // 'telefono'  => 'min_length[3]|max_length[255]',
             'cedula'    => 'required|min_length[3]|max_length[255]|is_unique[persona.cedula]',
         ])){
             $data['errors'] = $this->validator->getErrors();
             return $this->load_view('form/persona',$data);
         }
+        // email 
+        if(isset($_POST["email"]) and !empty($_POST["email"])){
+            if (!$this->validate([
+                'email'     => 'valid_email|is_unique[persona.email,idpersona,{id}]',
+            ])){
+                $data['errors'] = $this->validator->getErrors();
+                return $this->load_view('form/persona',$data);
+            }
+            $email = $_POST["email"];
+        }else{
+            $email = NULL ;
+        }
+        // telefono
+        if(isset($_POST["telefono"]) and !empty($_POST["telefono"])){
+            if (!$this->validate([
+                'telefono'  => 'min_length[3]|max_length[255]',
+            ])){
+                $data['errors'] = $this->validator->getErrors();
+                return $this->load_view('form/persona',$data);
+            }
+            $telefono = $_POST["telefono"];
+        }else{
+            $telefono = NULL ;
+        }
+
         $datos = [
             'persona'      => $_POST["persona"],
-            'email'        => $_POST["email"],
-            'telefono'     => $_POST["telefono"],
+            'email'        => $email,
+            'telefono'     => $telefono,
             'cedula'       => $_POST["cedula"],
         ];
         $PersonaModel->insertar($datos);
@@ -65,18 +90,44 @@ class Persona extends BaseController
         $PersonaModel = new PersonaModel();
         if(!isset($_GET["id"]) and empty($_GET['id'])) { $id = '0';} else {$id = $_GET["id"];} 
         $data['datos'] = $PersonaModel->encontrar($id);
-        $data['title'] = 'Crear Nuevo Persona';
+        $data['title'] = 'Actualizar Persona';
         $data['home'] = 'Persona';
         $data['principal']= $this->session->get('usuario');
+
         if (!$this->validate([
             'persona'   => 'required|min_length[3]|max_length[255]',
-            'email'     => 'required|valid_email|is_unique[persona.email,idpersona,{id}]',
-            'telefono'  => 'required|min_length[3]|max_length[255]',
+            // 'email'     => 'valid_email|is_unique[persona.email,idpersona,{id}]',
+            // 'telefono'  => 'min_length[3]|max_length[255]',
             'cedula'    => 'required|min_length[3]|max_length[255]|is_unique[persona.cedula,idpersona,{id}]',
         ])){
             $data['errors'] = $this->validator->getErrors();
             return $this->load_view('form/persona',$data);
         }
+        // email 
+        if(isset($_POST["email"]) and !empty($_POST["email"])){
+            if (!$this->validate([
+                'email'     => 'valid_email|is_unique[persona.email,idpersona,{id}]',
+            ])){
+                $data['errors'] = $this->validator->getErrors();
+                return $this->load_view('form/persona',$data);
+            }
+            $email = $_POST["email"];
+        }else{
+            $email = NULL ;
+        }
+        // telefono
+        if(isset($_POST["telefono"]) and !empty($_POST["telefono"])){
+            if (!$this->validate([
+                'telefono'  => 'min_length[3]|max_length[255]',
+            ])){
+                $data['errors'] = $this->validator->getErrors();
+                return $this->load_view('form/persona',$data);
+            }
+            $telefono = $_POST["telefono"];
+        }else{
+            $telefono = NULL ;
+        }
+
         $datos = [
             'persona'      => $_POST["persona"],
             'email'        => $_POST["email"],

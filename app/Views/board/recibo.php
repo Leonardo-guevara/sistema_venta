@@ -62,7 +62,7 @@
                     <td><?= esc($news_item['fk_persona']); ?></td>
                     <td><?= esc($news_item['total']); ?></td>
                     <td><?= esc($news_item['created_at']); ?></td>
-                    <td><a href="<?=base_url()?>venta/view_recibo?view=<?= esc($news_item['idventas']); ?>"><i class="fas fa-file"></i></a></td>
+                    <td><a href="<?=base_url()?>venta/view_recibo?view=<?= esc($news_item['idventas']); ?>" target="_blank" ><i class="fas fa-file"></i></a></td>
                   </tr>
                   <?php  endforeach; ?>
                   </tbody>

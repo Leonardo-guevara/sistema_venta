@@ -61,8 +61,25 @@
                       <!-- textarea -->
                       <div class="form-group">
                         <label>Agregar</label>
-       
                         <input type="number" name="stockt"  id="campoNumerico"  onclick="myFunction()"  class="form-control" >
+                      </div>
+                      <div class="form-group"  id="myDIV1" style='display: none;'>
+                        <label>Precio de compra</label>
+                        <?php //php code generator
+                          if  (isset($_POST['precio_compra']) and !empty($_POST['precio_compra'])){
+                            $precio_compra = $_POST['precio_compra'];
+                          }else { $precio_compra = '';}
+                        ?>
+                        <input type="number" id="mySelectPrecio"  name="precio_compra" class="form-control"  placeholder="Precio de compra" value="<?=$precio_compra; ?>">
+                      </div>
+                      <div class="form-group"  id="myDIV2" style='display: none;' >
+                        <label  id="demo">Precio de venta</label>
+                        <?php //php code generator
+                          if  (isset($_POST['precio_venta']) and !empty($_POST['precio_venta'])){
+                            $precio_venta = $_POST['precio_venta'];
+                          }else { $precio_venta = '';}
+                        ?>
+                        <input type="number" step="0.01" id="cobertura" name="precio_venta" class="form-control"  placeholder="valor"  value="<?=$precio_venta;?>" onkeydown="cien()" />
                       </div>
                     </div>
                     <div class="col-sm-6">
@@ -83,7 +100,7 @@
                     <div class="row">
                       <div class="col-sm-6">
                         <div   class="form-group">
-                          <button id="myDIV" type="submit" value="submit" class="btn btn-primary" style='display: none;' >Agregar</button>
+                          <button type="submit" value="submit" class="btn btn-primary"  id="myDIV" style='display: none;' >Agregar</button>
                         </div>
                       </div>
                     </div>
@@ -99,7 +116,18 @@
 
   </div>
   <script>
-
+    function cien() {
+      var x = document.getElementById("mySelectPrecio").value;
+        const input = document.getElementById('cobertura');
+        input.addEventListener('input', e => {
+            const value = parseInt(e.currentTarget.value);
+            if (value <= parseInt(x)) {
+                porcentaje =  (parseInt(x) * 0.30);
+                input.value = parseInt(x) + porcentaje;
+                alert('Por favor ingresa un mayor : '+x);
+            }
+        });
+   }
 
     function myFunction() {
 
@@ -107,25 +135,38 @@
       var x = document.getElementById("mySelect").value;
       var ruta  = "<?=base_url()?>Inventario/json?code="+x;
       var boton = document.getElementById("myDIV");
+      var imput1 = document.getElementById("myDIV1");
+      var imput2 = document.getElementById("myDIV2");
 
         http.open('GET', ruta,true);
         http.onreadystatechange = function(){
           if(this.readyState == 4 && this.status == 200){
             var resultado = (this.responseText);
-            // const index = resultado.indexOf("\n");
-            // const cut = resultado.substring(index);
-            // const final = resultado.replace(cut, "");
-            // const arr = new Array(http);
-            // var guardar  = JSON.parse(final);
-            var guardar  = JSON.parse(resultado);
-            document.getElementById("producto").innerHTML = guardar.name;
-            document.getElementById("cantidad").innerHTML = guardar.stocks;
-              if (boton.style.display === "none") {
-                boton.style.display = "block";
-              } 
+            const index = resultado.indexOf("\n");
+            const cut = resultado.substring(index);
+            const final = resultado.replace(cut, "");
+            const arr = new Array(http);
+            var guardar  = JSON.parse(final);
+            
+            // var guardar  = JSON.parse(resultado);
+            if (guardar != null) {
+              document.getElementById("producto").innerHTML = guardar.name;
+              document.getElementById("cantidad").innerHTML = guardar.stocks;
+              document.getElementById("mySelectPrecio").value = guardar.precio_compra;
+              document.getElementById("cobertura").value = guardar.precio_venta;
+              boton.style.display = "block";
+                imput1.style.display = "block";
+                imput2.style.display = "block";
+                console.log(guardar);
+            }else{
+
+            }
+
           }
           else {
-                  x.style.display = "none";
+                  boton.style.display = "none";
+                  imput1.style.display = "none";
+                  imput2.style.display = "none";
                   document.getElementById("producto").innerHTML = 'EL producto no existe';
                   document.getElementById("cantidad").innerHTML = 'Cantidad actual es 0';
               }

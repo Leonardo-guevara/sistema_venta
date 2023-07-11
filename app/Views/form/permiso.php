@@ -126,12 +126,12 @@ xml_parse  <div class="content-wrapper">
                           </label>
                         </div>
                         <!-- Logs de Acesso -->
-                        <div class="custom-control custom-checkbox">
+                    </div>
+                    <div class="custom-control custom-checkbox">
                           <label>
-                            <input type="checkbox" name="value[]" value="15" <?php echo isset($asignado[14]) ? 'checked' : '';  ?>> &nbsp;&nbsp;&nbsp;&nbsp; Logs de Acesso
+                            <input type="checkbox" name="value[]" value="15" <?php echo isset($asignado[14]) ? 'checked' : '';  ?>>  Historico Compra
                           </label>
                         </div>
-                    </div>
                   </div>
                 </div>
                   <div class="form-group">       

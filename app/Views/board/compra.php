@@ -1,6 +1,4 @@
- <!-- SweetAlert2 -->
-<link rel="stylesheet" href="<?=base_url('public')?>/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
-<script src="<?=base_url('public')?>/plugins/sweetalert2/sweetalert2.min.js"></script>
+
 <!-- DataTables -->
   <link rel="stylesheet" href="<?=base_url('public')?>/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="<?=base_url('public')?>/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
@@ -25,21 +23,10 @@
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6x">
+          <div class="col-sm-6">
             <h1><?php if(!isset($title) and empty($title)){echo '';}else{echo $title;}?></h1>
             <br>
-              <p>
-                <a href="<?=base_url()?>Inventario/Agregar" class="btn btn-app bg-success">
-                  <span class="badge bg-purple">+</span>
-                  <i class="fas fa-barcode"></i> Agregar
-                </a>
-                <a href="<?=base_url()?>Inventario/Ajuste" class="btn btn-app bg-warning">
-                  <span class="badge bg-purple">+/-</span>
-                  <i class="fas fa-barcode"></i> Ajuste
-                </a>
-              </p>
-              <hr>
-              <form action="" method="post">
+            <form action="" method="post">
                 <div class="row">
                   <div class="col-sm-4">
                       <label for="Hora Inicio">Fecha de inicio</label><br>
@@ -60,15 +47,15 @@
                       <input type="date" name="date_final" id="date_final" value="<?=$date_final;?>">
                   </div>
                   <div class="col-sm-4">
-                    <label>General KARDEX  <br>por fecha</label>
-                      <button type="submit" value="submit" class="btn btn-primary">KARDEX</button>
+                    <label>Buscar</label><br>
+                      <button type="submit" value="submit" class="btn btn-primary">
+                        Buscar
+                      </button>
                   </div>
-                </div>
-              </form>
-              <hr>
+                  </div>
+                </form>
           </div>
-          <div class="col-sm-6">
-
+          <div class="col-sm-5">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="<?=base_url()?><?php if(!isset($home) and empty($home)){echo '';}else{echo $home;}?>"><?php if(!isset($home) and empty($home)){echo '';}else{echo $home;}?></a></li>
               <li class="breadcrumb-item active"> <?php if(!isset($title) and empty($title)){echo '';}else{echo $title;}?> </li>
@@ -80,50 +67,51 @@
 
     <!-- Main content -->
       <section class="content">
-     <?php if (!empty($_POST)): ?>
+      <?php if (!empty($_POST)): ?>
             <?=\Config\Services::validation()->listErrors(); ?>    
-        <?php endif ?>   
-        <?php if (!empty($data)): ?>
-          <div class="card-body">
+        <?php endif ?>
+      <?php if (!empty($data)): ?>
+              <div class="card-body">
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
-                    <th>Fecha </th>
-                    <th>Movimiento</th>
+                  <th>Producto</th>
+                    <th>Nombre</th>
                     <th>Cantidad</th>
-                    <th>Cantidad Actual</th>
+                    <th>Precio de Compra</th>                    
+                    <th>Precio de Venta</th>
                     <th>Usuario</th>
-                    <th>Producto</th>
-                    <th>Codigo</th>
+                    <th>Fecha de Creacion</th>
                   </tr>
                   </thead>
                   <tbody>
                   <?php foreach ($data as $news_item): ?>
                   <tr>
-                    <td><?= esc($news_item['fecha']); ?></td>
-                    <td><?= esc($news_item['movimiento']); ?></td>
-                    <td><?= esc($news_item['cantidad']); ?></td>
-                    <td><?= esc($news_item['stocks']); ?></td>
-                    <td><?= esc($news_item['usuario']); ?></td>
                     <td><?= esc($news_item['producto']); ?></td>
-                    <td><?= esc($news_item['codigo']); ?></td>
+                    <td><?= esc($news_item['name']); ?></td>
+                    <td><?= esc($news_item['cantidad']); ?></td>
+                    <td><?= esc($news_item['precio_compra']); ?></td>
+                    <td><?= esc($news_item['precio_venta']); ?></td>
+                    <td><?= esc($news_item['usuario']); ?></td>
+                    <td><?= esc($news_item['created_at']); ?></td>
                   </tr>
                   <?php  endforeach; ?>
                   </tbody>
                   <tfoot>
                   <tr>
-                    <th>Fecha </th>
-                    <th>Movimiento</th>
-                    <th>Cantidad</th>
-                    <th>Cantidad Actual</th>
-                    <th>Usuario</th>
                     <th>Producto</th>
-                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio de Compra</th>                    
+                    <th>Precio de Venta</th>
+                    <th>Usuario</th>
+                    <th>Fecha de Creacion</th>
                   </tr>
                   </tfoot>
                 </table>
-          </div>
-        <?php endif ?>
+              </div>
+      <?php endif ?>
+
       </section>
     <!-- /.content -->
   </div>
@@ -133,10 +121,11 @@
 <script>
   $(function () {
     $("#example1").DataTable({
-      "order": [[ 0, "asend" ]],
+      "order": [[ 6, "asend" ]],
       "responsive": true, "lengthChange": false, "autoWidth": false,
       "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-    })
+  })
 
+ 
 </script>

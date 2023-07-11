@@ -61,7 +61,7 @@ class VentaModel extends Model {
 		$code = $data["code"] ;
 		$venta =$data["venta"];
 		// verificar si hay stock de producto
-		$sql = "SELECT `idproducto`, `name`, `codigo`, `stocks`, `minimo`,  `precio_venta` 
+		$sql = "SELECT `idproducto`, `name`, `codigo`, `stocks`, `minimo`,  `precio_venta` ,`precio_compra`
 		FROM `producto` WHERE `codigo` = ? AND `stocks` >= 1 AND `deleted_at`<=> NULL ;";
         $query = $db->query($sql,[$code]);
         $producto = $query->getRowArray();
@@ -75,9 +75,10 @@ class VentaModel extends Model {
 		$verificar = $query->getRowArray();
 		if (!isset($verificar)) {
 			// agregar nueva detalle de venta
-			$sql = "INSERT INTO `detalle_venta` (`fk_producto`, `fk_venta`, `cantidad`,`subtotal`, `total`) 
-			VALUES (?,?,'1',?,?);";
-			$db->query($sql,[$producto['idproducto'],$venta,$producto['precio_venta'],$producto['precio_venta']]);
+			$sql = "INSERT INTO `detalle_venta` (`fk_producto`, `fk_venta`, `cantidad`,`subtotal`, `total` ,`ganancia`) 
+			VALUES (?,?,'1',?,?,?);";
+			$ganancia = ($producto['precio_venta'] - $producto['precio_compra']);
+			$db->query($sql,[$producto['idproducto'],$venta,$producto['precio_venta'],$producto['precio_venta'],$ganancia]);
 			$sql = "UPDATE `producto` SET `stocks`= `stocks` - 1 WHERE `idproducto` = ?;";
 			$db->query($sql,[$producto['idproducto']]);
 			return true;
@@ -85,9 +86,12 @@ class VentaModel extends Model {
 		// agregar aumentar detalle de venta
 		$sql = "UPDATE `detalle_venta` SET 
 			`cantidad`= `cantidad` + 1,
-			`total`= `total` + ?
+			`total`= `total` + ?,
+			`ganancia` = `ganancia` + ?
 		WHERE `fk_producto` = ? AND `fk_venta` = ?;";
-		$db->query($sql,[$producto['precio_venta'],$producto['idproducto'],$venta]);
+		$ganancia = ($producto['precio_venta'] - $producto['precio_compra']);
+		$db->query($sql,[$producto['precio_venta'],$ganancia,$producto['idproducto'],$venta]);
+
 		$sql = "UPDATE `producto` SET `stocks`= `stocks` - 1 WHERE `idproducto` = ?;";
 		$db->query($sql,[$producto['idproducto']]);
 		return true;
@@ -98,7 +102,7 @@ class VentaModel extends Model {
 		$code = $data["code"] ;
 		$venta =$data["venta"];
 		// verificar si existe de producto
-		$sql = "SELECT `idproducto`, `name`, `codigo`, `stocks`, `minimo`,  `precio_venta` 
+		$sql = "SELECT `idproducto`, `name`, `codigo`, `stocks`, `minimo`,  `precio_venta` ,`precio_compra`
 		FROM `producto` WHERE `codigo` = ?  AND `deleted_at`<=> NULL ;";
 		$query = $db->query($sql,[$code]);
 		$producto = $query->getRowArray();
@@ -120,9 +124,12 @@ class VentaModel extends Model {
 		}
 		$sql = "UPDATE `detalle_venta` SET 
 		`cantidad`= `cantidad` - 1,
-		`total`= `total` - ?
+		`total`= `total` - ?,
+		`ganancia` = `ganancia` - ?
 		WHERE `fk_producto` = ? AND `fk_venta` = ?;";
-		$db->query($sql,[$producto['precio_venta'],$producto['idproducto'],$venta]);
+		
+		$ganancia = ($producto['precio_venta'] - $producto['precio_compra']);
+		$db->query($sql,[$producto['precio_venta'],$ganancia ,$producto['idproducto'],$venta]);
 		$sql = "UPDATE `producto` SET `stocks`= `stocks` + 1 WHERE `idproducto` = ?;";
 		$db->query($sql,[$producto['idproducto']]);
 
@@ -142,15 +149,15 @@ class VentaModel extends Model {
 
 	function finalizar_venta($data = null,$user = null) {
 		$db = \Config\Database::connect();
-		$sql = "UPDATE `venta` SET  `created_at` = NOW() WHERE `idventas` = ?;";
-		$db->query($sql,[$data]);
+		
 		// buscar el ineventario
-		$sql = "SELECT producto.codigo AS `fk_producto`, `fk_venta`, `cantidad`, `subtotal`, `total` 
+		$sql = "SELECT producto.codigo AS `fk_producto`, `fk_venta`, `cantidad`, `subtotal`, `total` ,`detalle_venta`.`ganancia`
 		FROM `detalle_venta` 
 		INNER JOIN producto ON producto.idproducto = detalle_venta.fk_producto
 		WHERE `fk_venta` = ?;";
 		$query = $db->query($sql,[$data]);
 		$row = $query->getResultArray();
+		$total_ganado = 0;
 		if (isset($row) ){
 		// 	// agregar a inventario
 			foreach ($row as $value) {
@@ -161,17 +168,19 @@ class VentaModel extends Model {
 					'venta',$user,
 					$value['fk_producto'],-$value['cantidad'] 
 				]);
-		// echo '<pre>';
-		// var_dump($value);
-		// echo '</pre>';
+				$total_ganado = $total_ganado + $value['ganancia'] ;
 			}
 		}
+		// update venta
+		$sql = "UPDATE `venta` SET `ganancia`= ?, `created_at` = NOW() WHERE `idventas` = ?;";
+		$db->query($sql,[$total_ganado ,$data]);
+		// update arqueo
 		$sql = "SELECT arqueo_caja.idarqueo_caja, venta.total FROM `arqueo_caja` INNER JOIN venta ON venta.fk_arqueo = arqueo_caja.idarqueo_caja WHERE  venta.idventas = ?;";
 		$query = $db->query($sql,[$data]);
 		$arqueo = $query->getRowArray();
 		if (isset($arqueo)) {
-			$sql = "UPDATE `arqueo_caja` SET `total_ventas`= `total_ventas` + ?  , `monto_final` = `total_ventas` + `monto_inicial` WHERE  `idarqueo_caja` = ?;";
-			$db->query($sql,[$arqueo['total'],$arqueo['idarqueo_caja']]);
+			$sql = "UPDATE `arqueo_caja` SET `total_ventas`= `total_ventas` + ?  , `monto_final` = `monto_final` + ? WHERE  `idarqueo_caja` = ?;";
+			$db->query($sql,[$arqueo['total'] ,$total_ganado ,$arqueo['idarqueo_caja']]);
 			return true;
 		} 
 		return false;
@@ -221,7 +230,7 @@ class VentaModel extends Model {
 		}
 		// $fecha = "2018-03-29 15:20:40";
 
-		$query = $db->query($sql,[$data['usuario'],$data['inicio'],$data['final']]);
+		$query = $db->query($sql,[$data['usuario'],$data['date_inicio'],$data['date_final']]);
 		$row = $query->getResultArray();
 		return $row;
 	}

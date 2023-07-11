@@ -39,46 +39,62 @@
       <section class="content">
         <div class="card-body">
             <hr>
+            <form action="" method="post">
             <div class="row">
                 <div class="col-sm-3">
                     <label for="Hora Inicio">Fecha de inicio</label><br>
-                    <input type="date" name="date_inicio" id="date_inicio" >
+                    <?php //php code generator
+                      if  (isset($_POST['date_inicio']) and !empty($_POST['date_inicio'])){
+                        $date_inicio = $_POST['date_inicio'];
+                      }else { $date_inicio = '';}
+                    ?>
+                    <input type="date" name="date_inicio" id="date_inicio"  value="<?=$date_inicio;?>" >
                 </div>
                 <div class="col-sm-3">
                     <label for="Hora Final">Fecha Final</label><br>
-                    <input type="date" name="date_final" id="date_final" >
+                    <?php //php code generator
+                      if  (isset($_POST['date_final']) and !empty($_POST['date_final'])){
+                        $date_final = $_POST['date_final'];
+                      }else { $date_final = '';}
+                    ?>
+                    <input type="date" name="date_final" id="date_final" value="<?=$date_final;?>">
                 </div>
                 <div class="col-sm-3">
                 <label>Usuario</label>
                       <?php //php code generator
                         if  (isset($_POST['usuario']) and !empty($_POST['usuario'])){
                           $usuario = $_POST['usuario'];
-                        }elseif (isset($datos['usuario']) and !empty($datos['usuario'])) {
-                          $usuario = $datos['usuario'];
                         }else { $usuario = '';}
                       ?>
-                      <select class="form-control select2"  id="usuario"  name="usuario" style="width: 100%;">
+                      <select class="form-control select2"  id="usuario"  name="usuario" value="<?=$usuario;?>" style="width: 100%;">
                         <!-- <option value="true">todos los usuario</option> -->
                         <?php
                             foreach ($listausuario as $key => $value) {
-                                echo '<option name="'.$value['usuario'].'" value="'.$value['idusuario'].'">'.$value['usuario'].'</option>';
+                              if ( $value['idusuario'] ==($usuario)) {
+                                echo '<option value="'.$value['idusuario'].'" selected="selected">'.$value['usuario'].'</option>';
+                              }else{
+                                echo '<option value="'.$value['idusuario'].'">'.$value['usuario'].'</option>';
+                                // echo '<option name="'.$value['usuario'].'" value="'.$value['idusuario'].'">'.$value['usuario'].'</option>';
+                              }
                             }
                         ?>
                       </select>
                 </div>
                 <div class="col-sm-2">
                 <label>General reporte</label>
-                    <button type="button"  onclick="ajax_reporte()" class="btn btn-block bg-gradient-primary ">
-                        Ejecutar
-                    </button>
+                    <button type="submit" value="submit" class="btn btn-primary">Ejecutar</button>
                 </div>
-                <button onclick="imprimir()" type="button"><i class="fas fa-print">Print</i></button>
-                
+                </form>
+
             </div>
             <hr>
+            <?php if (!empty($_POST)): ?>
+                      <?=\Config\Services::validation()->listErrors(); ?>    
+            <?php endif ?>
         </div>
 
-      <div class="card-body">
+            <?php if (!empty($data)): ?>
+              <div class="card-body">
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
@@ -91,8 +107,19 @@
                   </tr>
                   </thead>
                   <tbody>
-
-                  </tbody>
+                      <?php foreach ($data as $news_item): ?>
+                    <tr>
+                    <td><?= esc($news_item['created_at']); ?></td>
+                    <td><?= esc($news_item['idarqueo_caja']); ?></td>
+                    <td><?= esc($news_item['idventas']); ?></td>
+                    <td><?= esc($news_item['usuario']); ?></td>
+                    <td><?= esc($news_item['nombre']); ?></td>
+                    <td><?= esc($news_item['total']); ?>
+                      <a href="<?=base_url()?>venta/view_recibo?view=<?= esc($news_item['idventas']); ?>" ><i class="fas fa-file"></i></a>  
+                    </td>
+                    </tr>
+                    <?php  endforeach; ?>
+                    </tbody>
                   <tfoot>
                   <tr>
                     <th>Fecha</th>
@@ -105,73 +132,16 @@
                   </tfoot>
                 </table>
               </div>
-
+            <?php endif ?>
       </section>
-    <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
 
   
 <script>
-  function imprimir() {
-    window.addEventListener("load", window.print());
-  }
-  // $(function () {
-  //   $("#example1").DataTable(
-  //     {
-  //     "responsive": true, "lengthChange": false, "autoWidth": false,
-  //     "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-  //   }
-  //   ).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-  //   // $('.select2').select2();
-  //   })
-
-    function ajax_reporte() {
-        
-        var date_inicio = document.getElementById("date_inicio").value;
-        var date_final = document.getElementById("date_final").value;
-        var usuario = document.getElementById("usuario").value;
-        var now = new Date();
-        const mesActual = now.getMonth() + 1; 
-        const time =  now.getFullYear()+ "-" + mesActual + "-" + now.getDate() ;
-        if (!date_inicio) {
-            date_inicio = time;
-        }
-        if (!date_final) {
-            date_final = time;
-        }  
-        var http  = new XMLHttpRequest(); 
-        const ruta = "<?=base_url()?>reporte/ajax_reporte?usuario="+usuario+"&date_final="+date_final+"&date_inicio="+date_inicio;
-        http.open('GET',ruta,true);
-        http.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 200){
-          var resultado = (this.responseText);
-          // const index = resultado.indexOf("\n");
-          // const cut = resultado.substring(index);
-          // const final = resultado.replace(cut, "");
-	        tabla = document.getElementById('example1'),
-            tabla.innerHTML = '<thead><tr><th>Fecha</th><th>Cod. Arqueo</th><th>Cod. Recibo</th><th>Usuario</th><th>Cliente</th><th>Total</th></tr></thead>';
-            // var datos  = JSON.parse(final);
-            var datos  = JSON.parse(resultado);
-            datos.forEach(recibo => {
-              // var elemento = document.createElement("tbody");
-              var elemento = document.createElement("tr");
-
-              elemento.innerHTML += ("<td>" + recibo.created_at + "</td>");
-              elemento.innerHTML += ("<td>" + recibo.idarqueo_caja + "</td>");
-              elemento.innerHTML += ("<td>" + recibo.idventas + "</td>");
-              elemento.innerHTML += ("<td>" + recibo.vendedor + "</td>");
-              elemento.innerHTML += ("<td>" + recibo.nombre + "</td>");
-              elemento.innerHTML += ("<td>" + recibo.total + ' - '+
-              '<a href="<?=base_url()?>venta/view_recibo?view='+recibo.idventas+'"><i class="fas fa-file"></i></a>'
-              +"</td>");
-              document.getElementById("example1").appendChild(elemento);
-            });
-
-          } 
-        }
-        
-        http.send();
-    
-    }
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    })
 </script>

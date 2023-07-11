@@ -74,12 +74,28 @@
           		$vista = array_search('3', array_column($array, 'fk_permiso'));
           		if ($vista != ''): ?>
           <li class="nav-item">
-            <a href="<?=base_url()?>reporte" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="nav-icon  fa fa-file-excel" aria-hidden="true"></i>
               <p>
                 Reporte
+                <i class="fas fa-angle-left right"></i>
               </p>
             </a>
+            
+            <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="<?=base_url()?>reporte" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Reporte de recibo</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="<?=base_url()?>arqueo/historial" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Historial de Arqueo</p>
+                    </a>
+                  </li>
+                </ul>
           </li>
           <?php endif ?>
           <?php 
@@ -89,7 +105,7 @@
             <a href="<?=base_url()?>inventario" class="nav-link">
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
-                Inventario
+                Inventario / KARDEX 
               </p>
             </a>
           </li>
@@ -217,9 +233,22 @@
                   <p>Arqueo Caja</p>
                 </a>
               </li>
+
               <?php endif ?>
             </ul>
           </li>
+          <?php 
+          		$vista = array_search('4', array_column($array, 'fk_permiso'));
+          		if ($vista != ''): ?>
+          <li class="nav-item">
+            <a href="<?=base_url()?>compra" class="nav-link">
+              <i class="nav-icon far fa-calendar-alt"></i>
+              <p>
+                Historico de compras
+              </p>
+            </a>
+          </li>
+          <?php endif ?>
 
           <li class="nav-header">Funciones extra</li>
           <li class="nav-item">

@@ -58,8 +58,8 @@
                     <th>Folio</th>
                     <th>Caja</th>
                     <th>Usuario</th>
-                    <th>Monto  inicial</th>
-                    <th>Monto final</th>
+                    <th>Monto Inicial</th>
+                    <th>Monto Ganancia</th>
                     <th>Total ventas</th>
                     <th>Horario Inicio</th>
                     <th>Cerrar arqueo</th>
@@ -88,8 +88,8 @@
                   <th>Folio</th>
                     <th>Caja</th>
                     <th>Usuario</th>
-                    <th>Monto  inicial</th>
-                    <th>Monto final</th>
+                    <th>Monto Inicial</th>
+                    <th>Monto Ganancia</th>
                     <th>Total ventas</th>
                     <th>Horario Inicio</th>
                     <th>Cerrar arqueo</th>

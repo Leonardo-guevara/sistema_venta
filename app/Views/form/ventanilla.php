@@ -60,11 +60,9 @@
                       <select class="form-control select2"  id="fk_persona" onchange="select_cliente()" name="fk_persona" style="width: 100%;">
                       <?php
                         foreach ($persona as $key => $value) {
-                          if ( $value['idpersona'] == ($fk_persona)) {
-                            echo '<option cedula="'.$value['cedula'].'" name="'.$value['nombre'].'" value="'.$value['idpersona'].'" selected="selected">'.$value['nombre'].'</option>';
-                          }else{
+                 
                             echo '<option cedula="'.$value['cedula'].'" name="'.$value['nombre'].'" value="'.$value['idpersona'].'">'.$value['nombre'].'</option>';
-                          }
+                          
                         }
                       ?>
                       </select>

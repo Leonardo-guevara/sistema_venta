@@ -21,7 +21,7 @@ class InventarioModel extends Model
         'fk_producto',
         'cantidad'
     ];
-    public function seleccionar()
+    public function seleccionar($data = null)
     {
         $db = \Config\Database::connect();
         $sql = "SELECT movimiento_inventario.`iddetalle_movimiento` AS id, 
@@ -35,23 +35,24 @@ class InventarioModel extends Model
         FROM `movimiento_inventario` 
         INNER JOIN usuario ON movimiento_inventario.fk_usuario = usuario.idusuario 
         INNER JOIN producto ON movimiento_inventario.producto = producto.codigo 
-        --  LIMIT 2000 
+        WHERE  fecha BETWEEN ? AND ?
          ;";
-
-        $query = $db->query($sql);
+        $query = $db->query($sql,[$data['date_inicio'],$data['date_final']]);
         $row = $query->getResultArray();
         return $row;
+
     }
     public function encontrar($id = null)
     {
         $db = \Config\Database::connect();
-        $sql = "SELECT `idproducto`,`name`,`codigo`,`stocks` FROM `producto` WHERE `codigo` = ? AND `deleted_at`<=> NULL ;";
+        $sql = "SELECT `idproducto`,`name`,`codigo`,`stocks`,`precio_compra`, `precio_venta`  
+        FROM `producto` WHERE `codigo` = ? AND `deleted_at`<=> NULL ;";
         $query = $db->query($sql,[$id]);
         $row = $query->getRowArray();
         // $row = $query->getResultArray();
         return $row;
     }
-    public function agregar($data)
+    public function agregar($data = null)
     {
         $db = \Config\Database::connect();
         $sql = "INSERT INTO `movimiento_inventario`(`name`,`fecha`,`fk_usuario`,`producto`, `cantidad`) 
@@ -65,39 +66,50 @@ class InventarioModel extends Model
         $sql = "UPDATE producto SET stocks = stocks + ? WHERE `codigo` = ?;";
         $db->query($sql,[$data['cantidad'],$data['fk_producto'] ]);
 
-    }
-    public function create_name(Type $var = null)
-    {
-        # code...
-        if ($stocks['stocks'] > $datos['stocks']) {
-            $cantidad = ($datos['stocks'] - $stocks['stocks']);
-            $movimiento = 'Se ha quitado Producto';
-            // echo $movimiento . $cantidad;
-        }elseif ($datos['stocks'] < $stocks['stocks']) {
-            $cantidad = ($datos['stocks'] - $stocks['stocks']);
-            $movimiento = 'Se ha aumentado Producto';
-            // echo $movimiento . $cantidad;
-        }else {
-            $cantidad = 0;
-            $movimiento = 'No se movido Producto';
-            // echo $movimiento . $cantidad;
-        }
-
-        $sql_movi = "INSERT INTO `movimiento_inventario`( 
-            `name`, `fecha`, `fk_usuario`, `fk_producto`,
-            `cantidad` VALUES (?, NOW() ,?,?,?);";
-        $db->query($sql_movi,[
-            $movimiento, 1, $datos['codigo'], intval($cantidad) 
-        ]);
-
-        $sql = "INSERT INTO `movimiento_inventario`( 
-            `name`, `fecha`, `fk_usuario`, `fk_producto`,
-            `cantidad`) VALUES ( ?, NOW(),?,?,?)";
+        $sql = "INSERT INTO `compra`
+        ( `producto`,`name`,
+        `cantidad`, `precio_compra`,
+        `precio_venta`, `usuario`)
+         VALUES ( ?,?,?,?,?,?)";
         $query = $db->query($sql,[
-            'Entrada Inventario',1,
-            $datos['codigo'],$datos['stocks'] 
+            $data['fk_producto'], $data['name'],
+            $data['cantidad'],$data['precio_compra'],
+            $data['precio_venta'],$data['fk_usuario'] 
         ]);
+
     }
+    // public function create_name(Type $var = null)
+    // {
+    //     # code...
+    //     if ($stocks['stocks'] > $datos['stocks']) {
+    //         $cantidad = ($datos['stocks'] - $stocks['stocks']);
+    //         $movimiento = 'Se ha quitado Producto';
+    //         // echo $movimiento . $cantidad;
+    //     }elseif ($datos['stocks'] < $stocks['stocks']) {
+    //         $cantidad = ($datos['stocks'] - $stocks['stocks']);
+    //         $movimiento = 'Se ha aumentado Producto';
+    //         // echo $movimiento . $cantidad;
+    //     }else {
+    //         $cantidad = 0;
+    //         $movimiento = 'No se movido Producto';
+    //         // echo $movimiento . $cantidad;
+    //     }
+
+    //     $sql_movi = "INSERT INTO `movimiento_inventario`( 
+    //         `name`, `fecha`, `fk_usuario`, `fk_producto`,
+    //         `cantidad` VALUES (?, NOW() ,?,?,?);";
+    //     $db->query($sql_movi,[
+    //         $movimiento, 1, $datos['codigo'], intval($cantidad) 
+    //     ]);
+
+    //     $sql = "INSERT INTO `movimiento_inventario`( 
+    //         `name`, `fecha`, `fk_usuario`, `fk_producto`,
+    //         `cantidad`) VALUES ( ?, NOW(),?,?,?)";
+    //     $query = $db->query($sql,[
+    //         'Entrada Inventario',1,
+    //         $datos['codigo'],$datos['stocks'] 
+    //     ]);
+    // }
 
     public function valiadar($var = null)
     {

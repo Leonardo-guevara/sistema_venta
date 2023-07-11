@@ -20,14 +20,28 @@ class Reporte extends BaseController
         $data['user']  = $this->session->get('idusuario');
         // $data['data']  = $VentaModel->validar_caja($data);
         // if (!empty($data['data'])) {
-            $data['title'] = 'Lista de ventas';
+            $data['title'] = 'Reporte de venta';
             $data['home'] = 'Venta';
             $data['principal']= $this->session->get('usuario');
             $data['listausuario']  = $VentaModel->usuario();
             // $data['data'] =$VentaModel->seleccionar($data["data"]["idarqueo_caja"]);
+            if (!$this->validate([
+                'usuario'    => 'required', 
+                'date_final'    => 'required',   
+                'date_inicio'    => 'required',      
+            ])){
+                $data['errors'] = $this->validator->getErrors();
+                return $this->load_view('reporte/reporte',$data);
+            }
+            $datos = [
+                'date_inicio'    => $_POST["date_inicio"],
+                'date_final'     => $_POST["date_final"],
+                'usuario'        => $_POST["usuario"],
+            ];
+            $data['data'] = $VentaModel->ajax_reporte($datos);
+            
             return $this->load_view('reporte/reporte',$data);
-        // // } 
-        // echo 'hola';
+            die();
 
     }
     function ajax_reporte() {

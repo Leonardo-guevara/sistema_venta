@@ -22,7 +22,7 @@ class Producto extends BaseController
         $data['home'] = 'Producto';
         $data['principal']= $this->session->get('usuario');
         $data['data'] =$ProductoModel->seleccionar();
-        return $this->load_view('board/Producto',$data);
+        return $this->load_view('board/producto',$data);
     }
     public function json() {
         $ProductoModel = new ProductoModel();

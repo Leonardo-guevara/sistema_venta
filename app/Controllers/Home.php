@@ -25,7 +25,8 @@ class Home extends BaseController
         $query = $db->query($sql);
         $data["usuario"] = $row = $query->getResultArray();
         // selecionar movimiento
-        $sql = "SELECT * FROM `movimiento_inventario` LIMIT 25;";
+        $sql = "SELECT movimiento_inventario.`name`, `fecha`, producto.name AS `producto`, `cantidad` FROM `movimiento_inventario` 
+        INNER JOIN producto ON producto.codigo = movimiento_inventario.producto LIMIT 25;;";
         $query = $db->query($sql);
         $data["movimiento"] = $row = $query->getResultArray();
         // 

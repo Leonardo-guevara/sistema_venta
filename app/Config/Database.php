@@ -26,10 +26,10 @@ class Database extends Config
      */
     public array $default = [
         'DSN'      => '',
-        'hostname' => 'localhost',
-        'username' => '',
-        'password' => '',
-        'database' => '',
+        'hostname' => 'mysql.helpfibo.com',
+        'username' => 'leofibo',
+        'password' => 'fibo2805',
+        'database' => 'examen_grado',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

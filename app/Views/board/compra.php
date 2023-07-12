@@ -75,7 +75,8 @@
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
-                  <th>Producto</th>
+                    <th>Codigo</th>
+                    <th>Producto</th>
                     <th>Nombre</th>
                     <th>Cantidad</th>
                     <th>Precio de Compra</th>                    
@@ -87,6 +88,7 @@
                   <tbody>
                   <?php foreach ($data as $news_item): ?>
                   <tr>
+                    <td><?= esc($news_item['codigo']); ?></td>
                     <td><?= esc($news_item['producto']); ?></td>
                     <td><?= esc($news_item['name']); ?></td>
                     <td><?= esc($news_item['cantidad']); ?></td>
@@ -99,6 +101,7 @@
                   </tbody>
                   <tfoot>
                   <tr>
+                    <th>Codigo</th>
                     <th>Producto</th>
                     <th>Nombre</th>
                     <th>Cantidad</th>

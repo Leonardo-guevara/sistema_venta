@@ -23,9 +23,13 @@ class CompraModel extends Model
     public function seleccionar($data = null)
     {
         $db = \Config\Database::connect();
-        $sql = "SELECT `idcompra`, `producto`, `name`, `cantidad`, `precio_compra`, `precio_venta`, usuario.usuario, compra.`created_at` 
+        $sql = "SELECT `idcompra`,compra.`producto` as codigo,
+         producto.name AS producto, compra.`name`,
+         `cantidad`, compra.`precio_compra`,
+         compra.`precio_venta`, usuario.usuario, compra.`created_at` 
          FROM `compra` 
          INNER JOIN usuario on usuario.idusuario = compra.usuario 
+         INNER JOIN producto on producto.codigo = compra.producto
          WHERE  compra.`created_at` BETWEEN ? AND ?;";
         $query = $db->query($sql,[$data['date_inicio'],$data['date_final']]);
         $row = $query->getResultArray();

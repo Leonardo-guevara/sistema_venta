@@ -52,11 +52,11 @@ class Home extends BaseController
         $data = $UsuarioModel->login($datos);
         if ($data == 'ALgo salio mal intente de nuevo') {
             $datos['error'] = $data ;
-            return view('login/home',$datos);
+            return view('login/login',$datos);
         }
        $_SESSION = $data;
 
-        return redirect()->route('login');  
+        return redirect()->route('');  
         die();
     }
    

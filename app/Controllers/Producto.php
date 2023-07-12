@@ -181,7 +181,7 @@ class Producto extends BaseController
         }
         $ProductoModel = new ProductoModel();
         $data['title'] = 'Recuperar Producto';
-        $data['home'] = 'Producto';
+        $data['home'] = 'producto';
         $data['principal']= $this->session->get('usuario');
         $data['data'] =$ProductoModel->view_delete();
         return $this->load_view('recovery/producto',$data);

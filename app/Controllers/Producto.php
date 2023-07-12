@@ -62,7 +62,7 @@ class Producto extends BaseController
             
         ])){
             $data['errors'] = $this->validator->getErrors();
-            return $this->load_view('form/Producto',$data);
+            return $this->load_view('form/producto',$data);
         }
         if  (isset($_POST['fk_presentacion']) and !empty($_POST['fk_presentacion'])){
             $fk_presentacion = $_POST['fk_presentacion'];
@@ -90,7 +90,7 @@ class Producto extends BaseController
          ];
         $datos['user'] = $this->session->get('idusuario');
         $ProductoModel->insertar($datos);
-        return redirect()->route('Producto');
+        return redirect()->route('producto');
         die();
     }
     public function update()
@@ -128,7 +128,7 @@ class Producto extends BaseController
         
             ])){
             $data['errors'] = $this->validator->getErrors();
-            return $this->load_view('form/Producto',$data);
+            return $this->load_view('form/producto',$data);
         }
         if (isset($_POST['fk_presentacion']) and !empty($_POST['fk_presentacion'])){
             $fk_presentacion = $_POST['fk_presentacion'];
@@ -158,7 +158,7 @@ class Producto extends BaseController
         ];
         $datos['user'] = $this->session->get('idusuario');
         $ProductoModel->actualizar($id,$datos);    
-            return redirect()->route('Producto');
+            return redirect()->route('producto');
             die();
     }
     public function delete()

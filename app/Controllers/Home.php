@@ -11,6 +11,27 @@ class Home extends BaseController
 
     }
     protected $helpers = ['form'];
+    public function index() {
+        if (empty($this->session->get('usuario'))) {
+            return redirect()->route('login');
+            die();
+        }
+        
+        $db      = \Config\Database::connect();
+        $data['title'] = 'Presentacion';
+        $data['principal']= $this->session->get('usuario');
+        // selecionar usuario
+        $sql = "SELECT * FROM `usuario` WHERE `deleted_at`<=> NULL;";
+        $query = $db->query($sql);
+        $data["usuario"] = $row = $query->getResultArray();
+        // selecionar movimiento
+        // $sql = "SELECT * FROM `usuario` WHERE `deleted_at`<=> NULL;";
+        // $query = $db->query($sql);
+        // $data["usuario"] = $row = $query->getResultArray();
+        // 
+
+        return $this->load_view('board/home',$data);
+    }
 
     public function login()
     {

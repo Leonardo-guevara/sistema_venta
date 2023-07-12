@@ -142,13 +142,13 @@
         http.onreadystatechange = function(){
           if(this.readyState == 4 && this.status == 200){
             var resultado = (this.responseText);
-            const index = resultado.indexOf("\n");
-            const cut = resultado.substring(index);
-            const final = resultado.replace(cut, "");
-            const arr = new Array(http);
-            var guardar  = JSON.parse(final);
+            // const index = resultado.indexOf("\n");
+            // const cut = resultado.substring(index);
+            // const final = resultado.replace(cut, "");
+            // const arr = new Array(http);
+            // var guardar  = JSON.parse(final);
             
-            // var guardar  = JSON.parse(resultado);
+            var guardar  = JSON.parse(resultado);
             if (guardar != null) {
               document.getElementById("producto").innerHTML = guardar.name;
               document.getElementById("cantidad").innerHTML = guardar.stocks;

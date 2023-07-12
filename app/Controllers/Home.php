@@ -25,9 +25,9 @@ class Home extends BaseController
         $query = $db->query($sql);
         $data["usuario"] = $row = $query->getResultArray();
         // selecionar movimiento
-        // $sql = "SELECT * FROM `usuario` WHERE `deleted_at`<=> NULL;";
-        // $query = $db->query($sql);
-        // $data["usuario"] = $row = $query->getResultArray();
+        $sql = "SELECT * FROM `movimiento_inventario` LIMIT 25;";
+        $query = $db->query($sql);
+        $data["movimiento"] = $row = $query->getResultArray();
         // 
 
         return $this->load_view('board/home',$data);

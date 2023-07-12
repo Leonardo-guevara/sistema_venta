@@ -63,8 +63,8 @@ class InventarioModel extends Model
             $data['fk_producto'],
             $data['cantidad']
         ]);
-        $sql = "UPDATE producto SET stocks = stocks + ? WHERE `codigo` = ?;";
-        $db->query($sql,[$data['cantidad'],$data['fk_producto'] ]);
+        $sql = "UPDATE producto SET stocks = stocks + ?,`precio_compra`=?,`precio_venta`= ? WHERE `codigo` = ?;";
+        $db->query($sql,[$data['cantidad'],$data['precio_compra'],$data['precio_venta'], $data['fk_producto'] ]);
 
         $sql = "INSERT INTO `compra`
         ( `producto`,`name`,

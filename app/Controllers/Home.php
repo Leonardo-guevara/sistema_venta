@@ -56,7 +56,7 @@ class Home extends BaseController
         }
        $_SESSION = $data;
 
-        return redirect()->route('barcode');  
+        return redirect()->route('home');  
         die();
     }
    

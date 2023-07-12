@@ -210,7 +210,7 @@
                           $precio_compra = $datos['precio_compra'];
                         }else { $precio_compra = '';}
                       ?>
-                      <input type="number" id="mySelect"  name="precio_compra" class="form-control"  placeholder="Precio de compra" value="<?=$precio_compra; ?>">
+                      <input type="number" id="mySelect"  name="precio_compra" class="form-control"  placeholder="Precio de compra" value="<?=$precio_compra; ?>"step="0.01" >
                     </div>
                     <div class="form-group">
                       <label  id="demo">Precio de venta</label>

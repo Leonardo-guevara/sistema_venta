@@ -50,11 +50,11 @@ class ProductoModel extends Model
     {
 	    $dev = "";
         if(!empty($data["producto"]) and $data["producto"] == 3) {
-            $dev = "and minimo < stocks";
+            $dev = " and minimo < stocks";
         }elseif ($data["producto"] == 2) {
-            $dev = "and minimo > stocks";
+            $dev = " and minimo > stocks";
         }elseif ($data["producto"] == 1) {
-            $dev = "and stocks = 0";
+            $dev = " and stocks = 0";
         }else {
             $dev = "";
         }
@@ -68,7 +68,7 @@ class ProductoModel extends Model
             unidad.name AS unidad 
             FROM producto 
             INNER JOIN unidad ON producto.fk_unidad = unidad.idunidad 
-            WHERE producto.deleted_at <=> NULL".$dev.";";
+            WHERE producto.deleted_at <=> NULL ".$dev.";";
         $query = $db->query($sql);
         $row = $query->getResultArray();
         return $row;

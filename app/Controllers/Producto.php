@@ -21,7 +21,23 @@ class Producto extends BaseController
         $data['title'] = 'Lista de Producto';
         $data['home'] = 'Producto';
         $data['principal']= $this->session->get('usuario');
-        $data['data'] =$ProductoModel->seleccionar();
+                if (!empty($_POST)) {
+            if (!$this->validate([
+                'producto'    => 'required',       
+            ])){
+                $data['errors'] = $this->validator->getErrors();
+                return $this->load_view('board/producto',$data);
+            }
+            $datos = [
+                'producto'    => $_POST["producto"],
+            ];
+            $data['data'] =$ProductoModel->seleccionar($datos);
+            return $this->load_view('board/producto',$data);
+        }
+        $datos = [
+            'producto'    => "0",
+        ];
+        $data['data'] =$ProductoModel->seleccionar($datos);
         return $this->load_view('board/producto',$data);
     }
     public function json() {

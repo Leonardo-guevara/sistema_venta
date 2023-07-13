@@ -38,6 +38,48 @@
                   <i class="fas fa-barcode"></i>  producto
                 </a>
               </p>
+             <form action="" method="post">
+                <label for="detalle"> selecionar producto</label>
+                
+                <select name="producto" >
+                  <?php //php code generator
+                    if  (isset($_POST["producto"]) and !empty($_POST["producto"])){
+                      if ($_POST['producto'] == "1") {
+                        echo '<option value="'.$_POST["producto"].'" selected="selected">vacio</option>
+                        <option value="0">todos</option>
+                        <option value="2">minimo</option>
+                        <option value="3">llenos</option>';
+                      }
+                      elseif ($_POST['producto'] == "2") {
+                        echo '<option value="'.$_POST["producto"].'" selected="selected">minimo</option>
+                        <option value="0">todos</option>
+                        <option value="1">vacio</option>
+                        <option value="3">llenos</option>';
+                      }
+                      elseif ($_POST['producto'] == "3") {
+                        echo '<option value="'.$_POST["producto"].'" selected="selected">llenos</option>
+                        <option value="0">todos</option>
+                        <option value="1">vacio</option>
+                        <option value="2">minimo</option>';
+                      }
+                      else {
+                        echo '<option value="0">todos</option>
+                        <option value="1">vacio</option>
+                        <option value="2">minimo</option>
+                        <option value="3">llenos</option>';
+                      }
+                    }else {
+                      echo '<option value="0">todos</option>
+                      <option value="1">vacio</option>
+                      <option value="2">minimo</option>
+                      <option value="3">llenos</option>';
+                    }
+                  ?>
+                </select>
+                <button type="submit" value="submit" class="btn btn-primary">
+                  Buscar
+                </button>
+              </form>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">

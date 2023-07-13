@@ -46,8 +46,18 @@ class ProductoModel extends Model
     protected $cleanValidationRules = true;
 
 
-    public function seleccionar()
+    public function seleccionar($data = null)
     {
+	    $dev = "";
+        if(!empty($data["producto"]) and $data["producto"] == 3) {
+            $dev = "and minimo < stocks";
+        }elseif ($data["producto"] == 2) {
+            $dev = "and minimo > stocks";
+        }elseif ($data["producto"] == 1) {
+            $dev = "and stocks = 0";
+        }else {
+            $dev = "";
+        }
         $db = \Config\Database::connect();
         $sql = "SELECT 
             producto.idproducto AS idproducto,
@@ -58,7 +68,7 @@ class ProductoModel extends Model
             unidad.name AS unidad 
             FROM producto 
             INNER JOIN unidad ON producto.fk_unidad = unidad.idunidad 
-            WHERE producto.deleted_at <=> NULL;";
+            WHERE producto.deleted_at <=> NULL".$dev.";";
         $query = $db->query($sql);
         $row = $query->getResultArray();
         return $row;

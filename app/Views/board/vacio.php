@@ -25,7 +25,7 @@
         <h2 class="headline text-danger">Sin <br> Caja</h2>
 
         <div class="error-content">
-          <h3><i class="fas fa-exclamation-triangle text-danger"></i> ¡Ups! Algo no tiens caja asignada.</h3>
+          <h3><i class="fas fa-exclamation-triangle text-danger"></i> ¡Ups! Algo no tienes caja asignada.</h3>
 
           <p>
             Trabajaremos para solucionarlo de inmediato. 

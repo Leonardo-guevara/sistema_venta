@@ -223,7 +223,7 @@ class Usuario extends BaseController
                     'uploaded[file]',
                     'is_image[file]',
                     'mime_in[file,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
-                    'max_size[file,100]',
+                    'max_size[file,1000]',
                     'max_dims[file,1024,1024]',
                 ],
             ],

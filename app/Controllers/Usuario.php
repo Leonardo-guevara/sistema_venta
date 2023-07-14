@@ -68,7 +68,7 @@ class Usuario extends BaseController
             'fkroles'     => $_POST["fkroles"],
         ];
         $correo["email"] = $datos["email"] ;
-        $texto = '<h2 style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif;">Nueva Contraseña&nbsp;</h2><p style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small;">recuerda que puede cambiar la contraseña desde la aplicación&nbsp;<a href="https://udabol.helpfibo.com/" target="_blank">https://posgrado.helpfibo.com/</a></p><p style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small;"><b><u>Tu contraseña es:</u></b></p>';
+        $texto = '<h2 style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif;">Nueva Contraseña&nbsp;</h2><p style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small;">recuerda que puede cambiar la contraseña desde la aplicación&nbsp;<a href="https://udabol.helpfibo.com/" target="_blank">https://udabol.helpfibo.com/</a></p><p style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small;"><b><u>Tu contraseña es:</u></b></p>';
         $correo['mensaje'] = $texto.$password ;
         $correo['asunto'] = 'Crear  Contrasenha' ;
         $correo['titulo'] = ' Se creo una Contrasenha' ;

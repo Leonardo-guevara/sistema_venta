@@ -1,8 +1,8 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="<?=base_url()?>" class="brand-link">
-      <img src="<?=base_url('public')?>/dist/img/marker.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <a href="<?= base_url() ?>" class="brand-link">
+      <img src="<?= base_url('public') ?>/dist/img/marker.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Minimarker</span>
     </a>
 
@@ -11,14 +11,22 @@
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-        <?php if(!isset($_SESSION['foto']) and empty($_SESSION['foto'])){$foto = 'public/dist/img/user2-160x160.jpg';}else{$foto = $_SESSION['foto'];}?>
-          <img src="<?=base_url().$foto ;?>" class="img-circle elevation-2" alt="User Image">
+          <?php if (!isset($_SESSION['foto']) and empty($_SESSION['foto'])) {
+            $foto = 'public/dist/img/user2-160x160.jpg';
+          } else {
+            $foto = $_SESSION['foto'];
+          } ?>
+          <img src="<?= base_url() . $foto; ?>" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="<?=base_url()?>home/change_password" class="d-block">
-              <?php if(!isset($principal) and empty($principal)){echo '';}else{echo $principal;}?>
-          </a> 
-          
+          <a href="<?= base_url() ?>home/change_password" class="d-block">
+            <?php if (!isset($principal) and empty($principal)) {
+              echo '';
+            } else {
+              echo $principal;
+            } ?>
+          </a>
+
         </div>
       </div>
 
@@ -31,160 +39,124 @@
               <i class="fas fa-search fa-fw"></i>
             </button>
           </div>
-        </div>  
+        </div>
       </div>
-      <?php  
-       if(!isset($_SESSION['permiso']) and empty($_SESSION['permiso'])){
+      <?php
+      if (!isset($_SESSION['permiso']) and empty($_SESSION['permiso'])) {
         $array = [];
-      }else {
+      } else {
         # code...
-        $array =$_SESSION['permiso']; 
+        $array = $_SESSION['permiso'];
       }
-      
+
       ?>
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <li class="nav-header">Sitema de venta</li>
-          <?php 
-          		$vista = array_search('1', array_column($array, 'fk_permiso'));
-          		if ($vista != ''): ?>
-          <li class="nav-item">
-            <a href="<?=base_url()?>venta" class="nav-link">
-              <i class="nav-icon fa fa-cart-arrow-down" aria-hidden="true"></i>
-              <p>
-                Ventanilla  
-              </p>
-            </a>
-          </li>
-          <?php endif ?>
-          <?php 
-          		$vista = array_search('2', array_column($array, 'fk_permiso'));
-          		if ($vista != ''): ?>
-          <li class="nav-item">
-            <a href="<?=base_url()?>venta/recibo" class="nav-link">
-            <i class="nav-icon fa fa-book" ></i>
-              <p>
-                recibo
-              </p>
-            </a>
-          </li>
-          <?php endif ?>
-          <?php 
-          		$vista = array_search('3', array_column($array, 'fk_permiso'));
-          		if ($vista != ''): ?>
-          <li class="nav-item">
+
+          <li class="nav-item menu-is-opening menu-open">
             <a href="#" class="nav-link">
-              <i class="nav-icon  fa fa-file-excel" aria-hidden="true"></i>
+
               <p>
-                Reporte
+                Sitema de venta
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
-            
-            <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="<?=base_url()?>reporte" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Reporte de recibo</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="<?=base_url()?>arqueo/historial" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Historial de Arqueo</p>
-                    </a>
-                  </li>
-                </ul>
-          </li>
-          <?php endif ?>
-          <?php 
-          		$vista = array_search('4', array_column($array, 'fk_permiso'));
-          		if ($vista != ''): ?>
-          <li class="nav-item">
-            <a href="<?=base_url()?>inventario" class="nav-link">
-              <i class="nav-icon far fa-calendar-alt"></i>
-              <p>
-                Inventario / KARDEX 
-              </p>
-            </a>
-          </li>
-          <?php endif ?>
-          <?php 
-          		$vista = array_search('5', array_column($array, 'fk_permiso'));
-          		if ($vista != ''): ?>
-          <li class="nav-item">
-            <a href="<?=base_url()?>persona " class="nav-link">
-              <i class="nav-icon fa fa-users" aria-hidden="true"></i>
-              <p>
-                Persona - Cliente
-              </p>
-            </a>
-          </li>
-          <?php endif ?>
- 
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-barcode"> </i>
-              <p>
-                PRODUCTO
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-            <?php 
-          		$vista = array_search('6', array_column($array, 'fk_permiso'));
-          		if ($vista != ''): ?>
-              <li class="nav-item">
-                <a href="<?=base_url()?>producto" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Producto</p>
-                </a>
-              </li>
+            <ul class="nav nav-treeview " >
+              <?php
+              $vista = array_search('1', array_column($array, 'fk_permiso'));
+              if ($vista != '') : ?>
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>venta" class="nav-link">
+                    <i class="nav-icon fa fa-cart-arrow-down" aria-hidden="true"></i>
+                    <p>
+                      Ventanilla
+                    </p>
+                  </a>
+                </li>
               <?php endif ?>
-              <?php 
-          		$vista = array_search('7', array_column($array, 'fk_permiso'));
-          		if ($vista != ''): ?>
-              
-              <li class="nav-item">
-                <a href="<?=base_url()?>unidad" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Unidad</p>
-                </a>
-              </li>
+
+              <?php
+              $vista = array_search('2', array_column($array, 'fk_permiso'));
+              if ($vista != '') : ?>
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>venta/recibo" class="nav-link">
+                    <i class="nav-icon fa fa-book"></i>
+                    <p>
+                      recibo
+                    </p>
+                  </a>
+                </li>
               <?php endif ?>
-              <?php   
-          		$vista = array_search('8', array_column($array, 'fk_permiso'));
-          		if ($vista  != ''): ?>
-              <li class="nav-item">
-                <a href="<?=base_url()?>presentacion" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Presentacion</p>
-                </a>
-              </li>
-              <?php endif ?>
-              <?php   
-          		$vista = array_search('9', array_column($array, 'fk_permiso'));
-          		if ($vista != ''): ?>
-              <li class="nav-item">
-                <a href="<?=base_url()?>marca" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Marca</p>
-                </a>
-              </li>
-              <?php endif ?>
-              <?php   
-          		$vista = array_search('10', array_column($array, 'fk_permiso'));
-          		if ($vista != ''): ?>              
-              <li class="nav-item">
-                <a href="<?=base_url()?>categoria" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Categoria</p>
-                </a>
-              </li>
+
+
+              <?php
+              $vista = array_search('5', array_column($array, 'fk_permiso'));
+              if ($vista != '') : ?>
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>persona " class="nav-link">
+                    <i class="nav-icon fa fa-users" aria-hidden="true"></i>
+                    <p>
+                      Cliente
+                    </p>
+                  </a>
+                </li>
               <?php endif ?>
             </ul>
           </li>
+
+          <?php
+          $vista = array_search('3', array_column($array, 'fk_permiso'));
+          if ($vista != '') : ?>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon  fa fa-file-excel" aria-hidden="true"></i>
+                <p>
+                  Reporte
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>reporte" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Reporte de recibo</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>arqueo/historial" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Historial de Arqueo</p>
+                  </a>
+                </li>
+                <?php
+                $vista = array_search('4', array_column($array, 'fk_permiso'));
+                if ($vista != '') : ?>
+                  <li class="nav-item">
+                    <a href="<?= base_url() ?>inventario" class="nav-link">
+                      <i class="nav-icon far fa-calendar-alt"></i>
+                      <p>
+                        Inventario / KARDEX
+                      </p>
+                    </a>
+                  </li>
+                <?php endif ?>
+                <?php
+                $vista = array_search('4', array_column($array, 'fk_permiso'));
+                if ($vista != '') : ?>
+                  <li class="nav-item">
+                    <a href="<?= base_url() ?>compra" class="nav-link">
+                      <i class="nav-icon far fa-calendar-alt"></i>
+                      <p>
+                        Historico de compras
+                      </p>
+                    </a>
+                  </li>
+                <?php endif ?>
+              </ul>
+            </li>
+          <?php endif ?>
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-book"></i>
@@ -194,65 +166,146 @@
               </p>
             </a>
             <ul class="nav nav-treeview">
-              <?php   
-          		$vista = array_search('11', array_column($array, 'fk_permiso'));
-          		if ($vista != ''): ?>
-              <li class="nav-item">
-                <a href="<?=base_url()?>Usuario" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Usuario</p>
-                </a>
-              </li>
+              <?php
+              $vista = array_search('11', array_column($array, 'fk_permiso'));
+              if ($vista != '') : ?>
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>Usuario" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Usuario</p>
+                  </a>
+                </li>
               <?php endif ?>
-              <?php   
-          		$vista = array_search('12', array_column($array, 'fk_permiso'));
-          		if ($vista != ''): ?>
-              <li class="nav-item">
-                <a href="<?=base_url()?>Roles" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Roles</p>
-                </a>
-              </li>
+              <?php
+              $vista = array_search('12', array_column($array, 'fk_permiso'));
+              if ($vista != '') : ?>
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>Roles" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Roles</p>
+                  </a>
+                </li>
               <?php endif ?>
-              <?php   
-          		$vista = array_search('13', array_column($array, 'fk_permiso'));
-          		if ($vista != ''): ?>
-              <li class="nav-item">
-                <a href="<?=base_url()?>Caja" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Caja</p>
-                </a>
-              </li>
+              <?php
+              $vista = array_search('13', array_column($array, 'fk_permiso'));
+              if ($vista != '') : ?>
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>Caja" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Caja</p>
+                  </a>
+                </li>
               <?php endif ?>
-              <?php   
-          		$vista = array_search('14', array_column($array, 'fk_permiso'));
-          		if ($vista != ''): ?>
-              <li class="nav-item">
-                <a href="<?=base_url()?>Arqueo" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Arqueo Caja</p>
-                </a>
-              </li>
+              <?php
+              $vista = array_search('14', array_column($array, 'fk_permiso'));
+              if ($vista != '') : ?>
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>Arqueo" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Arqueo Caja</p>
+                  </a>
+                </li>
+              <?php endif ?>
 
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <i class="fa-sharp fa-solid fa-sliders"></i>
+              <p>
+                Modulo de compra
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <?php
+              $vista = array_search('9', array_column($array, 'fk_permiso'));
+              if ($vista != '') : ?>
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>Inventario/Agregar" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Agregar Producto</p>
+                  </a>
+                </li>
+              <?php endif ?>
+              <?php
+              $vista = array_search('10', array_column($array, 'fk_permiso'));
+              if ($vista != '') : ?>
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>Inventario/Ajuste" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ajustar Producto</p>
+                  </a>
+                </li>
               <?php endif ?>
             </ul>
           </li>
-          <?php 
-          		$vista = array_search('4', array_column($array, 'fk_permiso'));
-          		if ($vista != ''): ?>
           <li class="nav-item">
-            <a href="<?=base_url()?>compra" class="nav-link">
-              <i class="nav-icon far fa-calendar-alt"></i>
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-barcode"> </i>
               <p>
-                Historico de compras
+                PRODUCTO
+                <i class="fas fa-angle-left right"></i>
               </p>
             </a>
-          </li>
-          <?php endif ?>
+            <ul class="nav nav-treeview">
+              <?php
+              $vista = array_search('6', array_column($array, 'fk_permiso'));
+              if ($vista != '') : ?>
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>producto" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Producto</p>
+                  </a>
+                </li>
+              <?php endif ?>
+              <?php
+              $vista = array_search('7', array_column($array, 'fk_permiso'));
+              if ($vista != '') : ?>
 
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>unidad" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Unidad</p>
+                  </a>
+                </li>
+              <?php endif ?>
+              <?php
+              $vista = array_search('8', array_column($array, 'fk_permiso'));
+              if ($vista  != '') : ?>
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>presentacion" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Presentacion</p>
+                  </a>
+                </li>
+              <?php endif ?>
+              <?php
+              $vista = array_search('9', array_column($array, 'fk_permiso'));
+              if ($vista != '') : ?>
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>marca" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Marca</p>
+                  </a>
+                </li>
+              <?php endif ?>
+              <?php
+              $vista = array_search('10', array_column($array, 'fk_permiso'));
+              if ($vista != '') : ?>
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>categoria" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Categoria</p>
+                  </a>
+                </li>
+              <?php endif ?>
+            </ul>
+          </li>
           <li class="nav-header">Funciones extra</li>
           <li class="nav-item">
-            <a href="<?=base_url()?>barcode" class="nav-link">
+            <a href="<?= base_url() ?>barcode" class="nav-link">
               <i class="nav-icon fas fa-barcode"></i>
               <p>Crear Codigo Barra</p>
             </a>

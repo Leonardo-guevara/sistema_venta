@@ -1,3 +1,11 @@
+Algunas de estas anotaciones podrían ser:
+
+<!-- #FIXME:para marcar el código potencialmente problemático que requiere especial atención y/o revisión -->
+<!-- #NOTE:para documentar el funcionamiento interno de código e indican posibles dificultades -->
+<!-- #TODO: para indicar posibles mejoras previstas -->
+<!-- #XXX:para advertir a otros programadores de código problemático o posiblemente erroneamente planteado. -->
+
+
 # CodeIgniter 4 Framework
 
 ## What is CodeIgniter?

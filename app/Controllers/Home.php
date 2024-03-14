@@ -16,7 +16,6 @@ class Home extends BaseController
             return redirect()->route('login');
             die();
         }
-        
         $db      = \Config\Database::connect();
         $data['title'] = 'Presentacion';
         $data['principal']= $this->session->get('usuario');

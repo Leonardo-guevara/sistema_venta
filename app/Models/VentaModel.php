@@ -184,7 +184,6 @@ class VentaModel extends Model {
 			return true;
 		} 
 		return false;
-		die();
 	}
 
 	function chage_user($data = null) {
@@ -201,7 +200,6 @@ class VentaModel extends Model {
 		$sql = "SELECT SUM( DISTINCT `total`) AS resultado FROM `detalle_venta` WHERE `fk_venta` = ?;";
 		$query = $db->query($sql,[$data]);
 		$row = $query->getRowArray();
-
 		$sql = "UPDATE `venta` SET `total`= ? WHERE `idventas` = ?;";
 		$db->query($sql,[$row['resultado'],$data]);
 
@@ -210,6 +208,13 @@ class VentaModel extends Model {
 	function persona() {
 		$db = \Config\Database::connect();
         $sql = "SELECT * FROM `persona` WHERE `deleted_at`<=> NULL;";
+        $query = $db->query($sql);
+        $row = $query->getResultArray();
+        return $row;
+	}
+	function view_producto() {
+		$db = \Config\Database::connect();
+        $sql = "SELECT `name`, `codigo`, `foto`, `stocks` FROM `producto` WHERE `deleted_at` is null;";
         $query = $db->query($sql);
         $row = $query->getResultArray();
         return $row;

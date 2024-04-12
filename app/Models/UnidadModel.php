@@ -46,7 +46,7 @@ class UnidadModel extends Model
     public function seleccionar()
     {
         $db = \Config\Database::connect();
-        $sql = "SELECT * FROM `unidad` WHERE `deleted_at`<=> NULL;";
+        $sql = "SELECT `idunidad`, `name` FROM `unidad` WHERE `deleted_at`<=> NULL;";
         $query = $db->query($sql);
         $row = $query->getResultArray();
         return $row;

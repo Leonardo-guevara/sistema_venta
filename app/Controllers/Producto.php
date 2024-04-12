@@ -11,16 +11,14 @@ class Producto extends BaseController
 		$this->session = \Config\Services::session();	
 
 	}
-	public function index()
-    {
+    
+	public function index(){
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-            die();
+
         }
         $ProductoModel = new ProductoModel();
         $data['title'] = 'Lista de Producto';
-        $data['home'] = 'Producto';
-        $data['principal']= $this->session->get('usuario');
                 if (!empty($_POST)) {
             if (!$this->validate([
                 'producto'    => 'required',       
@@ -40,19 +38,20 @@ class Producto extends BaseController
         $data['data'] =$ProductoModel->seleccionar($datos);
         return $this->load_view('board/producto',$data);
     }
+
     public function json() {
         $ProductoModel = new ProductoModel();
         if(!isset($_GET["code"]) and empty($_GET['code'])) { $code = '0';} else {$code = $_GET["code"];} 
         $json = json_encode($ProductoModel->selec_presentacion($code));
         return $json;
     }
-    public function insert()
-    {
+
+    public function insert() {
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-            die();
+
         }
-        helper('form', 'url');
+        helper('form');
         $ProductoModel = new ProductoModel();
         $data['title'] = 'Crear Nuevo Producto';
         $data['home'] = 'Producto';
@@ -60,7 +59,6 @@ class Producto extends BaseController
         $data['categoria'] =$ProductoModel->categoria();
         $data['marca'] =$ProductoModel->marca();
         $data['presentacion'] =$ProductoModel->presentacion();
-        $data['principal']= $this->session->get('usuario');
         if(!empty($_FILES["file"]["name"]) and isset($_FILES["file"]["name"])){
             $foto = $this->upload_img($_FILES);    
         }
@@ -85,8 +83,8 @@ class Producto extends BaseController
         }else { $fk_presentacion = '1';}
 
         // validar imagen
-        if(isset($foto) and !empty($foto)){
-            $foto = $foto;
+        if(!isset($foto) and empty($foto)){
+            $foto;
        }else {
            $foto = "public/dist/img/vacio.png";
        } 
@@ -104,18 +102,17 @@ class Producto extends BaseController
             'fk_marca'      => $_POST["fk_marca"],
             'foto'          => $foto,
          ];
-        $datos['user'] = $this->session->get('idusuario');
+        $datos['user'] = $_SESSION['idusuario'];
         $ProductoModel->insertar($datos);
         return redirect()->route('producto');
-        die();
     }
-    public function update()
-    {
+
+    public function update(){
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-            die();
+
         }
-        helper('form', 'url');
+        helper('form');
         $ProductoModel = new ProductoModel();
         if(!isset($_GET["id"]) and empty($_GET['id'])) { $id = '';} else {$id = $_GET["id"];} 
         $data['datos'] = $ProductoModel->encontrar($id);
@@ -125,7 +122,6 @@ class Producto extends BaseController
         $data['marca'] =$ProductoModel->marca();
         $data['categoria'] =$ProductoModel->categoria();
         $data['presentacion'] =$ProductoModel->presentacion();
-        $data['principal']= $this->session->get('usuario');
         
         if(!empty($_FILES["file"]["name"]) and isset($_FILES["file"]["name"])){
             $foto = $this->upload_img($_FILES);    
@@ -151,7 +147,7 @@ class Producto extends BaseController
         }else { $fk_presentacion = '1';}
         // validar imagen
         if(isset($foto) and !empty($foto)){
-             $foto = $foto;
+             $foto;
         }elseif ($data['datos']["foto"] == '') {
             $foto = "public/dist/img/vacio.png";
         } else {
@@ -172,49 +168,48 @@ class Producto extends BaseController
             'fk_marca'     => $_POST["fk_marca"],
             'fk_presentacion' =>$fk_presentacion,
         ];
-        $datos['user'] = $this->session->get('idusuario');
+        $datos['user'] = $_SESSION['idusuario'];
         $ProductoModel->actualizar($id,$datos);    
             return redirect()->route('producto');
-            die();
+
     }
-    public function delete()
-    {
+
+    public function delete(){
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-            die();
+
         }
         $ProductoModel = new ProductoModel();
         if(!isset($_GET["id"]) and empty($_GET['id'])) { $id = '0';} else {$id = $_GET["id"];}   
         $ProductoModel->delete($id);
         header("Location: ".base_url()."Producto/");
-        die();
 
     }
+
     public function recovery(){
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-            die();
+
         }
         $ProductoModel = new ProductoModel();
         $data['title'] = 'Recuperar Producto';
-        $data['home'] = 'producto';
-        $data['principal']= $this->session->get('usuario');
         $data['data'] =$ProductoModel->view_delete();
         return $this->load_view('recovery/producto',$data);
     }
+
     public function recovery_mode()
     {
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-            die();
+
         }
         $ProductoModel = new ProductoModel();
         if(!isset($_GET["id"]) and empty($_GET['id'])) { $id = '0';} else {$id = $_GET["id"];}  
         
             $ProductoModel->recovery_data($id);
         return redirect()->route('producto');
-        die();
     }
+
     function upload_img($data) {
     
         $validationRule = [
@@ -249,8 +244,11 @@ class Producto extends BaseController
             return  $data;
         }
     }
-    protected function load_view( $view = null, $data = null)
-    {
+
+    protected function load_view( $view = null, $data = null) {
+        
+        $data['home'] = 'Producto';
+        $data['principal']= $_SESSION['usuario'];
         echo view('head',$data);
         echo view('header');
         echo view('sidebar');

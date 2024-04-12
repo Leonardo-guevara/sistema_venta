@@ -9,14 +9,13 @@ class Persona extends BaseController
     public function __construct(){
 		$this->db = \Config\Database::connect();
 		$this->session = \Config\Services::session();	
-        $this->helper = helper(array('form', 'url'));
 
 	}
 	public function index()
     {
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-            die();
+            
         }
         $PersonaModel = new PersonaModel();
         $data['title'] = 'Lista de persona';
@@ -29,9 +28,9 @@ class Persona extends BaseController
     {
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-            die();
+            
         }
-        helper('form', 'url');
+        helper('form');
         $PersonaModel = new PersonaModel();
         $data['title'] = 'Crear Nuevo Persona';
         $data['home'] = 'Persona';
@@ -78,15 +77,15 @@ class Persona extends BaseController
         ];
         $PersonaModel->insertar($datos);
         return redirect()->route('persona');
-        die();
+        
     }
     public function update()
     {
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-            die();
+            
         }
-        helper('form', 'url');
+        helper('form');
         $PersonaModel = new PersonaModel();
         if(!isset($_GET["id"]) and empty($_GET['id'])) { $id = '0';} else {$id = $_GET["id"];} 
         $data['datos'] = $PersonaModel->encontrar($id);
@@ -136,13 +135,13 @@ class Persona extends BaseController
         ];
         $PersonaModel->actualizar($id,$datos);
         return redirect()->route('persona');
-        die();
+        
     }
     public function delete()
     {
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-            die();
+            
         }
         $PersonaModel = new PersonaModel();
         if(!isset($_GET["id"]) and empty($_GET['id'])) { $id = '0';} else {$id = $_GET["id"];}   
@@ -150,13 +149,13 @@ class Persona extends BaseController
             $PersonaModel->delete($id);
         }
         return redirect()->route('persona');
-        die();
+        
 
     }
     public function recovery(){
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-            die();
+            
         }
         $PersonaModel = new PersonaModel();
         $data['title'] = 'Recuperar Cliente';
@@ -169,14 +168,14 @@ class Persona extends BaseController
     {
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-            die();
+            
         }
         $PersonaModel = new PersonaModel();
         if(!isset($_GET["id"]) and empty($_GET['id'])) { $id = '0';} else {$id = $_GET["id"];}  
         
             $PersonaModel->recovery_user($id);
         return redirect()->route('persona');
-        die();
+        
     }
     protected function load_view( $view = null, $data = null)
     {

@@ -11,7 +11,6 @@ class Unidad extends BaseController
     {
         $this->db = \Config\Database::connect();
         $this->session = \Config\Services::session();
-        $this->helper = helper(array('form', 'url'));
 
     }
     public function index()
@@ -21,8 +20,6 @@ class Unidad extends BaseController
         }
         $UnidadModel = new UnidadModel();
         $data['title'] = 'Lista de Unidad';
-        $data['home'] = 'Unidad';
-        $data['principal'] = $this->session->get('usuario');
         $data['data'] = $UnidadModel->seleccionar();
         return $this->load_view('board/unidad', $data);
     }
@@ -31,11 +28,9 @@ class Unidad extends BaseController
         if ($this->validar() == NULL) {
             return redirect()->route('login');
         }
-        helper('form', 'url');
+        helper('form');
         $UnidadModel = new UnidadModel();
         $data['title'] = 'Crear Nuevo Unidad';
-        $data['home'] = 'Unidad';
-        $data['principal'] = $this->session->get('usuario');
         if (
             !$this->validate([
                 'unidad' => 'required|min_length[3]|max_length[255]|is_unique[unidad.name]',
@@ -50,22 +45,44 @@ class Unidad extends BaseController
         $UnidadModel->insertar($datos);
         return redirect()->route('unidad');
     }
+    public function view_ajax()
+    {
+        if ($this->validar() == NULL) {
+            return false;
+        }
+        $UnidadModel = new UnidadModel();
+        $json = json_encode($UnidadModel->seleccionar());
+        return $json;
+    }
+    public function insert_ajax()
+    {
+        if ($this->validar() == NULL) {
+            return false;
+        }
+        $UnidadModel = new UnidadModel();
+        if (!isset ($_GET["data"]) and empty ($_GET['data'])) {
+            return 'false';
+        } else {
+            $datos = [
+                'unidad' => $_GET["data"],
+            ];
+        }
+        return $UnidadModel->insertar($datos);
+    }
     public function update()
     {
         if ($this->validar() == NULL) {
             return redirect()->route('login');
         }
-        helper('form', 'url');
+        helper('form');
         $UnidadModel = new UnidadModel();
-        if (!isset($_GET["id"]) and empty($_GET['id'])) {
+        if (!isset ($_GET["id"]) and empty ($_GET['id'])) {
             $id = '0';
         } else {
             $id = $_GET["id"];
         }
         $data['datos'] = $UnidadModel->encontrar($id);
         $data['title'] = 'Actualizar Unidad';
-        $data['home'] = 'Unidad';
-        $data['principal'] = $this->session->get('usuario');
         if (
             !$this->validate([
                 'unidad' => 'required|min_length[3]|max_length[255]|is_unique[unidad.name,idunidad,{id}]',
@@ -86,13 +103,12 @@ class Unidad extends BaseController
             return redirect()->route('login');
         }
         $UnidadModel = new UnidadModel();
-        if (!isset($_GET["id"]) and empty($_GET['id'])) {
+        if (!isset ($_GET["id"]) and empty ($_GET['id'])) {
             $id = '0';
         } else {
             $id = $_GET["id"];
         }
-        $UnidadModel->delete($id);
-        header("Location: " . base_url() . "unidad/");
+        return $UnidadModel->delete($id);
 
     }
     public function recovery()
@@ -102,8 +118,6 @@ class Unidad extends BaseController
         }
         $UnidadModel = new UnidadModel();
         $data['title'] = 'Recuperar Unidad';
-        $data['home'] = 'Unidad';
-        $data['principal'] = $this->session->get('usuario');
         $data['data'] = $UnidadModel->view_delete();
         return $this->load_view('recovery/unidad', $data);
     }
@@ -113,16 +127,18 @@ class Unidad extends BaseController
             return redirect()->route('login');
         }
         $UnidadModel = new UnidadModel();
-        if (!isset($_GET["id"]) and empty($_GET['id'])) {
-            $id = '0';
+        if (!isset ($_GET["id"]) and empty ($_GET['id'])) {
+            return false;
         } else {
             $id = $_GET["id"];
         }
-        $UnidadModel->recovery_data($id);
-        return redirect()->route('unidad');
+        return $UnidadModel->recovery_data($id);
     }
     protected function load_view($view = null, $data = null)
     {
+        
+        $data['home'] = 'Unidad';
+        $data['principal'] = $_SESSION['usuario'];
         echo view('head', $data);
         echo view('header');
         echo view('sidebar');
@@ -132,7 +148,7 @@ class Unidad extends BaseController
 
     protected function validar()
     {
-        if (isset($_SESSION["fkroles"])) {
+        if (isset ($_SESSION["fkroles"])) {
             $UnidadModel = new UnidadModel();
             $var['roles'] = intval($_SESSION["fkroles"]);
             $var['permiso'] = 1;

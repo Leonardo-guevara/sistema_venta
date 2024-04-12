@@ -49,9 +49,7 @@ class PresentacionModel extends Model
         $sql = "SELECT 
         `presentacion`.idpresentacion,
         `presentacion`.name,
-        `unidad`.name as unidad , 
-        `presentacion`.created_at, 
-        `presentacion`.deleted_at 
+        `unidad`.name as unidad 
         FROM presentacion INNER JOIN unidad  
         ON `presentacion`.fk_unidad = `unidad`.idunidad 
         WHERE `presentacion`.`deleted_at`<=> NULL;";

@@ -33,7 +33,9 @@ class Home extends BaseController
 
         return $this->load_view('board/home',$data);
     }
-
+    public function view(){
+        return view('demo/demo');
+    }
     public function login()
     {
         helper('form', 'url');

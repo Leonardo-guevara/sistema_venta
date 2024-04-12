@@ -28,16 +28,7 @@
           <div class="col-sm-6x">
             <h1><?php if(!isset($title) and empty($title)){echo '';}else{echo $title;}?></h1>
             <br>
-              <p>
-                <a href="<?=base_url()?>Inventario/Agregar" class="btn btn-app bg-success">
-                  <span class="badge bg-purple">+</span>
-                  <i class="fas fa-barcode"></i> Agregar
-                </a>
-                <a href="<?=base_url()?>Inventario/Ajuste" class="btn btn-app bg-warning">
-                  <span class="badge bg-purple">+/-</span>
-                  <i class="fas fa-barcode"></i> Ajuste
-                </a>
-              </p>
+             
               <hr>
               <form action="" method="post">
                 <div class="row">

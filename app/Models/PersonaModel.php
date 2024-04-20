@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use CodeIgniter\Email\Email;
 use CodeIgniter\Model;
 
 class PersonaModel extends Model
@@ -56,11 +57,14 @@ class PersonaModel extends Model
         $db = \Config\Database::connect();
         $sql = "INSERT INTO `persona` (`nombre`, `email`, `telefono`, `cedula`, `created_at`) VALUES ( ?,?,?,?, NOW());";
         $datos['persona'] = strtoupper($datos['persona']);
-        $datos['email'] = strtoupper($datos['email']);
         $datos['telefono'] = strtoupper($datos['telefono']);
         $datos['cedula'] = strtoupper($datos['cedula']);
-        $query = $db->query($sql,[$datos['persona'],$datos['email'],$datos['telefono'],$datos['cedula']]);
-
+        if (isset($datos['email'])) {
+            return  $db->query($sql,[$datos['persona'],null,$datos['telefono'],$datos['cedula']]);
+        }
+        $datos['email'] = strtoupper($datos['email']);
+        return $db->query($sql,[$datos['persona'],$datos['email'],$datos['telefono'],$datos['cedula']]);
+       
     }
     public function encontrar($id = null)
     {

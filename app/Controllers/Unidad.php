@@ -48,7 +48,7 @@ class Unidad extends BaseController
     public function view_ajax()
     {
         if ($this->validar() == NULL) {
-            return false;
+             return redirect()->route('login');
         }
         $UnidadModel = new UnidadModel();
         $json = json_encode($UnidadModel->seleccionar());
@@ -57,7 +57,7 @@ class Unidad extends BaseController
     public function insert_ajax()
     {
         if ($this->validar() == NULL) {
-            return false;
+             return redirect()->route('login');
         }
         $UnidadModel = new UnidadModel();
         if (!isset ($_GET["data"]) and empty ($_GET['data'])) {

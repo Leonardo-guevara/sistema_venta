@@ -9,13 +9,12 @@ class Roles extends BaseController
     public function __construct(){
 		$this->db = \Config\Database::connect();
 		$this->session = \Config\Services::session();	
-        $this->helper = helper(array('form', 'url'));
+        $this->helper = (array('form', 'url'));
 
 	}
 	public function index(){
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-            die();
         }
         $RolesModel = new RolesModel();
         $data['title'] = 'Lista de Roles';

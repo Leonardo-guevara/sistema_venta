@@ -1,6 +1,6 @@
- <!-- SweetAlert2 -->
-<link rel="stylesheet" href="<?=base_url('public')?>/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
-<script src="<?=base_url('public')?>/plugins/sweetalert2/sweetalert2.min.js"></script>
+  <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="<?=base_url('public')?>/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+  <script src="<?=base_url('public')?>/plugins/sweetalert2/sweetalert2.min.js"></script>
 <!-- DataTables -->
   <link rel="stylesheet" href="<?=base_url('public')?>/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="<?=base_url('public')?>/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">

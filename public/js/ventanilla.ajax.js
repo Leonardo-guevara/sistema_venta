@@ -1,18 +1,46 @@
 
-$(function() {
+$(function () {
     // select2
     $('.select2').select2();
     document.getElementById('publico').innerHTML = 'Público en General ';
-    suma_precio();
     actualizar_venta();
-    select_cliente();
-    listar_produto(); 
-    $("#example2").DataTable({
-        "responsive": true,
-        "lengthChange": false,
-        "autoWidth": false,
-    }).buttons().container().appendTo('#example2_wrapper .col-md-6:eq(0)');
+    select_cliente();       
+    table;
+
 })
+
+var table = new DataTable("#example2", {
+    ajax: hostname + "venta/view_producto",
+    columns: [
+        {  data: 'stocks' },
+        {data: 'codigo' },
+        { data: 'name'    },
+        { data: 'precio_venta'    },
+
+        {
+            data: null,
+            defaultContent: '<button class="btn btn-primary btn-sm btn-flat"><i class="fas fa-cart-plus fa-lg mr-2"></i></button>',
+            targets: -1
+        },
+        {   
+            data: null,
+            render: function (data, type, row) {
+                return '<img src="'+ hostname + data.foto + '",width=60px, height=60px />'
+            },
+            orderable: false
+        },
+
+    ],
+    "responsive": true,
+    "lengthChange": false,
+    "autoWidth": false,
+
+});
+
+table.on('click', 'button', function (e) {
+    let data = table.row(e.target.closest('tr')).data();
+    buscar_producto(data['codigo']);
+});
 
 // area de impresion
 function printDiv(divName) {
@@ -31,12 +59,12 @@ function select_cliente() {
     var cod = document.getElementById("fk_persona").value;
     var venta = idventas;
     var http = new XMLHttpRequest();
-    var ruta = hostname+"venta/chage_user?user=" + cod + "&venta=" + venta;
+    var ruta = hostname + "venta/chage_user?cliente=" + cod + "&venta=" + venta;
     http.open('GET', ruta, true);
+        // console.log(ruta);
     http.send();
     document.getElementById('publico').innerHTML = optionName;
-    document.getElementById('cedula').innerHTML = optionCedula;
-    // alert(cod);
+    document.getElementById('cedula').innerHTML = optionCedula; 
 }
 //#TODO:  mostral hora actual
 function mostra_hora() {
@@ -54,55 +82,55 @@ function mostra_hora() {
 setInterval(mostra_hora, 1000);
 // TODO:  producto barcode clip
 var input = document.getElementById("barcode");
-input.addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-        event.preventDefault();
-        document.getElementById("myBtn").click();
-        suma_precio();
-        actualizar_venta();
-    }
-});
-// TODO: borrar producto barcode clip
-var delete_barcode = document.getElementById("delete_barcode");
-delete_barcode.addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-        event.preventDefault();
-        document.getElementById("delete_producto").click();
-        suma_precio();
-        actualizar_venta();
-    }
+input.addEventListener("keypress", function (event) {
+    // if (event.key == "Enter"  ) {
+        buscar_producto(input.value);
+    // }
 });
 // TODO: buscar producto y registar
-function buscar_producto() {
+function  buscar_producto(barcode = null ) {
     var http = new XMLHttpRequest();
-    var barcode = document.getElementById("barcode").value;
-    var venta =idventas;
-    var ruta = hostname+"venta/ajax?venta=" + venta + "&code=" + barcode;
+    var venta = idventas;
+    var cantidad = document.getElementById("agregar").value;;
+    if ( barcode == null) {
+        barcode = document.getElementById("barcode").value;
+    }
+    var ruta = hostname + "venta/ajax?venta=" + venta + "&code=" + barcode +"&cantidad=" + cantidad ;
     http.open('GET', ruta, true);
+    console.log(ruta);
     actualizar_venta();
-    suma_precio();
-    document.getElementById("barcode").value = "";
+    // location.reload();
     http.send();
 }
+
+// TODO: borrar producto barcode clip
+var delete_barcode = document.getElementById("delete_barcode");
+delete_barcode.addEventListener("keypress", function (event) {
+    if (event.key == "Enter") {
+        eliminar_producto()
+    }
+});
+
 // TODO:  eliminar_producto
 function eliminar_producto() {
     var http = new XMLHttpRequest();
     var barcode = document.getElementById("delete_barcode").value;
-    var venta =idventas;
-    var ruta = hostname+"venta/delete_barcode?venta=" + venta + "&code=" + barcode;
+    var venta = idventas;
+    var cantidad = document.getElementById("quitar").value;;
+    var ruta = hostname + "venta/delete_barcode?venta=" + venta + "&code=" + barcode +"&cantidad=" + cantidad;
     http.open('GET', ruta, true);
-    suma_precio();
     actualizar_venta();
-    document.getElementById("delete_barcode").value = "";
+    // location.reload();
     http.send();
 }
+
 // TODO: actualizar venta
 function actualizar_venta() {
     var http = new XMLHttpRequest();
-    var venta =idventas;
-    const ruta = hostname+"venta/json?venta=" + venta;
+    var venta = idventas;
+    const ruta = hostname + "venta/json?venta=" + venta;
     http.open('GET', ruta, true);
-    http.onreadystatechange = function() {
+    http.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             var resultado = (this.responseText);
             if (resultado.indexOf("\n") > 2) {
@@ -111,9 +139,10 @@ function actualizar_venta() {
                 final = resultado.replace(cut, "");
                 resultado = final;
             }
+            myObj = JSON.parse(resultado);
+            datos = (myObj.detalle_venta);
             tabla = document.getElementById('tabla'),
                 tabla.innerHTML = '<tr><th>Cant.</th><th>Producto</th><th>Prec. Uni.</th><th>Subtotal</th></tr>';
-            var datos = JSON.parse(resultado);
             datos.forEach(recibo => {
                 var elemento = document.createElement("tr");
                 elemento.innerHTML += ("<td>" + recibo.cantidad + "</td>");
@@ -122,57 +151,11 @@ function actualizar_venta() {
                 elemento.innerHTML += ("<td>" + recibo.total + "</td>");
                 document.getElementById("tabla").appendChild(elemento);
             });
+            datos = (myObj.suma_precio);
+            document.getElementById("total_precio").innerHTML = datos.resultado;    
         }
     }
     http.send();
-}
-// TODO:  ver total
-function suma_precio() {
-    var http = new XMLHttpRequest();
-    var venta = idventas ;
-    var ruta = hostname+"venta/suma_precio?venta=" + venta;
-    http.open('GET', ruta, true);
-    http.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            var resultado = (this.responseText);
-            if (resultado.indexOf("\n") > 2) {
-                index = resultado.indexOf("\n");
-                cut = resultado.substring(index);
-                final = resultado.replace(cut, "");
-                resultado = final;
-            }
-            var datos = JSON.parse(resultado);
-            document.getElementById("total_precio").innerHTML = datos.resultado;
-        }
-    }
-    http.send();
-}
-// TODO: finalizra venta
-function finalizar_venta() {
-    var http = new XMLHttpRequest();
-    var venta =idventas;
-    var ruta = hostname+"venta/finalizar_venta?venta=" + venta;
-    http.open('GET', ruta, true);
-    http.send();
-    location.reload();
-}
-// TODO: listar
-function listar_produto(){
-    var http = new XMLHttpRequest();
-    var ruta = hostname+"venta/view_producto";
-    http.open('GET', ruta, true);
-    http.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            var resultado = (this.responseText);
-            if (resultado.indexOf("\n") > 2) {
-                index = resultado.indexOf("\n");
-                cut = resultado.substring(index);
-                final = resultado.replace(cut, "");
-                resultado = final;
-            }
-            var datos = JSON.parse(resultado);
-            console.log(datos); 
-        }
-    }
-    http.send();
+    document.getElementById("delete_barcode").value = "";
+    document.getElementById("barcode").value = "";
 }

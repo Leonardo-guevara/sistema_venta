@@ -7,9 +7,8 @@ use CodeIgniter\Config\BaseConfig;
 class Roles extends BaseController
 {
     public function __construct(){
-		$this->db = \Config\Database::connect();
-		$this->session = \Config\Services::session();	
-        $this->helper = (array('form', 'url'));
+		\Config\Database::connect();
+		\Config\Services::session();	
 
 	}
 	public function index(){
@@ -18,8 +17,6 @@ class Roles extends BaseController
         }
         $RolesModel = new RolesModel();
         $data['title'] = 'Lista de Roles';
-        $data['home'] = 'Roles';
-        $data['principal']= $this->session->get('usuario');
         $data['data'] =$RolesModel->seleccionar();
         return $this->load_view('board/roles',$data);
     }
@@ -31,8 +28,6 @@ class Roles extends BaseController
         helper('form', 'url');
         $RolesModel = new RolesModel();
         $data['title'] = 'Crear Nuevo Roles';
-        $data['home'] = 'Roles';
-        $data['principal']= $this->session->get('usuario');
         if (!$this->validate([
             'roles'    => 'required|min_length[3]|max_length[255]|is_unique[roles.name]',
             'detalle'  => 'required',
@@ -60,8 +55,6 @@ class Roles extends BaseController
         if ($id != 1) {
         $data['datos'] = $RolesModel->encontrar($id);
         $data['title'] = 'Crear Nuevo Roles';
-        $data['home'] = 'Roles';
-        $data['principal']= $this->session->get('usuario');
         if (!$this->validate([
             'roles'    => 'required|min_length[3]|max_length[255]|is_unique[roles.name,idroles,{id}]',   
             'detalle'  => 'required',
@@ -104,8 +97,6 @@ class Roles extends BaseController
         if ($id != 1) {
         $data['datos'] = $RolesModel->encontrar_permiso($id);
         $data['title'] = 'Asignar Permiso';
-        $data['home'] = 'Roles';
-        $data['principal']= $this->session->get('usuario');
         if (isset($_POST) and empty($_POST)){
             return $this->load_view('form/permiso',$data);
         }
@@ -121,8 +112,6 @@ class Roles extends BaseController
         }
         $RolesModel = new RolesModel();
         $data['title'] = 'Recuperar Roles';
-        $data['home'] = 'Roles';
-        $data['principal']= $this->session->get('usuario');
         $data['data'] =$RolesModel->view_delete();
         return $this->load_view('recovery/roles',$data);
     }
@@ -138,6 +127,8 @@ class Roles extends BaseController
         die();
     }
     protected function load_view( $view = null, $data = null){
+        $data['principal']= $_SESSION['usuario'];
+        $data['home'] = 'Roles';
         echo view('head',$data);
         echo view('header');
         echo view('sidebar');

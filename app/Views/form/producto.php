@@ -73,6 +73,19 @@
                           <input type="text" name="codigo" class="form-control" placeholder="Ingrese codigo" value="<?= $codigo; ?>">
                         </div>
                         <div class="form-group">
+                          <label>Nombre</label>
+                          <?php //php code generator
+                          if (isset($_POST['name']) and !empty($_POST['name'])) {
+                            $name = $_POST['name'];
+                          } elseif (isset($datos['name']) and !empty($datos['name'])) {
+                            $name = $datos['name'];
+                          } else {
+                            $name = '';
+                          }
+                          ?>
+                          <input type="text" name="name" class="form-control" placeholder="Ingrese Nombre" value="<?= $name; ?>">
+                        </div>
+                        <div class="form-group">
                           <label>Detalle</label>
                           <?php
                           if (isset($_POST['description']) and !empty($_POST['description'])) {
@@ -101,21 +114,11 @@
                           <img src="<?= base_url() ?><?= $file ?>" id="output" width="100px" />
                           <input type="file" accept="image/*" name="file" class="form-control" value="<?= $file; ?>" onchange="loadFile(event)">
                         </div>
+
+
                       </div>
                       <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Nombre</label>
-                          <?php //php code generator
-                          if (isset($_POST['name']) and !empty($_POST['name'])) {
-                            $name = $_POST['name'];
-                          } elseif (isset($datos['name']) and !empty($datos['name'])) {
-                            $name = $datos['name'];
-                          } else {
-                            $name = '';
-                          }
-                          ?>
-                          <input type="text" name="name" class="form-control" placeholder="Ingrese Nombre" value="<?= $name; ?>">
-                        </div>
+
                         <div class="form-group">
                           <label>Unidad</label>
                           <div class="input-group-prepend">
@@ -137,21 +140,14 @@
                               }
                               ?>
                             </select>
-                            <span>
-                              <button 
-                              type="button" 
-                              class="btn btn-default btn-xs btn btn-app bg-success " 
-                              data-toggle="modal" 
-                              data-target="#modalAgregarCliente" 
-                              data-dismiss="modal">
-                              <i class="fas fa-users"></i>
-                              </button>
-                            </span>
+                            <span class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarUnidad">
+                              Agregar Unidad
+                            </span>                          
                           </div>
-
                         </div>
                         <div class="form-group">
                           <label>Marca</label>
+                          <div class="input-group-prepend">
                           <?php //php code generator
                           if (isset($_POST['fk_marca']) and !empty($_POST['fk_marca'])) {
                             $fk_marca = $_POST['fk_marca'];
@@ -172,9 +168,14 @@
                             }
                             ?>
                           </select>
+                          <span class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarMarca">
+                              Agregar Marca
+                          </span>
+                          </div>
                         </div>
                         <div class="form-group">
                           <label>Presentacion</label>
+                          <div class="input-group-prepend">
                           <?php //php code generator
                           if (isset($_POST['fk_presentacion']) and !empty($_POST['fk_presentacion'])) {
                             $fk_presentacion = $_POST['fk_presentacion'];
@@ -193,9 +194,14 @@
                             }
                             ?>
                           </select>
+                          <span class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarPresentacion">
+                              Agregar Presentacion
+                          </span>
+                          </div>
                         </div>
                         <div class="form-group">
                           <label>Categoria</label>
+                          <div class="input-group-prepend">
                           <?php //php code generator
                           if (isset($_POST['fk_categoria']) and !empty($_POST['fk_categoria'])) {
                             $fk_categoria = $_POST['fk_categoria'];
@@ -216,9 +222,11 @@
                             }
                             ?>
                           </select>
+                          <span class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarCategoria">
+                              Agregar categoría
+                          </span>
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-md-6">
                         <div class="form-group">
                           <label>Cantidad de Producto</label>
                           <?php //php code generator
@@ -245,8 +253,6 @@
                           ?>
                           <input type="number" name="minimo" class="form-control" placeholder="Cantidad de minimo" value="<?= $minimo; ?>">
                         </div>
-                      </div>
-                      <div class="col-md-6">
                         <div class="form-group">
                           <label>Precio de compra</label>
                           <?php //php code generator
@@ -273,17 +279,18 @@
                           ?>
                           <input type="number" step="0.01" id="cobertura" name="precio_venta" class="form-control" placeholder="valor" value="<?= $precio_venta; ?>" onkeydown="cien()" />
                           <!-- <input type="number" onkeydown="cien()" name="precio_venta" class="form-control"  placeholder="Precio de Venta" value="<?= $precio_venta; ?>"> -->
-                        </div>
+                        </div>  
                       </div>
+
                     </div>
                     <div class="form-group">
 
                     </div>
-                    <div class="form-group">
-                      <?php if (!empty($_POST)) : ?>
-                        <?= \Config\Services::validation()->listErrors(); ?>
-                      <?php endif ?>
-                    </div>
+                      <div class="form-group">
+                        <?php if (!empty($_POST)) : ?>
+                          <?= \Config\Services::validation()->listErrors(); ?>
+                        <?php endif ?>
+                      </div>
                   </div>
                   <!-- /.card-body -->
 
@@ -301,60 +308,125 @@
     <!-- /.content-wrapper -->
 
     <script>
-      $(function() {
-        $('.select2').select2()
-        $('#summernote').summernote()
-      })
-
-      function cien() {
-        var x = document.getElementById("mySelect").value;
-        const input = document.getElementById('cobertura');
-        input.addEventListener('input', e => {
-          const value = parseInt(e.currentTarget.value);
-          if (value <= parseInt(x)) {
-            porcentaje = (parseInt(x) * 0.30);
-            input.value = parseInt(x) + porcentaje;
-            alert('Por favor ingresa un mayor : ' + x);
-          }
-        });
-      }
-
-      function select_presentacion() {
-        const x = document.getElementById("unidad").value;
-        var presentacion = document.getElementById('presentacion');
-        ruta = "<?= base_url() ?>producto/json?code=" + x;
-        var http = new XMLHttpRequest();
-        http.open('GET', ruta);
-        http.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-            var resultado = (this.responseText);
-
-            if (resultado.indexOf("\n") > 2) {
-              index = resultado.indexOf("\n");
-              cut = resultado.substring(index);
-              final = resultado.replace(cut, "");
-              resultado = final;
-            }
-            var guardar = JSON.parse(resultado);
-            console.log(resultado);
-
-
-            presentacion.innerHTML = '<option value="">Seleccione una presentacion...</option>'
-            guardar.forEach(element => {
-              var option = document.createElement("option");
-              option.value = element.idpresentacion;
-              option.text = element.name;
-              presentacion.appendChild(option);
-            });
-          }
-        }
-        http.send();
-      }
-      var loadFile = function(event) {
-        var output = document.getElementById('output');
-        output.src = URL.createObjectURL(event.target.files[0]);
-        output.onload = function() {
-          URL.revokeObjectURL(output.src) // free memory
-        }
-      };
+      hostname = '<?= base_url() ?>';
     </script>
+    <script src="<?= base_url() ?>public\js\producto.js"></script>
+
+
+<!--=====================================
+MODAL UNIDAD 
+======================================-->
+<div id="modalAgregarUnidad" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form action="<?=base_url()?>producto/insertunidad"role="form" method="get">
+        <div class="modal-header" style="background:#3c8dbc; color:white">
+          <h4 class="modal-title">Agregar Unidad</h4>
+        </div>
+        <div class="modal-body">
+          <div class="box-body">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-th"></i></span> 
+                <input type="text" class="form-control input-lg" name="unidad" placeholder="Ingresar unidad" required>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--=====================================
+MODAL marca 
+======================================-->
+<div id="modalAgregarMarca" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form action="<?=base_url()?>producto/insertmarca"role="form" method="post">
+        <div class="modal-header" style="background:#3c8dbc; color:white">
+          <h4 class="modal-title">Agregar Marca</h4>
+        </div>
+        <div class="modal-body">
+          <div class="box-body">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-th"></i></span> 
+                <input type="text" class="form-control input-lg" name="marca" placeholder="Ingresar marca" required>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--=====================================
+MODAL presentacion
+======================================-->
+<div id="modalAgregarPresentacion" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form action="<?=base_url()?>producto/insertpresentacion"role="form" method="get">
+        <div class="modal-header" style="background:#3c8dbc; color:white">
+          <h4 class="modal-title">Agregar Presentacion</h4>
+        </div>
+        <div class="modal-body">
+          <div class="box-body">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-th"></i></span> 
+                <input type="hidden" name="unidad"id="envunidad">
+                <input type="text" class="form-control input-lg" name="presentacion" placeholder="Ingresar presentacion" required>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--=====================================
+MODAL categoria 
+======================================-->
+<div id="modalAgregarCategoria" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form action="<?=base_url()?>producto/insertcategoria"role="form" method="get">
+        <div class="modal-header" style="background:#3c8dbc; color:white">
+          <h4 class="modal-title">Agregar Categoria</h4>
+        </div>
+        <div class="modal-body">
+          <div class="box-body">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-th"></i></span> 
+                <input type="text" class="form-control input-lg" name="categoria" placeholder="Ingresar categoria" required>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

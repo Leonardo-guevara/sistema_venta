@@ -7,8 +7,8 @@ use CodeIgniter\Config\BaseConfig;
 class Persona extends BaseController
 {
     public function __construct(){
-		$this->db = \Config\Database::connect();
-		$this->session = \Config\Services::session();	
+		\Config\Database::connect();
+		\Config\Services::session();	
 
 	}
 	public function index()

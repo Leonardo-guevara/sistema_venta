@@ -30,7 +30,7 @@ class ProductoModel extends Model
 
     // Dates
     protected $useTimestamps = true;
-    // protected $dateFormat    = 'datetime';
+    protected $dateFormat    = 'datetime';
     protected $createdField = 'created_at';
     protected $updatedField = 'updated_at';
     protected $deletedField = 'deleted_at';
@@ -78,43 +78,70 @@ class ProductoModel extends Model
     public function unidad()
     {
         $db = \Config\Database::connect();
-        $sql = "SELECT * FROM `unidad` WHERE `deleted_at`<=> NULL;";
+        $sql = "SELECT * FROM `unidad` WHERE `deleted_at`<=> NULL ORDER BY created_at DESC;";
         $query = $db->query($sql);
         $row = $query->getResultArray();
         return $row;
+    }
+    function insertunidad($data = null) {
+        $db = \Config\Database::connect();
+        $sql = "INSERT INTO `unidad`( `name`, `created_at`) VALUES (?,NOW());";
+        $data['data'] = strtoupper($data['data']);
+        $db->query($sql,[$data['data']]);
+        return $data;
     }
     public function marca()
     {
         $db = \Config\Database::connect();
-        $sql = "SELECT * FROM `marca` WHERE `deleted_at`<=> NULL;";
+        $sql = "SELECT * FROM `marca` WHERE `deleted_at`<=> NULL ORDER BY created_at DESC;";
         $query = $db->query($sql);
         $row = $query->getResultArray();
         return $row;
+    }
+    function insertmarca($data = null) {
+        $db = \Config\Database::connect();
+        $sql = "INSERT INTO `marca`( `name`, `created_at`) VALUES (?,NOW());";
+        $data['data'] = strtoupper($data['data']);
+        $db->query($sql,[$data['data']]);
+        return $data;
     }
     public function presentacion()
     {
         $db = \Config\Database::connect();
-        $sql = "SELECT * FROM `presentacion` WHERE `deleted_at`<=> NULL;";
+        $sql = "SELECT * FROM `presentacion` WHERE `deleted_at`<=> NULL ORDER BY created_at DESC;";
         $query = $db->query($sql);
         $row = $query->getResultArray();
         return $row;
+    }
+    public function insertpresentacion($datos = null)
+    {
+        $db = \Config\Database::connect();
+        $sql = "INSERT INTO `presentacion` (`name`,`fk_unidad`,`created_at`) VALUES ( ?,?, NOW());";
+        $datos['presentacion'] = strtoupper($datos['presentacion']);
+        $db->query($sql,[$datos['presentacion'],$datos['fk_unidad']]);
     }
     function selec_presentacion($data)
     {
         $db = \Config\Database::connect();
-        $sql = "SELECT * FROM `presentacion` WHERE  `fk_unidad` = ? AND `deleted_at`<=> NULL;";
+        $sql = "SELECT * FROM `presentacion` WHERE  `fk_unidad` = ? AND `deleted_at`<=> NULL ORDER BY created_at DESC;";
         $query = $db->query($sql, [$data]);
         $row = $query->getResultArray();
         return $row;
     }
-
-    public function categoria($var = null)
+    public function categoria()
     {
         $db = \Config\Database::connect();
-        $sql = "SELECT * FROM `categoria` WHERE `deleted_at`<=> NULL;";
+        $sql = "SELECT * FROM `categoria` WHERE `deleted_at`<=> NULL ORDER BY created_at DESC;";
         $query = $db->query($sql);
         $row = $query->getResultArray();
         return $row;
+    }
+    function insertcategoria($data = null) {
+        $db = \Config\Database::connect();
+        $sql = "INSERT INTO `categoria`( `name`, `created_at`) VALUES (?,NOW());";
+        $data['data'] = strtoupper($data['data']);
+        $db->query($sql,[$data['data']]);
+        return $data;
     }
     public function insertar($datos = null)
     {
@@ -241,7 +268,6 @@ class ProductoModel extends Model
         $sql = "UPDATE `producto` SET `deleted_at` = NULL  WHERE `producto`.`idproducto` IN (?);";
         $db->query($sql, [$id]);
     }
-
     public function view_delete()
     {
         $db = \Config\Database::connect();

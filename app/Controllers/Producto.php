@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Controllers;
 
 use App\Models\ProductoModel;
@@ -10,25 +11,20 @@ class Producto extends BaseController
     public function __construct()
     {
         // $this->session = \Config\Services::session();
-        $session = \Config\Services::session();
-	
-
+        \Config\Services::session();
     }
 
     public function index()
     {
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-
         }
         $ProductoModel = new ProductoModel();
         $data['title'] = 'Lista de Producto';
         if (!empty($_POST)) {
-            if (
-                !$this->validate([
-                    'producto' => 'required',
-                ])
-            ) {
+            if (!$this->validate([
+                'producto' => 'required',
+            ])) {
                 $data['errors'] = $this->validator->getErrors();
                 return $this->load_view('board/producto', $data);
             }
@@ -47,6 +43,9 @@ class Producto extends BaseController
 
     public function json()
     {
+        if ($this->validar() == NULL) {
+            return false;
+        }
         $ProductoModel = new ProductoModel();
         if (!isset($_GET["code"]) and empty($_GET['code'])) {
             $code = '0';
@@ -56,12 +55,85 @@ class Producto extends BaseController
         $json = json_encode($ProductoModel->selec_presentacion($code));
         return $json;
     }
+    public function insertunidad()
+    {
+        if ($this->validar() == NULL) {
+            return false;
+        }
+        $ProductoModel = new ProductoModel();
 
+        if (!$this->validate([
+            'unidad' => 'required|min_length[3]|max_length[255]|is_unique[unidad.name]',
+        ])) {
+            $data['errors'] = $this->validator->getErrors();
+            return $this->insert();
+        }
+        $data = [
+            'data' => $_GET["unidad"],
+        ];
+        $ProductoModel->insertunidad($data);
+        return $this->insert();
+    }
+    public function insertmarca()
+    {
+        if ($this->validar() == NULL) {
+            return false;
+        }
+        $ProductoModel = new ProductoModel();
+        if (!$this->validate([
+            'marca' => 'required|min_length[3]|max_length[255]|is_unique[marca.name]',
+        ])) {
+            $data['errors'] = $this->validator->getErrors();
+            return $this->insert();
+        }
+        $data = [
+            'data' => $_GET["marca"],
+        ];
+        $ProductoModel->insertmarca($data);
+        return $this->insert();
+    }
+    public function insertpresentacion()
+    {
+        if ($this->validar() == NULL) {
+            return false;
+        }
+        $ProductoModel = new ProductoModel();
+        if (!$this->validate([
+            'unidad' => 'required',
+            'presentacion' => 'required|min_length[3]|max_length[255]',
+        ])) {
+            $data['errors'] = $this->validator->getErrors();
+            return $this->insert();
+        }
+        $data = [
+            'fk_unidad' =>$_GET["unidad"],
+            'presentacion' => $_GET["presentacion"],
+        ];
+        $ProductoModel->insertpresentacion($data);
+        return $this->insert();
+    }
+    public function insertcategoria()
+    {
+        if ($this->validar() == NULL) {
+            return false;
+        }
+        $ProductoModel = new ProductoModel();
+        if (!$this->validate([
+            'categoria' => 'required|min_length[3]|max_length[255]|is_unique[categoria.name]',
+        ])) {
+            $data['errors'] = $this->validator->getErrors();
+            return $this->insert();
+        }
+        $data = [
+            'data' => $_GET["categoria"],
+        ];
+        $ProductoModel->insertcategoria($data);
+        return $this->insert();
+    }
     public function insert()
     {
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-
         }
         helper('form');
         $ProductoModel = new ProductoModel();
@@ -125,7 +197,6 @@ class Producto extends BaseController
     {
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-
         }
         helper('form');
         $ProductoModel = new ProductoModel();
@@ -194,14 +265,12 @@ class Producto extends BaseController
         $datos['user'] = $_SESSION['idusuario'];
         $ProductoModel->actualizar($id, $datos);
         return redirect()->route('producto');
-
     }
 
     public function delete()
     {
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-
         }
         $ProductoModel = new ProductoModel();
         if (!isset($_GET["id"]) and empty($_GET['id'])) {
@@ -211,14 +280,12 @@ class Producto extends BaseController
         }
         $ProductoModel->delete($id);
         header("Location: " . base_url() . "Producto/");
-
     }
 
     public function recovery()
     {
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-
         }
         $ProductoModel = new ProductoModel();
         $data['title'] = 'Recuperar Producto';
@@ -230,7 +297,6 @@ class Producto extends BaseController
     {
         if ($this->validar() == NULL) {
             return redirect()->route('login');
-
         }
         $ProductoModel = new ProductoModel();
         if (!isset($_GET["id"]) and empty($_GET['id'])) {

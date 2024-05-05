@@ -23,7 +23,7 @@ class Caja extends BaseController
         $CajaModel = new CajaModel();
         $data['title'] = 'Lista de Caja';
         $data['home'] = 'Caja';
-        $data['principal']= $this->session->get('usuario');
+        $data['principal']= $_SESSION['usuario'];;
         $data['data'] =$CajaModel->seleccionar();
         $data['cajas'] =$CajaModel->cajas_abiertas();
         return $this->load_view('board/caja',$data);
@@ -39,7 +39,7 @@ class Caja extends BaseController
         $CajaModel = new CajaModel();
         $data['title'] = 'Crear Nuevo caja';
         $data['home'] = 'caja';
-        $data['principal']= $this->session->get('usuario');
+        $data['principal']= $_SESSION['usuario'];;
         if (!$this->validate([
             'caja'    => 'required|min_length[3]|max_length[255]|is_unique[caja.name]',
             'detalle'    => 'required|min_length[3]',
@@ -67,7 +67,7 @@ class Caja extends BaseController
         $data['datos'] = $CajaModel->encontrar($id);
         $data['title'] = 'Crear Nuevo caja';
         $data['home'] = 'Caja';
-        $data['principal']= $this->session->get('usuario');
+        $data['principal']= $_SESSION['usuario'];;
         if (!$this->validate([
             'caja'    => 'required|min_length[3]|max_length[255]|is_unique[caja.name,idcaja,{id}]',
             'detalle'    => 'required|min_length[3]',
@@ -104,7 +104,7 @@ class Caja extends BaseController
         $CajaModel = new CajaModel();
         $data['title'] = 'Historial de Caja Arqueo';
         $data['home'] = 'Caja';
-        $data['principal']= $this->session->get('usuario');
+        $data['principal']= $_SESSION['usuario'];;
         if(!isset($_GET["id"]) and empty($_GET['id'])) { $id = '0';} else {$id = $_GET["id"];}  
         $data['data'] =$CajaModel->historial($id);
         return $this->load_view('board/arqueo_historial',$data);
@@ -118,7 +118,7 @@ class Caja extends BaseController
         $CajaModel = new CajaModel();
         $data['title'] = 'Recuperar Caja';
         $data['home'] = 'Caja';
-        $data['principal']= $this->session->get('usuario');
+        $data['principal']= $_SESSION['usuario'];;
         $data['data'] =$CajaModel->view_delete();
         return $this->load_view('recovery/caja',$data);
     }

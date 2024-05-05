@@ -173,32 +173,7 @@
                           </span>
                           </div>
                         </div>
-                        <div class="form-group">
-                          <label>Presentacion</label>
-                          <div class="input-group-prepend">
-                          <?php //php code generator
-                          if (isset($_POST['fk_presentacion']) and !empty($_POST['fk_presentacion'])) {
-                            $fk_presentacion = $_POST['fk_presentacion'];
-                          } elseif (isset($datos['fk_presentacion']) and !empty($datos['fk_presentacion'])) {
-                            $fk_presentacion = $datos['fk_presentacion'];
-                          } else {
-                            $fk_presentacion = '';
-                          }
-                          ?>
-                          <select class="form-control select2" id="presentacion" name="fk_presentacion" style="width: 100%;">
-                            <?php
-                            foreach ($presentacion as $key => $value) {
-                              if ($value['idpresentacion'] == ($fk_presentacion)) {
-                                echo '<option   value="' . $value['idpresentacion'] . '" selected="selected" style="display:none">' . $value['name'] . '</option>';
-                              }
-                            }
-                            ?>
-                          </select>
-                          <span class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarPresentacion">
-                              Agregar Presentacion
-                          </span>
-                          </div>
-                        </div>
+
                         <div class="form-group">
                           <label>Categoria</label>
                           <div class="input-group-prepend">
@@ -371,36 +346,7 @@ MODAL marca
     </div>
   </div>
 </div>
-<!--=====================================
-MODAL presentacion
-======================================-->
-<div id="modalAgregarPresentacion" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <form action="<?=base_url()?>producto/insertpresentacion"role="form" method="get">
-        <div class="modal-header" style="background:#3c8dbc; color:white">
-          <h4 class="modal-title">Agregar Presentacion</h4>
-        </div>
-        <div class="modal-body">
-          <div class="box-body">
-            <div class="form-group">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-th"></i></span> 
-                <input type="hidden" name="unidad"id="envunidad">
-                <input type="text" class="form-control input-lg" name="presentacion" placeholder="Ingresar presentacion" required>
-              </div>
-            </div>
-  
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
-          <button type="submit" class="btn btn-primary">Guardar</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
+
 <!--=====================================
 MODAL categoria 
 ======================================-->

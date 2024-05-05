@@ -23,7 +23,6 @@ class Usuario extends BaseController
         $UsuarioModel = new UsuarioModel();
         $data['title'] = 'Lista de Usuario';
         $data['home'] = 'Usuario';
-        $data['principal']= $this->session->get('usuario');
         $data['data'] =$UsuarioModel->seleccionar();
         return $this->load_view('board/usuario',$data);
     }
@@ -38,7 +37,6 @@ class Usuario extends BaseController
         $data['title'] = 'Crear nuevo Usuario';
         $data['home'] = 'Usuario';
         $data['roles'] =$UsuarioModel->roles();
-        $data['principal']= $this->session->get('usuario');
         if(!empty($_FILES["file"]["name"]) and isset($_FILES["file"]["name"])){
             $foto = $this->upload_img($_FILES);    
         }
@@ -105,7 +103,6 @@ class Usuario extends BaseController
         if(!empty($_FILES["file"]["name"]) and isset($_FILES["file"]["name"])){
             $foto = $this->upload_img($_FILES);    
         }
-        $data['principal']= $this->session->get('usuario');
         if (!$this->validate([
             'usuario'    => 'required|min_length[3]|max_length[255]|is_unique[usuario.usuario,idusuario,{id}]',
             'detalle'    => 'required|min_length[3]',
@@ -158,7 +155,6 @@ class Usuario extends BaseController
         $UsuarioModel = new UsuarioModel();
         $data['title'] = 'Recuperar Usuario';
         $data['home'] = 'Usuario';
-        $data['principal']= $this->session->get('usuario');
         $data['data'] =$UsuarioModel->view_delete();
         return $this->load_view('recovery/usuario',$data);
     }
@@ -170,7 +166,6 @@ class Usuario extends BaseController
         $UsuarioModel = new UsuarioModel();
         $data['title'] = 'Cambiara Contraseña';
         $data['home'] = 'Usuario';
-        $data['principal']= $this->session->get('usuario');
         $data['data'] = $UsuarioModel->view_delete();
 
         if (!$this->validate([
@@ -198,6 +193,7 @@ class Usuario extends BaseController
 
     protected function load_view( $view = null, $data = null)
     {
+        $data['principal']= $_SESSION['usuario'];
         echo view('head',$data);
         echo view('header');
         echo view('sidebar');

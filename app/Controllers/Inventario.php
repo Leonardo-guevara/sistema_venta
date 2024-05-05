@@ -21,7 +21,7 @@ class Inventario extends BaseController
         $InventarioModel = new InventarioModel();
         $data['title'] = 'KARDEX DE MOVIMIENTO';
         $data['home'] = 'Inventario';
-        $data['principal']= $this->session->get('usuario');
+        $data['principal']= $_SESSION['usuario'];;
         if (!$this->validate([
             'date_final'    => 'required',  
             'date_inicio'    => 'required',      
@@ -55,7 +55,7 @@ class Inventario extends BaseController
         $InventarioModel = new InventarioModel();
         $data['title'] = 'Agregar Producto';
         $data['home'] = 'Inventario';
-        $data['principal']= $this->session->get('usuario');
+        $data['principal']= $_SESSION['usuario'];;
         if (!$this->validate([
             'code'    => 'required', 
             'stockt'    => 'required|is_natural_no_zero',  
@@ -88,7 +88,7 @@ class Inventario extends BaseController
         $InventarioModel = new InventarioModel();
         $data['title'] = 'Ajuste de Producto';
         $data['home'] = 'Inventario';
-        $data['principal']= $this->session->get('usuario');
+        $data['principal']= $_SESSION['usuario'];;
         if (!$this->validate([
             'code'    => 'required', 
             'stockt'    => 'required|integer',  

@@ -22,7 +22,7 @@ class Arqueo extends BaseController
         $ArqueoModel = new ArqueoModel();
         $data['title'] = 'Lista de Arqueo';
         $data['home'] = 'Arqueo';
-        $data['principal']= $this->session->get('usuario');
+        $data['principal']= $_SESSION['usuario'];;
         $data['data'] =$ArqueoModel->seleccionar();
         // $data['arqueos'] =$ArqueoModel->arqueos_abiertas();
         return $this->load_view('board/arqueo',$data);
@@ -36,7 +36,7 @@ class Arqueo extends BaseController
         $ArqueoModel = new ArqueoModel();
         $data['title'] = 'Historial de Arqueo';
         $data['home'] = 'Arqueo';
-        $data['principal']= $this->session->get('usuario');
+        $data['principal']= $_SESSION['usuario'];;
         $data['data'] =$ArqueoModel->historial();
         // $data['arqueos'] =$ArqueoModel->arqueos_abiertas();
         return $this->load_view('board/arqueo_historial',$data);
@@ -54,7 +54,7 @@ class Arqueo extends BaseController
         $data['title'] = 'Crear Nuevo Arqueo';
         $data['home'] = 'Arqueo';
         $data['error'] = '';
-        $data['principal']= $this->session->get('usuario');
+        $data['principal']= $_SESSION['usuario'];;
         if (!$this->validate([
             'fk_usuario'    => 'required',
             'fkcaja'    => 'required',

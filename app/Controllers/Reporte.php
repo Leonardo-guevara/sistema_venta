@@ -22,7 +22,7 @@ class Reporte extends BaseController
         // if (!empty($data['data'])) {
             $data['title'] = 'Reporte de venta';
             $data['home'] = 'Venta';
-            $data['principal']= $this->session->get('usuario');
+            $data['principal']= $_SESSION['usuario'];;
             $data['listausuario']  = $VentaModel->usuario();
             // $data['data'] =$VentaModel->seleccionar($data["data"]["idarqueo_caja"]);
             if (!$this->validate([

@@ -6,19 +6,18 @@ use App\Models\UsuarioModel;
 
 class Home extends BaseController
 {
-    public function __construct(Type $var = null) {
-		$this->session = \Config\Services::session();	
+    public function __construct() {
+		\Config\Services::session();	
 
     }
     protected $helpers = ['form'];
     public function index() {
-        if (empty($this->session->get('usuario'))) {
+        if (empty($_SESSION['usuario'])) {
             return redirect()->route('login');
             die();
         }
         $db      = \Config\Database::connect();
         $data['title'] = 'Presentacion';
-        $data['principal']= $this->session->get('usuario');
         // selecionar usuario
         $sql = "SELECT * FROM `usuario` WHERE `deleted_at`<=> NULL;";
         $query = $db->query($sql);
@@ -67,7 +66,6 @@ class Home extends BaseController
         
         $data['title'] = 'Crear codigo de barra';
         $data['home'] = 'barcode';
-        $data['principal']= $this->session->get('usuario');
         return $this->load_view('extra/barcode',$data);
     }
     function change_password() {
@@ -78,7 +76,6 @@ class Home extends BaseController
         $UsuarioModel = new UsuarioModel();
         $data['title'] = 'Cambiara Contraseña';
         $data['home'] = 'Usuario';
-        $data['principal']= $this->session->get('usuario');
         $data['data'] = $UsuarioModel->view_delete();
 
         if (!$this->validate([
@@ -106,6 +103,7 @@ class Home extends BaseController
     
     protected function load_view( $view = null, $data = null)
     {
+        $data['principal']= $_SESSION['usuario'];
         echo view('head',$data);
         echo view('header');
         echo view('sidebar');

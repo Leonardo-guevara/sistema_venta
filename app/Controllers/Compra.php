@@ -20,7 +20,7 @@ class Compra extends BaseController
         $CompraModel = new CompraModel();
         $data['title'] = 'Lista de Compra';
         $data['home'] = 'compra';
-        $data['principal']= $this->session->get('usuario');
+        $data['principal']= $_SESSION['usuario'];;
         if (!$this->validate([
             'date_final'    => 'required',  
             'date_inicio'    => 'required',      
